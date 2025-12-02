@@ -1,0 +1,6 @@
+INFO     utils.video_recorder:video_recorder.py:42 🎥 Grabación iniciada: videos/test_one_way_booking[edge]_edge_20251201_144629.mp4
+INFO     conftest:conftest.py:98 Configurando driver para EDGE (headless=False)
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST edgedriver version for Edge 142.0.3595
+WARNING  conftest:conftest.py:132 WebDriver Manager falló: Could not reach host. Are you offline?. Usando driver local.
+ERROR    conftest:conftest.py:147 Error configurando driver edge: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location

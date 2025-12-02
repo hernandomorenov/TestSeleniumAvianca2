@@ -1,0 +1,20 @@
+2025-12-01 14:55:30,929 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[chrome]_chrome_20251201_145530.mp4
+2025-12-01 14:55:30,929 - conftest - INFO - Configurando driver para CHROME (headless=False)
+2025-12-01 14:55:31,187 - WDM - INFO - ====== WebDriver manager ======
+2025-12-01 14:55:35,314 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-01 14:55:35,531 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-01 14:55:35,642 - WDM - INFO - Driver [C:\Users\HernandoMorenoVargas\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-12-01 14:55:35,741 - conftest - WARNING - WebDriver Manager falló: [WinError 193] %1 no es una aplicación Win32 válida. Usando driver local.
+2025-12-01 14:55:41,009 - conftest - INFO - Driver CHROME configurado exitosamente
+2025-12-01 14:55:41,013 - conftest - INFO - URL base configurada: https://nuxqa4.avtest.ink/
+2025-12-01 14:55:41 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_145541.png
+2025-12-01 14:55:41,280 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_145541.png
+2025-12-01 14:55:41 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:55:41,284 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:55:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:55:47,701 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:55:48 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:55:48,702 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:55:49,528 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[chrome]_20251201_145549.png
+2025-12-01 14:55:49,578 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[chrome]_chrome_20251201_145530.mp4
+2025-12-01 14:55:52,277 - conftest - INFO - Driver CHROME cerrado

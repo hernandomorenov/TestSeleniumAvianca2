@@ -1,0 +1,24 @@
+2025-12-01 14:45:49,988 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[firefox]_firefox_20251201_144549.mp4
+2025-12-01 14:45:49,988 - conftest - INFO - Configurando driver para FIREFOX (headless=False)
+2025-12-01 14:45:49,994 - WDM - INFO - ====== WebDriver manager ======
+2025-12-01 14:45:52,879 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 14:45:53,172 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 14:45:53,457 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 14:45:53,742 - WDM - INFO - Getting latest mozilla release info for v0.36.0
+2025-12-01 14:45:54,086 - WDM - INFO - About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+2025-12-01 14:45:54,745 - WDM - INFO - Driver downloading response is 200
+2025-12-01 14:45:54,842 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 14:45:55,282 - WDM - INFO - Driver has been saved in cache [C:\Users\HernandoMorenoVargas\.wdm\drivers\geckodriver\win64\v0.36.0]
+2025-12-01 14:46:07,956 - conftest - INFO - Driver FIREFOX configurado exitosamente
+2025-12-01 14:46:07,960 - conftest - INFO - URL base configurada: https://nuxqa4.avtest.ink/
+2025-12-01 14:46:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_144607.png
+2025-12-01 14:46:08,103 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_144607.png
+2025-12-01 14:46:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:46:08,107 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:46:21 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:46:21,530 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:46:22 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:46:22,534 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:46:23,429 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[firefox]_20251201_144622.png
+2025-12-01 14:46:23,472 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[firefox]_firefox_20251201_144549.mp4
+2025-12-01 14:46:29,607 - conftest - INFO - Driver FIREFOX cerrado

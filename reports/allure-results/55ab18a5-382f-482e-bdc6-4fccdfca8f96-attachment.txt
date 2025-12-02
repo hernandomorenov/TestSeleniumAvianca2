@@ -1,0 +1,8 @@
+2025-12-01 19:35:44,354 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[edge]_edge_20251201_193544.mp4
+2025-12-01 19:35:44,354 - conftest - INFO - Configurando driver para EDGE (headless=False)
+2025-12-01 19:35:44,360 - WDM - INFO - xdist worker is: gw0
+2025-12-01 19:35:44,361 - WDM - INFO - ====== WebDriver manager ======
+2025-12-01 19:35:46,640 - WDM - INFO - Get LATEST edgedriver version for Edge 142.0.3595
+2025-12-01 19:35:46,776 - conftest - WARNING - WebDriver Manager falló: Could not reach host. Are you offline?. Usando driver local.
+2025-12-01 19:35:47,478 - conftest - ERROR - Error configurando driver edge: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+

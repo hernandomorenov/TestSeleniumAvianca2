@@ -1,0 +1,78 @@
+2025-12-01 15:41:54,580 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[firefox]_firefox_20251201_154154.mp4
+2025-12-01 15:41:54,581 - conftest - INFO - Configurando driver para FIREFOX (headless=False)
+2025-12-01 15:41:54,588 - WDM - INFO - xdist worker is: gw0
+2025-12-01 15:41:54,588 - WDM - INFO - ====== WebDriver manager ======
+2025-12-01 15:41:57,026 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 15:41:57,792 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 15:41:58,615 - WDM - INFO - Driver [C:\Users\HernandoMorenoVargas\.wdm\gw0\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-12-01 15:42:08,351 - conftest - INFO - Driver FIREFOX configurado exitosamente
+2025-12-01 15:42:08,355 - conftest - INFO - URL base configurada: https://nuxqa4.avtest.ink/
+2025-12-01 15:42:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154208.png
+2025-12-01 15:42:08,488 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154208.png
+2025-12-01 15:42:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:42:08,493 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:42:16 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:42:16,619 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:42:17 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 15:42:17,628 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 15:42:17 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 15:42:17,629 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 15:42:18 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154217.png
+2025-12-01 15:42:18,091 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154217.png
+2025-12-01 15:42:19 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 15:42:19,847 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 15:42:20 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_154219.png
+2025-12-01 15:42:20,029 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_154219.png
+2025-12-01 15:42:20 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_154220.png
+2025-12-01 15:42:20,229 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_154220.png
+2025-12-01 15:42:21 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 15:42:21,593 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 15:42:21 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_154221.png
+2025-12-01 15:42:21,760 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_154221.png
+2025-12-01 15:42:21 - utils.logger - INFO - Seleccionando One way según CSV
+2025-12-01 15:42:21,760 - utils.logger - INFO - Seleccionando One way según CSV
+2025-12-01 15:42:21 - utils.logger - INFO - 📸 Screenshot tomado: before_click_One way radio_20251201_154221.png
+2025-12-01 15:42:21,982 - utils.logger - INFO - 📸 Screenshot tomado: before_click_One way radio_20251201_154221.png
+2025-12-01 15:42:32 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+
+2025-12-01 15:42:32,259 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+
+2025-12-01 15:42:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154232.png
+2025-12-01 15:42:32,577 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154232.png
+2025-12-01 15:42:32 - utils.logger - INFO - Configurando destino MDE según CSV
+2025-12-01 15:42:32,578 - utils.logger - INFO - Configurando destino MDE según CSV
+2025-12-01 15:42:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154232.png
+2025-12-01 15:42:32,732 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154232.png
+2025-12-01 15:42:34 - utils.logger - INFO - ✅ Click realizado en: Destination container
+2025-12-01 15:42:34,570 - utils.logger - INFO - ✅ Click realizado en: Destination container
+2025-12-01 15:42:34 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_154234.png
+2025-12-01 15:42:34,768 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_154234.png
+2025-12-01 15:42:35 - utils.logger - INFO - 📸 Screenshot tomado: before_text_Destination MDE_20251201_154234.png
+2025-12-01 15:42:35,050 - utils.logger - INFO - 📸 Screenshot tomado: before_text_Destination MDE_20251201_154234.png
+2025-12-01 15:42:36 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
+2025-12-01 15:42:36,933 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
+2025-12-01 15:42:37 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_154236.png
+2025-12-01 15:42:37,219 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_154236.png
+2025-12-01 15:42:37 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
+2025-12-01 15:42:37,221 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
+2025-12-01 15:42:37 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
+2025-12-01 15:42:37,221 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
+2025-12-01 15:42:37 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154237.png
+2025-12-01 15:42:37,435 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154237.png
+2025-12-01 15:42:39 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
+2025-12-01 15:42:39,601 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
+2025-12-01 15:42:39 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_154239.png
+2025-12-01 15:42:39,943 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_154239.png
+2025-12-01 15:42:39 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
+2025-12-01 15:42:39,944 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
+2025-12-01 15:42:39 - utils.logger - INFO - Buscando vuelos según CSV
+2025-12-01 15:42:39,947 - utils.logger - INFO - Buscando vuelos según CSV
+2025-12-01 15:42:40 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154239.png
+2025-12-01 15:42:40,222 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154239.png
+2025-12-01 15:42:42 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 15:42:42,405 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 15:42:42 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154242.png
+2025-12-01 15:42:42,669 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154242.png
+2025-12-01 15:42:42,826 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking_csv[firefox]_20251201_154242.png
+2025-12-01 15:42:42,861 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking_csv[firefox]_firefox_20251201_154154.mp4
+2025-12-01 15:42:47,448 - conftest - INFO - Driver FIREFOX cerrado

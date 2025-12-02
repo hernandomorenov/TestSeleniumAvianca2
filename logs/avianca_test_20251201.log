@@ -1,0 +1,389 @@
+2025-12-01 14:45:40 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_144540.png
+2025-12-01 14:45:40 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:45:44 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:45:45 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:46:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_144607.png
+2025-12-01 14:46:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:46:21 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:46:22 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:55:41 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_145541.png
+2025-12-01 14:55:41 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:55:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:55:48 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:56:16 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_145615.png
+2025-12-01 14:56:16 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:56:21 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:56:22 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 14:58:14 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_145814.png
+2025-12-01 14:58:14 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 14:58:18 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 14:58:19 - utils.logger - INFO - Seleccionando idioma: english
+2025-12-01 15:25:25 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_152525.png
+2025-12-01 15:25:25 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:25:30 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:25:31 - utils.logger - INFO - Click en dropdown de idioma (Español)
+2025-12-01 15:25:32 - utils.logger - INFO - Seleccionando English
+2025-12-01 15:25:38 - utils.logger - INFO - Seleccionando One way
+2025-12-01 15:25:39 - utils.logger - INFO - Abriendo selector de destino
+2025-12-01 15:25:41 - utils.logger - INFO - Scroll down para ver opciones de destino
+2025-12-01 15:25:42 - utils.logger - INFO - Ingresando MDE como destino
+2025-12-01 15:25:50 - utils.logger - WARNING - No se encontró la opción Colombia, continuando...
+2025-12-01 15:25:50 - utils.logger - INFO - Configurando pasajeros
+2025-12-01 15:25:53 - utils.logger - INFO - Scroll down en selector de pasajeros
+2025-12-01 15:25:54 - utils.logger - INFO - Añadiendo pasajeros adicionales
+2025-12-01 15:26:04 - utils.logger - INFO - Cerrando selector de pasajeros
+2025-12-01 15:26:05 - utils.logger - INFO - Buscando vuelos...
+2025-12-01 15:26:11 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:26:12 - utils.logger - INFO - Scroll down para ver tarifas
+2025-12-01 15:26:19 - utils.logger - WARNING - No se pudo hacer click en 'Select fare': Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'Select fare') or contains(@class, 'fare-select')]"}
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6ec86a235
+	0x7ff6ec5c2630
+	0x7ff6ec3516dd
+	0x7ff6ec3aa27e
+	0x7ff6ec3aa58c
+	0x7ff6ec3fed77
+	0x7ff6ec3fbaba
+	0x7ff6ec39b0ed
+	0x7ff6ec39bf63
+	0x7ff6ec895d60
+	0x7ff6ec88fe8a
+	0x7ff6ec8b1005
+	0x7ff6ec5dd71e
+	0x7ff6ec5e4e1f
+	0x7ff6ec5cb7c4
+	0x7ff6ec5cb97f
+	0x7ff6ec5b18e8
+	0x7ffd4fe6e8d7
+	0x7ffd50eac53c
+
+2025-12-01 15:26:19 - utils.logger - INFO - Scroll up
+2025-12-01 15:26:21 - utils.logger - INFO - Seleccionando tarifa Basic
+2025-12-01 15:26:26 - utils.logger - INFO - Seleccionando tarifa: basic
+2025-12-01 15:26:27 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Tarifa basic_20251201_152626.png
+2025-12-01 15:26:38 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6ec86a235
+	0x7ff6ec5c2630
+	0x7ff6ec3516dd
+	0x7ff6ec3aa27e
+	0x7ff6ec3aa58c
+	0x7ff6ec3fed77
+	0x7ff6ec3fbaba
+	0x7ff6ec39b0ed
+	0x7ff6ec39bf63
+	0x7ff6ec895d60
+	0x7ff6ec88fe8a
+	0x7ff6ec8b1005
+	0x7ff6ec5dd71e
+	0x7ff6ec5e4e1f
+	0x7ff6ec5cb7c4
+	0x7ff6ec5cb97f
+	0x7ff6ec5b18e8
+	0x7ffd4fe6e8d7
+	0x7ffd50eac53c
+
+2025-12-01 15:26:38 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Tarifa basic_20251201_152638.png
+2025-12-01 15:27:04 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_152704.png
+2025-12-01 15:27:04 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:27:09 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:27:10 - utils.logger - INFO - Click en dropdown de idioma (Español)
+2025-12-01 15:27:12 - utils.logger - INFO - Seleccionando English
+2025-12-01 15:27:16 - utils.logger - INFO - Seleccionando One way
+2025-12-01 15:27:18 - utils.logger - INFO - Abriendo selector de destino
+2025-12-01 15:27:20 - utils.logger - INFO - Scroll down para ver opciones de destino
+2025-12-01 15:27:21 - utils.logger - INFO - Ingresando MDE como destino
+2025-12-01 15:27:23 - utils.logger - WARNING - No se encontró la opción Colombia, continuando...
+2025-12-01 15:27:23 - utils.logger - INFO - Configurando pasajeros
+2025-12-01 15:27:26 - utils.logger - INFO - Scroll down en selector de pasajeros
+2025-12-01 15:27:27 - utils.logger - INFO - Añadiendo pasajeros adicionales
+2025-12-01 15:27:37 - utils.logger - INFO - Cerrando selector de pasajeros
+2025-12-01 15:27:38 - utils.logger - INFO - Buscando vuelos...
+2025-12-01 15:27:44 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:27:45 - utils.logger - INFO - Scroll down para ver tarifas
+2025-12-01 15:27:52 - utils.logger - WARNING - No se pudo hacer click en 'Select fare': Message: Unable to locate element: //div[contains(text(), 'Select fare') or contains(@class, 'fare-select')]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 15:27:52 - utils.logger - INFO - Scroll up
+2025-12-01 15:27:54 - utils.logger - INFO - Seleccionando tarifa Basic
+2025-12-01 15:27:59 - utils.logger - INFO - Seleccionando tarifa: basic
+2025-12-01 15:28:00 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Tarifa basic_20251201_152759.png
+2025-12-01 15:28:11 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 15:28:11 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Tarifa basic_20251201_152811.png
+2025-12-01 15:29:23 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_152923.png
+2025-12-01 15:29:23 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:29:26 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:29:27 - utils.logger - INFO - Click en dropdown de idioma (Español)
+2025-12-01 15:29:29 - utils.logger - INFO - Seleccionando English
+2025-12-01 15:29:31 - utils.logger - INFO - Seleccionando One way
+2025-12-01 15:29:33 - utils.logger - INFO - Abriendo selector de destino
+2025-12-01 15:29:34 - utils.logger - INFO - Scroll down para ver opciones de destino
+2025-12-01 15:29:35 - utils.logger - INFO - Ingresando MDE como destino
+2025-12-01 15:29:43 - utils.logger - WARNING - No se encontró la opción Colombia, continuando...
+2025-12-01 15:29:43 - utils.logger - INFO - Configurando pasajeros
+2025-12-01 15:29:46 - utils.logger - INFO - Scroll down en selector de pasajeros
+2025-12-01 15:29:47 - utils.logger - INFO - Añadiendo pasajeros adicionales
+2025-12-01 15:41:23 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154123.png
+2025-12-01 15:41:23 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:41:26 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:41:27 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 15:41:27 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 15:41:28 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154127.png
+2025-12-01 15:41:29 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 15:41:30 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_154129.png
+2025-12-01 15:41:30 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_154130.png
+2025-12-01 15:41:32 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 15:41:32 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6ec86a235
+	0x7ff6ec5c2630
+	0x7ff6ec3516dd
+	0x7ff6ec33dfd8
+	0x7ff6ec33c30d
+	0x7ff6ec33cbcb
+	0x7ff6ec363080
+	0x7ff6ec40b727
+	0x7ff6ec3d2b0a
+	0x7ff6ec3fbaba
+	0x7ff6ec39b0ed
+	0x7ff6ec39bf63
+	0x7ff6ec895d60
+	0x7ff6ec88fe8a
+	0x7ff6ec8b1005
+	0x7ff6ec5dd71e
+	0x7ff6ec5e4e1f
+	0x7ff6ec5cb7c4
+	0x7ff6ec5cb97f
+	0x7ff6ec5b18e8
+	0x7ffd4fe6e8d7
+	0x7ffd50eac53c
+
+2025-12-01 15:41:32 - utils.logger - INFO - Seleccionando One way según CSV
+2025-12-01 15:41:32 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6ec86a235
+	0x7ff6ec5c2630
+	0x7ff6ec3516dd
+	0x7ff6ec33dfd8
+	0x7ff6ec33c30d
+	0x7ff6ec33cbcb
+	0x7ff6ec363080
+	0x7ff6ec40b727
+	0x7ff6ec3d2b0a
+	0x7ff6ec3fbaba
+	0x7ff6ec39b0ed
+	0x7ff6ec39bf63
+	0x7ff6ec895d60
+	0x7ff6ec88fe8a
+	0x7ff6ec8b1005
+	0x7ff6ec5dd71e
+	0x7ff6ec5e4e1f
+	0x7ff6ec5cb7c4
+	0x7ff6ec5cb97f
+	0x7ff6ec5b18e8
+	0x7ffd4fe6e8d7
+	0x7ffd50eac53c
+
+2025-12-01 15:41:42 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+
+2025-12-01 15:41:43 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154142.png
+2025-12-01 15:41:43 - utils.logger - INFO - Configurando destino MDE según CSV
+2025-12-01 15:41:43 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154143.png
+2025-12-01 15:41:44 - utils.logger - INFO - ✅ Click realizado en: Destination container
+2025-12-01 15:41:45 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_154144.png
+2025-12-01 15:41:45 - utils.logger - INFO - 📸 Screenshot tomado: before_text_Destination MDE_20251201_154145.png
+2025-12-01 15:41:46 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
+2025-12-01 15:41:46 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_154146.png
+2025-12-01 15:41:46 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
+2025-12-01 15:41:46 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
+2025-12-01 15:41:46 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154146.png
+2025-12-01 15:41:48 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
+2025-12-01 15:41:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_154148.png
+2025-12-01 15:41:48 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
+2025-12-01 15:41:48 - utils.logger - INFO - Buscando vuelos según CSV
+2025-12-01 15:41:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154148.png
+2025-12-01 15:41:50 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 15:41:51 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154150.png
+2025-12-01 15:42:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154208.png
+2025-12-01 15:42:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:42:16 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:42:17 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 15:42:17 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 15:42:18 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154217.png
+2025-12-01 15:42:19 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 15:42:20 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_154219.png
+2025-12-01 15:42:20 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_154220.png
+2025-12-01 15:42:21 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 15:42:21 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_154221.png
+2025-12-01 15:42:21 - utils.logger - INFO - Seleccionando One way según CSV
+2025-12-01 15:42:21 - utils.logger - INFO - 📸 Screenshot tomado: before_click_One way radio_20251201_154221.png
+2025-12-01 15:42:32 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+
+2025-12-01 15:42:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154232.png
+2025-12-01 15:42:32 - utils.logger - INFO - Configurando destino MDE según CSV
+2025-12-01 15:42:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154232.png
+2025-12-01 15:42:34 - utils.logger - INFO - ✅ Click realizado en: Destination container
+2025-12-01 15:42:34 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_154234.png
+2025-12-01 15:42:35 - utils.logger - INFO - 📸 Screenshot tomado: before_text_Destination MDE_20251201_154234.png
+2025-12-01 15:42:36 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
+2025-12-01 15:42:37 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_154236.png
+2025-12-01 15:42:37 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
+2025-12-01 15:42:37 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
+2025-12-01 15:42:37 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154237.png
+2025-12-01 15:42:39 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
+2025-12-01 15:42:39 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_154239.png
+2025-12-01 15:42:39 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
+2025-12-01 15:42:39 - utils.logger - INFO - Buscando vuelos según CSV
+2025-12-01 15:42:40 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154239.png
+2025-12-01 15:42:42 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 15:42:42 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154242.png
+2025-12-01 19:34:34 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193434.png
+2025-12-01 19:34:34 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 19:34:40 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 19:34:41 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 19:34:41 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:34:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193441.png
+2025-12-01 19:34:43 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 19:34:43 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_193443.png
+2025-12-01 19:34:44 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_193443.png
+2025-12-01 19:34:48 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 19:34:49 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_193448.png
+2025-12-01 19:35:11 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193510.png
+2025-12-01 19:35:11 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 19:35:32 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 19:35:33 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 19:35:33 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:35:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193533.png
+2025-12-01 19:35:34 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 19:35:35 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_193534.png
+2025-12-01 19:35:35 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_193535.png
+2025-12-01 19:35:37 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 19:35:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_193537.png
+2025-12-01 19:45:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194508.png
+2025-12-01 19:45:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 19:45:15 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 19:45:16 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 19:45:16 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:45:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194516.png
+2025-12-01 19:45:17 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 19:45:18 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_194517.png
+2025-12-01 19:45:18 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_194518.png
+2025-12-01 19:45:22 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 19:45:23 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_194522.png
+2025-12-01 19:45:38 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194538.png
+2025-12-01 19:45:38 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 19:45:48 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 19:45:49 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 19:45:49 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:45:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194549.png
+2025-12-01 19:45:51 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 19:45:51 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_194551.png
+2025-12-01 19:45:51 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_194551.png
+2025-12-01 19:45:53 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 19:45:53 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_194553.png
+2025-12-01 19:49:09 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194908.png
+2025-12-01 19:49:09 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 19:49:14 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 19:49:15 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 19:49:15 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:49:15 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194915.png
+2025-12-01 19:49:16 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 19:49:17 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_194916.png
+2025-12-01 19:49:17 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_194917.png
+2025-12-01 19:49:18 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 19:49:18 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6e69aa235
+	0x7ff6e6702630
+	0x7ff6e64916dd
+	0x7ff6e647dfd8
+	0x7ff6e647c30d
+	0x7ff6e647cbcb
+	0x7ff6e64a3080
+	0x7ff6e654b727
+	0x7ff6e6512b0a
+	0x7ff6e653baba
+	0x7ff6e64db0ed
+	0x7ff6e64dbf63
+	0x7ff6e69d5d60
+	0x7ff6e69cfe8a
+	0x7ff6e69f1005
+	0x7ff6e671d71e
+	0x7ff6e6724e1f
+	0x7ff6e670b7c4
+	0x7ff6e670b97f
+	0x7ff6e66f18e8
+	0x7ffd4fe6e8d7
+	0x7ffd50eac53c
+
+2025-12-01 19:49:53 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194953.png
+2025-12-01 19:49:53 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 19:49:58 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 19:49:59 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 19:49:59 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:49:59 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194959.png
+2025-12-01 19:50:00 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 19:50:01 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_195000.png
+2025-12-01 19:50:01 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_195001.png
+2025-12-01 19:50:03 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 19:50:03 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6e69aa235
+	0x7ff6e6702630
+	0x7ff6e64916dd
+	0x7ff6e647dfd8
+	0x7ff6e647c30d
+	0x7ff6e647cbcb
+	0x7ff6e64a3080
+	0x7ff6e654b727
+	0x7ff6e6512b0a
+	0x7ff6e653baba
+	0x7ff6e64db0ed
+	0x7ff6e64dbf63
+	0x7ff6e69d5d60
+	0x7ff6e69cfe8a
+	0x7ff6e69f1005
+	0x7ff6e671d71e
+	0x7ff6e6724e1f
+	0x7ff6e670b7c4
+	0x7ff6e670b97f
+	0x7ff6e66f18e8
+	0x7ffd4fe6e8d7
+	0x7ffd50eac53c
+
+2025-12-01 19:50:22 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_195022.png
+2025-12-01 19:50:22 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 19:50:31 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 19:50:32 - utils.logger - INFO - Completando configuración home según CSV
+2025-12-01 19:50:32 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:50:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_195032.png
+2025-12-01 19:50:35 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 19:50:35 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_195035.png
+2025-12-01 19:50:35 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_195035.png
+2025-12-01 19:50:37 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 19:50:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_195037.png

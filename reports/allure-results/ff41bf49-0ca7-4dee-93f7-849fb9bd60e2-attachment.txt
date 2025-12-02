@@ -1,0 +1,19 @@
+INFO     utils.video_recorder:video_recorder.py:42 🎥 Grabación iniciada: videos/test_one_way_booking[firefox]_firefox_20251201_144549.mp4
+INFO     conftest:conftest.py:98 Configurando driver para FIREFOX (headless=False)
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 Getting latest mozilla release info for v0.36.0
+INFO     WDM:logger.py:11 About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+INFO     WDM:logger.py:11 Driver downloading response is 200
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 Driver has been saved in cache [C:\Users\HernandoMorenoVargas\.wdm\drivers\geckodriver\win64\v0.36.0]
+INFO     conftest:conftest.py:143 Driver FIREFOX configurado exitosamente
+INFO     conftest:conftest.py:198 URL base configurada: https://nuxqa4.avtest.ink/
+INFO     utils.logger:screenshot_manager.py:33 📸 Screenshot tomado: test_start_20251201_144607.png
+INFO     utils.logger:base_page.py:88 🌐 Navegando a: https://nuxqa4.avtest.ink/
+INFO     utils.logger:base_page.py:78 ✅ Página cargada completamente
+INFO     utils.logger:home_page.py:79 Seleccionando idioma: english
+INFO     utils.video_recorder:video_recorder.py:74 🎥 Grabación detenida: videos/test_one_way_booking[firefox]_firefox_20251201_144549.mp4
+INFO     conftest:conftest.py:186 Driver FIREFOX cerrado

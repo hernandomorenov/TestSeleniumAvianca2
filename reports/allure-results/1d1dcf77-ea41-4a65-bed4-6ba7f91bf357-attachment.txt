@@ -1,0 +1,90 @@
+2025-12-01 15:26:42,204 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[firefox]_firefox_20251201_152642.mp4
+2025-12-01 15:26:42,205 - conftest - INFO - Configurando driver para FIREFOX (headless=False)
+2025-12-01 15:26:42,209 - WDM - INFO - xdist worker is: gw0
+2025-12-01 15:26:42,209 - WDM - INFO - ====== WebDriver manager ======
+2025-12-01 15:26:45,377 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 15:26:45,674 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 15:26:45,949 - WDM - INFO - There is no [win64] geckodriver "v0.36.0" for browser firefox "145.0" in cache
+2025-12-01 15:26:45,949 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 15:26:46,474 - WDM - INFO - Getting latest mozilla release info for v0.36.0
+2025-12-01 15:26:47,061 - WDM - INFO - About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+2025-12-01 15:26:47,514 - WDM - INFO - Driver downloading response is 200
+2025-12-01 15:26:47,673 - WDM - INFO - Get LATEST geckodriver version for 145.0 firefox
+2025-12-01 15:26:47,992 - WDM - INFO - Driver has been saved in cache [C:\Users\HernandoMorenoVargas\.wdm\gw0\drivers\geckodriver\win64\v0.36.0]
+2025-12-01 15:27:04,402 - conftest - INFO - Driver FIREFOX configurado exitosamente
+2025-12-01 15:27:04,408 - conftest - INFO - URL base configurada: https://nuxqa4.avtest.ink/
+2025-12-01 15:27:04 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_152704.png
+2025-12-01 15:27:04,579 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_152704.png
+2025-12-01 15:27:04 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:27:04,584 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 15:27:09 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:27:09,343 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:27:10 - utils.logger - INFO - Click en dropdown de idioma (Español)
+2025-12-01 15:27:10,355 - utils.logger - INFO - Click en dropdown de idioma (Español)
+2025-12-01 15:27:12 - utils.logger - INFO - Seleccionando English
+2025-12-01 15:27:12,297 - utils.logger - INFO - Seleccionando English
+2025-12-01 15:27:16 - utils.logger - INFO - Seleccionando One way
+2025-12-01 15:27:16,318 - utils.logger - INFO - Seleccionando One way
+2025-12-01 15:27:18 - utils.logger - INFO - Abriendo selector de destino
+2025-12-01 15:27:18,253 - utils.logger - INFO - Abriendo selector de destino
+2025-12-01 15:27:20 - utils.logger - INFO - Scroll down para ver opciones de destino
+2025-12-01 15:27:20,076 - utils.logger - INFO - Scroll down para ver opciones de destino
+2025-12-01 15:27:21 - utils.logger - INFO - Ingresando MDE como destino
+2025-12-01 15:27:21,114 - utils.logger - INFO - Ingresando MDE como destino
+2025-12-01 15:27:23 - utils.logger - WARNING - No se encontró la opción Colombia, continuando...
+2025-12-01 15:27:23,782 - utils.logger - WARNING - No se encontró la opción Colombia, continuando...
+2025-12-01 15:27:23 - utils.logger - INFO - Configurando pasajeros
+2025-12-01 15:27:23,782 - utils.logger - INFO - Configurando pasajeros
+2025-12-01 15:27:26 - utils.logger - INFO - Scroll down en selector de pasajeros
+2025-12-01 15:27:26,533 - utils.logger - INFO - Scroll down en selector de pasajeros
+2025-12-01 15:27:27 - utils.logger - INFO - Añadiendo pasajeros adicionales
+2025-12-01 15:27:27,573 - utils.logger - INFO - Añadiendo pasajeros adicionales
+2025-12-01 15:27:37 - utils.logger - INFO - Cerrando selector de pasajeros
+2025-12-01 15:27:37,584 - utils.logger - INFO - Cerrando selector de pasajeros
+2025-12-01 15:27:38 - utils.logger - INFO - Buscando vuelos...
+2025-12-01 15:27:38,729 - utils.logger - INFO - Buscando vuelos...
+2025-12-01 15:27:44 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:27:44,468 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 15:27:45 - utils.logger - INFO - Scroll down para ver tarifas
+2025-12-01 15:27:45,469 - utils.logger - INFO - Scroll down para ver tarifas
+2025-12-01 15:27:52 - utils.logger - WARNING - No se pudo hacer click en 'Select fare': Message: Unable to locate element: //div[contains(text(), 'Select fare') or contains(@class, 'fare-select')]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 15:27:52,488 - utils.logger - WARNING - No se pudo hacer click en 'Select fare': Message: Unable to locate element: //div[contains(text(), 'Select fare') or contains(@class, 'fare-select')]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 15:27:52 - utils.logger - INFO - Scroll up
+2025-12-01 15:27:52,488 - utils.logger - INFO - Scroll up
+2025-12-01 15:27:54 - utils.logger - INFO - Seleccionando tarifa Basic
+2025-12-01 15:27:54,831 - utils.logger - INFO - Seleccionando tarifa Basic
+2025-12-01 15:27:59 - utils.logger - INFO - Seleccionando tarifa: basic
+2025-12-01 15:27:59,844 - utils.logger - INFO - Seleccionando tarifa: basic
+2025-12-01 15:28:00 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Tarifa basic_20251201_152759.png
+2025-12-01 15:28:00,112 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Tarifa basic_20251201_152759.png
+2025-12-01 15:28:11 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 15:28:11,138 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 15:28:11 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Tarifa basic_20251201_152811.png
+2025-12-01 15:28:11,478 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Tarifa basic_20251201_152811.png
+2025-12-01 15:28:11,686 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[firefox]_20251201_152811.png
+2025-12-01 15:28:11,707 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[firefox]_firefox_20251201_152642.mp4
+2025-12-01 15:28:16,862 - conftest - INFO - Driver FIREFOX cerrado
