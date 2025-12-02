@@ -136,11 +136,11 @@ dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
 2025-12-01 15:29:43 - utils.logger - INFO - Configurando pasajeros
 2025-12-01 15:29:46 - utils.logger - INFO - Scroll down en selector de pasajeros
 2025-12-01 15:29:47 - utils.logger - INFO - Añadiendo pasajeros adicionales
-2025-12-01 15:41:23 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154123.png
+2025-12-01 15:41:23 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_154123.png
 2025-12-01 15:41:23 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 15:41:26 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 15:41:27 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 15:41:27 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 15:41:27 - utils.logger - INFO - Completando configuración home 
+2025-12-01 15:41:27 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 15:41:28 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154127.png
 2025-12-01 15:41:29 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 15:41:30 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_154129.png
@@ -174,7 +174,7 @@ Symbols not available. Dumping unresolved backtrace:
 	0x7ffd4fe6e8d7
 	0x7ffd50eac53c
 
-2025-12-01 15:41:32 - utils.logger - INFO - Seleccionando One way según CSV
+2025-12-01 15:41:32 - utils.logger - INFO - Seleccionando One way 
 2025-12-01 15:41:32 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
 from aborted by navigation: Not attached to an active page
   (Session info: chrome=142.0.7444.176)
@@ -206,7 +206,7 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 15:41:42 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
 
 2025-12-01 15:41:43 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154142.png
-2025-12-01 15:41:43 - utils.logger - INFO - Configurando destino MDE según CSV
+2025-12-01 15:41:43 - utils.logger - INFO - Configurando destino MDE 
 2025-12-01 15:41:43 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154143.png
 2025-12-01 15:41:44 - utils.logger - INFO - ✅ Click realizado en: Destination container
 2025-12-01 15:41:45 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_154144.png
@@ -214,32 +214,32 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 15:41:46 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
 2025-12-01 15:41:46 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_154146.png
 2025-12-01 15:41:46 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
-2025-12-01 15:41:46 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
+2025-12-01 15:41:46 - utils.logger - INFO - Configurando pasajeros de todos los tipos 
 2025-12-01 15:41:46 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154146.png
 2025-12-01 15:41:48 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
 2025-12-01 15:41:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_154148.png
 2025-12-01 15:41:48 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
-2025-12-01 15:41:48 - utils.logger - INFO - Buscando vuelos según CSV
+2025-12-01 15:41:48 - utils.logger - INFO - Buscando vuelos 
 2025-12-01 15:41:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154148.png
 2025-12-01 15:41:50 - utils.logger - INFO - ✅ Click realizado en: Search flights
 2025-12-01 15:41:51 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154150.png
-2025-12-01 15:42:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154208.png
+2025-12-01 15:42:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_154208.png
 2025-12-01 15:42:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 15:42:16 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 15:42:17 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 15:42:17 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 15:42:17 - utils.logger - INFO - Completando configuración home 
+2025-12-01 15:42:17 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 15:42:18 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154217.png
 2025-12-01 15:42:19 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 15:42:20 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_154219.png
 2025-12-01 15:42:20 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_154220.png
 2025-12-01 15:42:21 - utils.logger - INFO - ✅ Click realizado en: English option
 2025-12-01 15:42:21 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_154221.png
-2025-12-01 15:42:21 - utils.logger - INFO - Seleccionando One way según CSV
+2025-12-01 15:42:21 - utils.logger - INFO - Seleccionando One way 
 2025-12-01 15:42:21 - utils.logger - INFO - 📸 Screenshot tomado: before_click_One way radio_20251201_154221.png
 2025-12-01 15:42:32 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
 
 2025-12-01 15:42:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154232.png
-2025-12-01 15:42:32 - utils.logger - INFO - Configurando destino MDE según CSV
+2025-12-01 15:42:32 - utils.logger - INFO - Configurando destino MDE 
 2025-12-01 15:42:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154232.png
 2025-12-01 15:42:34 - utils.logger - INFO - ✅ Click realizado en: Destination container
 2025-12-01 15:42:34 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_154234.png
@@ -247,31 +247,31 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 15:42:36 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
 2025-12-01 15:42:37 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_154236.png
 2025-12-01 15:42:37 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
-2025-12-01 15:42:37 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
+2025-12-01 15:42:37 - utils.logger - INFO - Configurando pasajeros de todos los tipos 
 2025-12-01 15:42:37 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154237.png
 2025-12-01 15:42:39 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
 2025-12-01 15:42:39 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_154239.png
 2025-12-01 15:42:39 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
-2025-12-01 15:42:39 - utils.logger - INFO - Buscando vuelos según CSV
+2025-12-01 15:42:39 - utils.logger - INFO - Buscando vuelos 
 2025-12-01 15:42:40 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154239.png
 2025-12-01 15:42:42 - utils.logger - INFO - ✅ Click realizado en: Search flights
 2025-12-01 15:42:42 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154242.png
-2025-12-01 19:34:34 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193434.png
+2025-12-01 19:34:34 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_193434.png
 2025-12-01 19:34:34 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:34:40 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:34:41 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:34:41 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:34:41 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:34:41 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:34:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193441.png
 2025-12-01 19:34:43 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 19:34:43 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_193443.png
 2025-12-01 19:34:44 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_193443.png
 2025-12-01 19:34:48 - utils.logger - INFO - ✅ Click realizado en: English option
 2025-12-01 19:34:49 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_193448.png
-2025-12-01 19:35:11 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193510.png
+2025-12-01 19:35:11 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_193510.png
 2025-12-01 19:35:11 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:35:32 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:35:33 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:35:33 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:35:33 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:35:33 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:35:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193533.png
 2025-12-01 19:35:34 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 19:35:35 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_193534.png
@@ -281,8 +281,8 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 19:45:08 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194508.png
 2025-12-01 19:45:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:45:15 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:45:16 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:45:16 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:45:16 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:45:16 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:45:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194516.png
 2025-12-01 19:45:17 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 19:45:18 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_194517.png
@@ -292,8 +292,8 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 19:45:38 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194538.png
 2025-12-01 19:45:38 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:45:48 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:45:49 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:45:49 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:45:49 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:45:49 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:45:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194549.png
 2025-12-01 19:45:51 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 19:45:51 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_194551.png
@@ -303,8 +303,8 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 19:49:09 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194908.png
 2025-12-01 19:49:09 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:49:14 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:49:15 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:49:15 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:49:15 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:49:15 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:49:15 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194915.png
 2025-12-01 19:49:16 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 19:49:17 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_194916.png
@@ -341,8 +341,8 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 19:49:53 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_194953.png
 2025-12-01 19:49:53 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:49:58 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:49:59 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:49:59 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:49:59 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:49:59 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:49:59 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194959.png
 2025-12-01 19:50:00 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 19:50:01 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_195000.png
@@ -379,11 +379,1465 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 19:50:22 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_195022.png
 2025-12-01 19:50:22 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:50:31 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:50:32 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:50:32 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:50:32 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:50:32 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:50:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_195032.png
 2025-12-01 19:50:35 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
 2025-12-01 19:50:35 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_195035.png
 2025-12-01 19:50:35 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_195035.png
 2025-12-01 19:50:37 - utils.logger - INFO - ✅ Click realizado en: English option
 2025-12-01 19:50:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_195037.png
+2025-12-01 20:54:56 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_205456.png
+2025-12-01 20:54:56 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 20:55:01 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 20:55:02 - utils.logger - INFO - Completando configuración home 
+2025-12-01 20:55:02 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 20:55:02 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_205502.png
+2025-12-01 20:55:04 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 20:55:04 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_205504.png
+2025-12-01 20:55:05 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_205504.png
+2025-12-01 20:55:11 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 20:55:11 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_205511.png
+2025-12-01 21:02:25 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_210225.png
+2025-12-01 21:02:25 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 21:02:54 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 21:02:55 - utils.logger - INFO - Completando configuración home
+2025-12-01 21:02:55 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 21:02:55 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_210255.png
+2025-12-01 21:02:56 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 21:02:57 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_210256.png
+2025-12-01 21:02:57 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_210257.png
+2025-12-01 21:03:17 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 21:03:17 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_210317.png
+2025-12-01 21:03:17 - utils.logger - INFO - Seleccionando One way  paso 4
+2025-12-01 21:03:17 - utils.logger - ERROR - Error crítico seleccionando One way: name 'driver' is not defined
+2025-12-01 21:03:18 - utils.logger - INFO - 📸 Screenshot tomado: one_way_error_20251201_210317.png
+2025-12-01 21:05:13 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_210513.png
+2025-12-01 21:05:13 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 21:05:17 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 21:05:18 - utils.logger - INFO - Completando configuración home
+2025-12-01 21:05:18 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 21:05:18 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_210518.png
+2025-12-01 21:05:20 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 21:05:20 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_210520.png
+2025-12-01 21:05:20 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_210520.png
+2025-12-01 21:05:24 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 21:05:24 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_210524.png
+2025-12-01 21:05:24 - utils.logger - INFO - Seleccionando One way  paso 4
+2025-12-01 21:05:24 - utils.logger - ERROR - Error crítico seleccionando One way: name 'driver' is not defined
+2025-12-01 21:05:24 - utils.logger - INFO - 📸 Screenshot tomado: one_way_error_20251201_210524.png
+2025-12-01 21:06:17 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_210617.png
+2025-12-01 21:06:17 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 21:06:20 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 21:06:21 - utils.logger - INFO - Completando configuración home
+2025-12-01 21:06:21 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 21:06:21 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_210621.png
+2025-12-01 21:06:22 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 21:06:22 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_210622.png
+2025-12-01 21:06:23 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_210622.png
+2025-12-01 21:06:24 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 21:06:24 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_210624.png
+2025-12-01 21:06:24 - utils.logger - INFO - Seleccionando One way  paso 4
+2025-12-01 21:06:24 - utils.logger - ERROR - Error crítico seleccionando One way: name 'driver' is not defined
+2025-12-01 21:06:24 - utils.logger - INFO - 📸 Screenshot tomado: one_way_error_20251201_210624.png
+2025-12-01 21:13:03 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_211303.png
+2025-12-01 21:13:03 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 21:13:06 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 21:13:07 - utils.logger - INFO - Completando configuración home
+2025-12-01 21:13:07 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 21:13:07 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_211307.png
+2025-12-01 21:13:09 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 21:13:09 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_211309.png
+2025-12-01 21:13:09 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_211309.png
+2025-12-01 21:13:11 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 21:13:11 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2b7dfd8
+	0x7ff7d2b7c30d
+	0x7ff7d2b7cbcb
+	0x7ff7d2ba3080
+	0x7ff7d2c4b727
+	0x7ff7d2c12b0a
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 21:13:11 - utils.logger - INFO - Seleccionando One way
+2025-12-01 21:13:11 - utils.logger - ERROR - Error crítico seleccionando One way: name 'driver' is not defined
+2025-12-01 21:13:11 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2b7dfd8
+	0x7ff7d2b7c30d
+	0x7ff7d2b7cbcb
+	0x7ff7d2ba3080
+	0x7ff7d2c4b727
+	0x7ff7d2c12b0a
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 21:14:06 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_211406.png
+2025-12-01 21:14:06 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 21:14:21 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 21:14:22 - utils.logger - INFO - Completando configuración home
+2025-12-01 21:14:22 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 21:14:22 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_211422.png
+2025-12-01 21:14:24 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 21:14:24 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_211424.png
+2025-12-01 21:14:24 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_211424.png
+2025-12-01 21:14:25 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 21:14:25 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_211425.png
+2025-12-01 21:14:25 - utils.logger - INFO - Seleccionando One way
+2025-12-01 21:14:25 - utils.logger - ERROR - Error crítico seleccionando One way: name 'driver' is not defined
+2025-12-01 21:14:26 - utils.logger - INFO - 📸 Screenshot tomado: one_way_error_20251201_211425.png
+2025-12-01 21:17:22 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_211722.png
+2025-12-01 21:17:22 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 21:17:37 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 21:17:39 - utils.logger - INFO - Completando configuración home
+2025-12-01 21:17:39 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 21:17:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_211739.png
+2025-12-01 21:17:40 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 21:17:41 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_211740.png
+2025-12-01 21:17:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_211741.png
+2025-12-01 21:17:54 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 21:17:55 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_211754.png
+2025-12-01 21:17:55 - utils.logger - INFO - Seleccionando One way
+2025-12-01 21:17:55 - utils.logger - ERROR - Error crítico seleccionando One way: name 'driver' is not defined
+2025-12-01 21:17:55 - utils.logger - INFO - 📸 Screenshot tomado: one_way_error_20251201_211755.png
+2025-12-01 21:17:55 - utils.logger - INFO - Configurando destino MDE
+2025-12-01 21:17:55 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_211755.png
+2025-12-01 21:17:57 - utils.logger - INFO - ✅ Click realizado en: Destination container
+2025-12-01 21:17:57 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_211757.png
+2025-12-01 21:17:57 - utils.logger - INFO - 📸 Screenshot tomado: before_text_Destination MDE_20251201_211757.png
+2025-12-01 21:17:58 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
+2025-12-01 21:17:59 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_211758.png
+2025-12-01 21:17:59 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
+2025-12-01 21:17:59 - utils.logger - INFO - Configurando pasajeros de todos los tipos
+2025-12-01 21:17:59 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_211759.png
+2025-12-01 21:18:00 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
+2025-12-01 21:18:01 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_211800.png
+2025-12-01 21:18:01 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
+2025-12-01 21:18:01 - utils.logger - INFO - Buscando vuelos 
+2025-12-01 21:18:01 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_211801.png
+2025-12-01 21:18:03 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 21:18:03 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_211803.png
+2025-12-01 21:18:39 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_211839.png
+2025-12-01 21:18:39 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 21:18:41 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 21:18:42 - utils.logger - INFO - Completando configuración home
+2025-12-01 21:18:42 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 21:18:43 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_211842.png
+2025-12-01 21:18:44 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 21:18:44 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_211844.png
+2025-12-01 21:18:44 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_211844.png
+2025-12-01 21:18:46 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 21:18:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_211846.png
+2025-12-01 21:18:46 - utils.logger - INFO - Seleccionando One way
+2025-12-01 21:18:46 - utils.logger - ERROR - Error crítico seleccionando One way: name 'driver' is not defined
+2025-12-01 21:18:46 - utils.logger - INFO - 📸 Screenshot tomado: one_way_error_20251201_211846.png
+2025-12-01 21:18:46 - utils.logger - INFO - Configurando destino MDE
+2025-12-01 21:18:46 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_211846.png
+2025-12-01 21:18:49 - utils.logger - INFO - ✅ Click realizado en: Destination container
+2025-12-01 21:18:50 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Destination container_20251201_211849.png
+2025-12-01 21:18:50 - utils.logger - INFO - 📸 Screenshot tomado: before_text_Destination MDE_20251201_211850.png
+2025-12-01 21:18:50 - utils.logger - INFO - ✅ Texto ingresado en Destination MDE: MDE
+2025-12-01 21:18:51 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_211850.png
+2025-12-01 21:18:51 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
+2025-12-01 21:18:51 - utils.logger - INFO - Configurando pasajeros de todos los tipos
+2025-12-01 21:18:51 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_211851.png
+2025-12-01 21:18:52 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
+2025-12-01 21:18:52 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_211852.png
+2025-12-01 21:18:52 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
+2025-12-01 21:18:52 - utils.logger - INFO - Buscando vuelos 
+2025-12-01 21:18:53 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_211852.png
+2025-12-01 21:18:54 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 21:18:54 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_211854.png
+2025-12-01 22:00:01 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_220001.png
+2025-12-01 22:00:01 - utils.logger - INFO - === NAVEGANDO A: https://nuxqa4.avtest.ink/ ===
+2025-12-01 22:00:01 - utils.logger - INFO - Browser: chrome
+2025-12-01 22:00:01 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:00:08 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:00:12 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:00:12 - utils.logger - INFO - === COMPLETANDO CONFIGURACIÓN HOME ===
+2025-12-01 22:00:12 - utils.logger - INFO - 📸 Screenshot tomado: before_home_configuration_20251201_220012.png
+2025-12-01 22:00:12 - utils.logger - INFO - Completando configuración home
+2025-12-01 22:00:12 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 22:00:12 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_220012.png
+2025-12-01 22:00:14 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:00:14 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_220014.png
+2025-12-01 22:00:14 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_220014.png
+2025-12-01 22:00:18 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:00:18 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_220018.png
+2025-12-01 22:00:18 - utils.logger - INFO - Intentando seleccionar One Way...
+2025-12-01 22:00:24 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_220024.png
+2025-12-01 22:00:25 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:00:26 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_220025.png
+2025-12-01 22:00:26 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:01:30 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_220130.png
+2025-12-01 22:01:30 - utils.logger - INFO - === NAVEGANDO A: https://nuxqa4.avtest.ink/ ===
+2025-12-01 22:01:30 - utils.logger - INFO - Browser: firefox
+2025-12-01 22:01:30 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:01:33 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:01:37 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:01:37 - utils.logger - INFO - === COMPLETANDO CONFIGURACIÓN HOME ===
+2025-12-01 22:01:37 - utils.logger - INFO - 📸 Screenshot tomado: before_home_configuration_20251201_220137.png
+2025-12-01 22:01:37 - utils.logger - INFO - Completando configuración home
+2025-12-01 22:01:37 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 22:01:37 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_220137.png
+2025-12-01 22:01:39 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:01:39 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_220139.png
+2025-12-01 22:01:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_220139.png
+2025-12-01 22:01:40 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:01:40 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_220140.png
+2025-12-01 22:01:40 - utils.logger - INFO - Intentando seleccionar One Way...
+2025-12-01 22:01:46 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_220146.png
+2025-12-01 22:01:47 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:01:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_220147.png
+2025-12-01 22:01:48 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:13:45 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_221345.png
+2025-12-01 22:13:45 - utils.logger - INFO - === NAVEGANDO A: https://nuxqa4.avtest.ink/ ===
+2025-12-01 22:13:45 - utils.logger - INFO - Browser: chrome
+2025-12-01 22:13:45 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:13:49 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:13:53 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:13:53 - utils.logger - INFO - === COMPLETANDO CONFIGURACIÓN HOME ===
+2025-12-01 22:13:53 - utils.logger - INFO - 📸 Screenshot tomado: before_home_configuration_20251201_221353.png
+2025-12-01 22:13:53 - utils.logger - INFO - Completando configuración home
+2025-12-01 22:13:53 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 22:13:53 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_221353.png
+2025-12-01 22:13:55 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:13:55 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_221355.png
+2025-12-01 22:13:56 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_221355.png
+2025-12-01 22:13:59 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:13:59 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_221359.png
+2025-12-01 22:14:01 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_221401.png
+2025-12-01 22:14:03 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:14:03 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_221403.png
+2025-12-01 22:14:03 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:14:06 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:14:06 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:14:09 - utils.logger - INFO - Buscando opción con XPath: //div[contains(text(), 'Medellin') and contains(text(), 'MDE')]
+2025-12-01 22:14:09 - utils.logger - WARNING - No se encontró opción específica, intentando alternativa: name 'WebDriverWait' is not defined
+2025-12-01 22:14:14 - utils.logger - ERROR - No se encontró ninguna opción para MDE
+2025-12-01 22:14:20 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:14:38 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_221438.png
+2025-12-01 22:14:38 - utils.logger - INFO - === NAVEGANDO A: https://nuxqa4.avtest.ink/ ===
+2025-12-01 22:14:38 - utils.logger - INFO - Browser: firefox
+2025-12-01 22:14:38 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:14:41 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:14:45 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:14:45 - utils.logger - INFO - === COMPLETANDO CONFIGURACIÓN HOME ===
+2025-12-01 22:14:45 - utils.logger - INFO - 📸 Screenshot tomado: before_home_configuration_20251201_221445.png
+2025-12-01 22:14:45 - utils.logger - INFO - Completando configuración home
+2025-12-01 22:14:45 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 22:14:45 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_221445.png
+2025-12-01 22:14:46 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:14:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_221446.png
+2025-12-01 22:14:47 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_221446.png
+2025-12-01 22:14:48 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:14:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_221448.png
+2025-12-01 22:14:50 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_221450.png
+2025-12-01 22:14:52 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:14:52 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_221452.png
+2025-12-01 22:14:52 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:14:55 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:14:55 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:14:59 - utils.logger - INFO - Buscando opción con XPath: //div[contains(text(), 'Medellin') and contains(text(), 'MDE')]
+2025-12-01 22:14:59 - utils.logger - WARNING - No se encontró opción específica, intentando alternativa: name 'WebDriverWait' is not defined
+2025-12-01 22:15:04 - utils.logger - ERROR - No se encontró ninguna opción para MDE
+2025-12-01 22:15:10 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:27:58 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_222758.png
+2025-12-01 22:27:58 - utils.logger - INFO - === NAVEGANDO A: https://nuxqa4.avtest.ink/ ===
+2025-12-01 22:27:58 - utils.logger - INFO - Browser: chrome
+2025-12-01 22:27:58 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:28:41 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_222841.png
+2025-12-01 22:28:41 - utils.logger - INFO - === NAVEGANDO A: https://nuxqa4.avtest.ink/ ===
+2025-12-01 22:28:41 - utils.logger - INFO - Browser: firefox
+2025-12-01 22:28:41 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:28:43 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:28:47 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:28:47 - utils.logger - INFO - === COMPLETANDO CONFIGURACIÓN HOME ===
+2025-12-01 22:28:47 - utils.logger - INFO - 📸 Screenshot tomado: before_home_configuration_20251201_222847.png
+2025-12-01 22:28:47 - utils.logger - INFO - Completando configuración home
+2025-12-01 22:28:47 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 22:28:47 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_222847.png
+2025-12-01 22:28:48 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:28:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_222848.png
+2025-12-01 22:28:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_222848.png
+2025-12-01 22:28:50 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:28:50 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_222850.png
+2025-12-01 22:28:52 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_222852.png
+2025-12-01 22:28:55 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:28:55 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_222855.png
+2025-12-01 22:28:55 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:28:58 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:28:58 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:29:01 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 22:29:01 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 22:29:02 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 22:29:08 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:41:54 - utils.logger - INFO - ================================================================================
+2025-12-01 22:41:54 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:41:54 - utils.logger - INFO - ================================================================================
+2025-12-01 22:41:54 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_224154.png
+2025-12-01 22:41:54 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:41:54 - utils.logger - INFO - Browser: chrome
+2025-12-01 22:41:54 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:41:59 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:42:03 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:42:03 - utils.logger - INFO - ============================================================
+2025-12-01 22:42:03 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:42:03 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:42:03 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:42:03 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:42:03 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:42:03 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:42:03 - utils.logger - INFO - ============================================================
+2025-12-01 22:42:04 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_224203.png
+2025-12-01 22:42:04 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:42:04 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:42:04 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_224204.png
+2025-12-01 22:42:06 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:42:06 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_224206.png
+2025-12-01 22:42:07 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_224207.png
+2025-12-01 22:42:11 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:42:11 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_224211.png
+2025-12-01 22:42:11 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:42:13 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 22:42:13 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:42:14 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS Colombia_20251201_224214.png
+2025-12-01 22:42:25 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2bea27e
+	0x7ff7d2bea58c
+	0x7ff7d2c3ed77
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:42:26 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS Colombia_20251201_224226.png
+2025-12-01 22:42:26 - utils.logger - INFO - ✓ POS Colombia seleccionado
+2025-12-01 22:42:27 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_224227.png
+2025-12-01 22:42:28 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:42:29 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_224228.png
+2025-12-01 22:42:29 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:42:32 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 22:42:32 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:42:37 - utils.logger - ERROR - Error seleccionando origen: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b914e5
+	0x7ff7d2beb833
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:42:38 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:42:38 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:42:41 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 22:42:41 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 22:42:42 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 22:42:48 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:43:01 - utils.logger - INFO - ================================================================================
+2025-12-01 22:43:01 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:43:01 - utils.logger - INFO - ================================================================================
+2025-12-01 22:43:01 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_224301.png
+2025-12-01 22:43:01 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:43:01 - utils.logger - INFO - Browser: firefox
+2025-12-01 22:43:01 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:43:04 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:43:08 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:43:08 - utils.logger - INFO - ============================================================
+2025-12-01 22:43:08 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:43:08 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:43:08 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:43:08 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:43:08 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:43:08 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:43:08 - utils.logger - INFO - ============================================================
+2025-12-01 22:43:08 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_224308.png
+2025-12-01 22:43:08 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:43:08 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:43:08 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_224308.png
+2025-12-01 22:43:09 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:43:10 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_224309.png
+2025-12-01 22:43:11 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_224311.png
+2025-12-01 22:43:12 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:43:12 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_224312.png
+2025-12-01 22:43:12 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:43:14 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 22:43:14 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:43:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS Colombia_20251201_224315.png
+2025-12-01 22:43:27 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 22:43:27 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS Colombia_20251201_224327.png
+2025-12-01 22:43:27 - utils.logger - INFO - ✓ POS Colombia seleccionado
+2025-12-01 22:43:28 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_224328.png
+2025-12-01 22:43:29 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:43:29 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_224329.png
+2025-12-01 22:43:29 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:43:32 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 22:43:32 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:43:32 - utils.logger - ERROR - Error seleccionando origen: Message: Element <input id="departureStationInputId" class="control_field_input" name="departureStationInputId" type="text"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 22:43:33 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:43:33 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:43:33 - utils.logger - ERROR - Error seleccionando destino: Message: Element <input id="arrivalStationInputId" class="control_field_input" name="arrivalStationInputId" type="text"> is not clickable at point (476,326) because another element <ul id="pointOfSaleListId" class="points-of-sale_list"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:354:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 22:43:33 - utils.logger - INFO - 📸 Screenshot tomado: destination_selection_error_20251201_224333.png
+2025-12-01 22:43:40 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:47:54 - utils.logger - INFO - ================================================================================
+2025-12-01 22:47:54 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:47:54 - utils.logger - INFO - ================================================================================
+2025-12-01 22:47:54 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_224754.png
+2025-12-01 22:47:54 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:47:54 - utils.logger - INFO - Browser: chrome
+2025-12-01 22:47:54 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:47:58 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:48:02 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:48:02 - utils.logger - INFO - ============================================================
+2025-12-01 22:48:02 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:48:02 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:48:02 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:48:02 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:48:02 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:48:02 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:48:02 - utils.logger - INFO - ============================================================
+2025-12-01 22:48:02 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_224802.png
+2025-12-01 22:48:02 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:48:02 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:48:03 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_224802.png
+2025-12-01 22:48:04 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:48:04 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_224804.png
+2025-12-01 22:48:06 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_224805.png
+2025-12-01 22:48:07 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:48:07 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2b7dfd8
+	0x7ff7d2b7c30d
+	0x7ff7d2b7cbcb
+	0x7ff7d2ba3080
+	0x7ff7d2c4b727
+	0x7ff7d2c12b0a
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:48:07 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:48:09 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 22:48:09 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:48:10 - utils.logger - ERROR - Error usando Select: Message: Select only works on <select> elements, not on button
+
+2025-12-01 22:48:11 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS Colombia_20251201_224811.png
+2025-12-01 22:48:22 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2bea27e
+	0x7ff7d2bea58c
+	0x7ff7d2c3ed77
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:48:23 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS Colombia_20251201_224823.png
+2025-12-01 22:48:23 - utils.logger - WARNING - No se pudo seleccionar POS, continuando...
+2025-12-01 22:48:24 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_224824.png
+2025-12-01 22:48:26 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:48:26 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_224826.png
+2025-12-01 22:48:26 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:48:29 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 22:48:29 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:48:34 - utils.logger - ERROR - Error seleccionando origen: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b914e5
+	0x7ff7d2beb833
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:48:35 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:48:35 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:48:36 - utils.logger - ERROR - Error seleccionando destino: Message: element click intercepted: Element <input _ngcontent-hov-c8="" class="control_field_input" role="combobox" type="text" aria-expanded="false" aria-controls="controlOptionsArrivalId" aria-label="Focus will move to the next field when selecting one option" name="arrivalStationInputId" id="arrivalStationInputId" placeholder="Destination"> is not clickable at point (515, 326). Other element would receive the click: <ul _ngcontent-hov-c36="" aria-labelledby="pointsOfSaleTitleId" class="points-of-sale_list" id="pointOfSaleListId" role="listbox" tabindex="-1">...</ul>
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2bf24c9
+	0x7ff7d2befe4e
+	0x7ff7d2becd71
+	0x7ff7d2bebc10
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:48:36 - utils.logger - INFO - 📸 Screenshot tomado: destination_selection_error_20251201_224836.png
+2025-12-01 22:48:42 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:48:55 - utils.logger - INFO - ================================================================================
+2025-12-01 22:48:55 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:48:55 - utils.logger - INFO - ================================================================================
+2025-12-01 22:48:55 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_224855.png
+2025-12-01 22:48:55 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:48:55 - utils.logger - INFO - Browser: firefox
+2025-12-01 22:48:55 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:49:25 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:49:29 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:49:29 - utils.logger - INFO - ============================================================
+2025-12-01 22:49:29 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:49:29 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:49:29 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:49:29 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:49:29 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:49:29 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:49:29 - utils.logger - INFO - ============================================================
+2025-12-01 22:49:29 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_224929.png
+2025-12-01 22:49:29 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:49:29 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:49:29 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_224929.png
+2025-12-01 22:49:31 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:49:31 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_224931.png
+2025-12-01 22:49:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_224932.png
+2025-12-01 22:49:33 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:49:33 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_224933.png
+2025-12-01 22:49:33 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:49:35 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 22:49:36 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:49:36 - utils.logger - ERROR - Error usando Select: Message: Select only works on <select> elements, not on button
+
+2025-12-01 22:49:36 - utils.logger - ERROR - Error seleccionando POS: Message: Element <button id="pointOfSaleSelectorId" class="point-of-sale-selector_button"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 22:49:36 - utils.logger - WARNING - POS dropdown podría no estar disponible, continuando...
+2025-12-01 22:49:37 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_224937.png
+2025-12-01 22:49:48 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+
+2025-12-01 22:49:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_224948.png
+2025-12-01 22:49:48 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:49:51 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 22:49:51 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:49:51 - utils.logger - ERROR - Error seleccionando origen: Message: Element <input id="departureStationInputId" class="control_field_input" name="departureStationInputId" type="text"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 22:49:52 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:49:52 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:49:55 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 22:49:55 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 22:49:56 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 22:50:03 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:51:12 - utils.logger - INFO - ================================================================================
+2025-12-01 22:51:12 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:51:12 - utils.logger - INFO - ================================================================================
+2025-12-01 22:51:12 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_225112.png
+2025-12-01 22:51:12 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:51:12 - utils.logger - INFO - Browser: chrome
+2025-12-01 22:51:12 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:51:15 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:51:19 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:51:19 - utils.logger - INFO - ============================================================
+2025-12-01 22:51:19 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:51:19 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:51:19 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:51:19 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:51:19 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:51:19 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:51:19 - utils.logger - INFO - ============================================================
+2025-12-01 22:51:19 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_225119.png
+2025-12-01 22:51:19 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:51:19 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:51:20 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_225119.png
+2025-12-01 22:51:21 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:51:22 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_225121.png
+2025-12-01 22:51:23 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_225123.png
+2025-12-01 22:51:24 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:51:24 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2b7dfd8
+	0x7ff7d2b7c30d
+	0x7ff7d2b7cbcb
+	0x7ff7d2ba3080
+	0x7ff7d2c4b727
+	0x7ff7d2c12b0a
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:51:24 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:51:26 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 22:51:38 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 22:51:38 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_225138.png
+2025-12-01 22:51:38 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 22:51:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_225139.png
+2025-12-01 22:51:41 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:51:41 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_225141.png
+2025-12-01 22:51:41 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:51:44 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 22:51:44 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:51:49 - utils.logger - ERROR - Error seleccionando origen: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b914e5
+	0x7ff7d2beb833
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:51:50 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:51:50 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:51:53 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 22:51:53 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 22:51:54 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 22:52:00 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:52:13 - utils.logger - INFO - ================================================================================
+2025-12-01 22:52:13 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:52:13 - utils.logger - INFO - ================================================================================
+2025-12-01 22:52:13 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_225213.png
+2025-12-01 22:52:13 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:52:13 - utils.logger - INFO - Browser: firefox
+2025-12-01 22:52:13 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:52:16 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:52:20 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:52:20 - utils.logger - INFO - ============================================================
+2025-12-01 22:52:20 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:52:20 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:52:20 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:52:20 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:52:20 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:52:20 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:52:20 - utils.logger - INFO - ============================================================
+2025-12-01 22:52:20 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_225220.png
+2025-12-01 22:52:20 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:52:20 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:52:21 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_225220.png
+2025-12-01 22:52:22 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:52:22 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_225222.png
+2025-12-01 22:52:23 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_225223.png
+2025-12-01 22:52:25 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:52:25 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_225225.png
+2025-12-01 22:52:25 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:52:27 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 22:52:38 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 22:52:38 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_225238.png
+2025-12-01 22:52:38 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 22:52:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_225239.png
+2025-12-01 22:52:41 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:52:41 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_225241.png
+2025-12-01 22:52:41 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:52:44 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 22:52:44 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:52:44 - utils.logger - ERROR - Error seleccionando origen: Message: Element <input id="departureStationInputId" class="control_field_input" name="departureStationInputId" type="text"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 22:52:45 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:52:45 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:52:48 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 22:52:48 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 22:52:50 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 22:52:56 - utils.logger - ERROR - Error seleccionando fecha 3: No se encontró el día visible
+2025-12-01 22:58:05 - utils.logger - INFO - ================================================================================
+2025-12-01 22:58:05 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:58:05 - utils.logger - INFO - ================================================================================
+2025-12-01 22:58:05 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_225805.png
+2025-12-01 22:58:05 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:58:05 - utils.logger - INFO - Browser: chrome
+2025-12-01 22:58:05 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:58:09 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:58:13 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:58:13 - utils.logger - INFO - ============================================================
+2025-12-01 22:58:13 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:58:13 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:58:13 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:58:13 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:58:13 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:58:13 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:58:13 - utils.logger - INFO - ============================================================
+2025-12-01 22:58:13 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_225813.png
+2025-12-01 22:58:13 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:58:13 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:58:13 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_225813.png
+2025-12-01 22:58:15 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:58:15 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_225815.png
+2025-12-01 22:58:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_225816.png
+2025-12-01 22:58:18 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:58:18 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2b7dfd8
+	0x7ff7d2b7c30d
+	0x7ff7d2b7cbcb
+	0x7ff7d2ba3080
+	0x7ff7d2c4b727
+	0x7ff7d2c12b0a
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:58:18 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:58:20 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 22:58:31 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 22:58:31 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_225831.png
+2025-12-01 22:58:31 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 22:58:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_225832.png
+2025-12-01 22:58:34 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:58:35 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_225834.png
+2025-12-01 22:58:35 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 22:58:38 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 22:58:38 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:58:43 - utils.logger - ERROR - Error seleccionando origen: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b914e5
+	0x7ff7d2beb833
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 22:58:44 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 22:58:44 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 22:58:47 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 22:58:47 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 22:58:48 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 22:58:49 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 22:58:50 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 22:58:51 - utils.logger - INFO - ✓ Fecha seleccionada: Día 3
+2025-12-01 22:58:53 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_225853.png
+2025-12-01 22:58:55 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 22:58:55 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_225855.png
+2025-12-01 22:59:01 - utils.logger - ERROR - No se encontraron suficientes botones '+' para pasajeros
+2025-12-01 22:59:02 - utils.logger - INFO - Buscando vuelos 
+2025-12-01 22:59:02 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_225902.png
+2025-12-01 22:59:05 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 22:59:06 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_225905.png
+2025-12-01 22:59:06 - utils.logger - INFO - === CONFIGURACIÓN HOME COMPLETADA: CON ERRORES ===
+2025-12-01 22:59:06 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_error_configuracion_20251201_225906.png
+2025-12-01 22:59:18 - utils.logger - INFO - ================================================================================
+2025-12-01 22:59:18 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 22:59:18 - utils.logger - INFO - ================================================================================
+2025-12-01 22:59:18 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_225918.png
+2025-12-01 22:59:18 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:59:18 - utils.logger - INFO - Browser: firefox
+2025-12-01 22:59:18 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 22:59:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 22:59:51 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 22:59:51 - utils.logger - INFO - ============================================================
+2025-12-01 22:59:51 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 22:59:51 - utils.logger - INFO - - Idioma: English
+2025-12-01 22:59:51 - utils.logger - INFO - - POS: Colombia
+2025-12-01 22:59:51 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 22:59:51 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 22:59:51 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 22:59:51 - utils.logger - INFO - ============================================================
+2025-12-01 22:59:51 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_225951.png
+2025-12-01 22:59:51 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 22:59:51 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 22:59:51 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_225951.png
+2025-12-01 22:59:53 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 22:59:53 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_225953.png
+2025-12-01 22:59:54 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_225954.png
+2025-12-01 22:59:56 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 22:59:56 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_225956.png
+2025-12-01 22:59:56 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 22:59:58 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 23:00:09 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:00:09 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_230009.png
+2025-12-01 23:00:09 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 23:00:10 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_230010.png
+2025-12-01 23:00:18 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:00:18 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_230018.png
+2025-12-01 23:00:18 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 23:00:21 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 23:00:21 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:00:21 - utils.logger - ERROR - Error seleccionando origen: Message: Element <input id="departureStationInputId" class="control_field_input" name="departureStationInputId" type="text"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 23:00:22 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 23:00:22 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:00:26 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 23:00:26 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 23:00:27 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 23:00:28 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 23:00:29 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 23:00:29 - utils.logger - INFO - ✓ Fecha seleccionada: Día 3
+2025-12-01 23:00:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_230031.png
+2025-12-01 23:00:33 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:00:33 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_230033.png
+2025-12-01 23:00:39 - utils.logger - ERROR - No se encontraron suficientes botones '+' para pasajeros
+2025-12-01 23:00:40 - utils.logger - INFO - Buscando vuelos 
+2025-12-01 23:00:40 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_230040.png
+2025-12-01 23:00:42 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 23:00:42 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_230042.png
+2025-12-01 23:00:42 - utils.logger - INFO - === CONFIGURACIÓN HOME COMPLETADA: CON ERRORES ===
+2025-12-01 23:00:42 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_error_configuracion_20251201_230042.png
+2025-12-01 23:07:29 - utils.logger - INFO - ================================================================================
+2025-12-01 23:07:29 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 23:07:29 - utils.logger - INFO - ================================================================================
+2025-12-01 23:07:29 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_230729.png
+2025-12-01 23:07:29 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:07:29 - utils.logger - INFO - Browser: chrome
+2025-12-01 23:07:29 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:07:34 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 23:07:38 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 23:07:38 - utils.logger - INFO - ============================================================
+2025-12-01 23:07:38 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 23:07:38 - utils.logger - INFO - - Idioma: English
+2025-12-01 23:07:38 - utils.logger - INFO - - POS: Colombia
+2025-12-01 23:07:38 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 23:07:38 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 23:07:38 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 23:07:38 - utils.logger - INFO - ============================================================
+2025-12-01 23:07:38 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_230738.png
+2025-12-01 23:07:38 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 23:07:38 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 23:07:38 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_230738.png
+2025-12-01 23:07:40 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 23:07:40 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_230740.png
+2025-12-01 23:07:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_230741.png
+2025-12-01 23:07:45 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 23:07:45 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_230745.png
+2025-12-01 23:07:45 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 23:07:47 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 23:07:58 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:07:59 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_230758.png
+2025-12-01 23:07:59 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 23:08:00 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_230800.png
+2025-12-01 23:08:01 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:08:02 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_230801.png
+2025-12-01 23:08:02 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 23:08:05 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 23:08:05 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:08:10 - utils.logger - ERROR - Error seleccionando origen: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b914e5
+	0x7ff7d2beb833
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 23:08:11 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 23:08:11 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:08:14 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 23:08:14 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 23:08:15 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 23:08:16 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 23:08:17 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 23:08:18 - utils.logger - INFO - ✓ Fecha seleccionada: Día 3
+2025-12-01 23:08:20 - utils.logger - INFO - Abriendo menú de pasajeros...
+2025-12-01 23:08:20 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:08:33 - utils.logger - ERROR - Error configurando pasajeros: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2bea27e
+	0x7ff7d2bea58c
+	0x7ff7d2c3ed77
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 23:08:33 - utils.logger - INFO - 📸 Screenshot tomado: passengers_configuration_error_20251201_230833.png
+2025-12-01 23:08:34 - utils.logger - INFO - Buscando vuelos 
+2025-12-01 23:08:34 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_230834.png
+2025-12-01 23:08:37 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 23:08:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_230837.png
+2025-12-01 23:08:37 - utils.logger - INFO - === CONFIGURACIÓN HOME COMPLETADA: CON ERRORES ===
+2025-12-01 23:08:38 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_error_configuracion_20251201_230837.png
+2025-12-01 23:08:50 - utils.logger - INFO - ================================================================================
+2025-12-01 23:08:50 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 23:08:50 - utils.logger - INFO - ================================================================================
+2025-12-01 23:08:50 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_230850.png
+2025-12-01 23:08:50 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:08:50 - utils.logger - INFO - Browser: firefox
+2025-12-01 23:08:50 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:08:53 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 23:08:57 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 23:08:57 - utils.logger - INFO - ============================================================
+2025-12-01 23:08:57 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 23:08:57 - utils.logger - INFO - - Idioma: English
+2025-12-01 23:08:57 - utils.logger - INFO - - POS: Colombia
+2025-12-01 23:08:57 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 23:08:57 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 23:08:57 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 23:08:57 - utils.logger - INFO - ============================================================
+2025-12-01 23:08:57 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_230857.png
+2025-12-01 23:08:57 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 23:08:57 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 23:08:57 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_230857.png
+2025-12-01 23:08:58 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 23:08:59 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_230858.png
+2025-12-01 23:09:00 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_230900.png
+2025-12-01 23:09:01 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 23:09:01 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_230901.png
+2025-12-01 23:09:01 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 23:09:03 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 23:09:14 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:09:14 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_230914.png
+2025-12-01 23:09:14 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 23:09:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_230915.png
+2025-12-01 23:09:17 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:09:17 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_230917.png
+2025-12-01 23:09:17 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 23:09:20 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 23:09:20 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:09:20 - utils.logger - ERROR - Error seleccionando origen: Message: Element <input id="departureStationInputId" class="control_field_input" name="departureStationInputId" type="text"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 23:09:21 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 23:09:21 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:09:25 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 23:09:30 - utils.logger - WARNING - No se encontró opción con 'Medellin', intentando con código 'MDE': Message: 
+
+2025-12-01 23:09:33 - utils.logger - ERROR - No se encontró ninguna opción para Medellin o MDE: Message: 
+
+2025-12-01 23:09:34 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 23:09:35 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 23:09:46 - utils.logger - ERROR - Error seleccionando fecha 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-01 23:09:46 - utils.logger - INFO - 📸 Screenshot tomado: date_selection_error_20251201_230946.png
+2025-12-01 23:09:47 - utils.logger - INFO - Abriendo menú de pasajeros...
+2025-12-01 23:09:47 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:09:50 - utils.logger - INFO - ✓ Joven agregado
+2025-12-01 23:09:51 - utils.logger - INFO - ✓ Niño agregado
+2025-12-01 23:09:52 - utils.logger - INFO - ✓ Infante agregado
+2025-12-01 23:09:52 - utils.logger - INFO - Confirmando selección de pasajeros...
+2025-12-01 23:09:58 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:09:58 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_230958.png
+2025-12-01 23:09:58 - utils.logger - ERROR - No se encontró botón de confirmación
+2025-12-01 23:09:59 - utils.logger - INFO - Buscando vuelos 
+2025-12-01 23:10:00 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_230959.png
+2025-12-01 23:10:01 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-01 23:10:01 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_231001.png
+2025-12-01 23:10:01 - utils.logger - INFO - === CONFIGURACIÓN HOME COMPLETADA: CON ERRORES ===
+2025-12-01 23:10:02 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_error_configuracion_20251201_231001.png
+2025-12-01 23:17:59 - utils.logger - INFO - ================================================================================
+2025-12-01 23:17:59 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 23:17:59 - utils.logger - INFO - ================================================================================
+2025-12-01 23:17:59 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_231759.png
+2025-12-01 23:17:59 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:17:59 - utils.logger - INFO - Browser: chrome
+2025-12-01 23:17:59 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:18:03 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 23:18:07 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 23:18:07 - utils.logger - INFO - ============================================================
+2025-12-01 23:18:07 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 23:18:07 - utils.logger - INFO - - Idioma: English
+2025-12-01 23:18:07 - utils.logger - INFO - - POS: Colombia
+2025-12-01 23:18:07 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 23:18:07 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 23:18:07 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 23:18:07 - utils.logger - INFO - ============================================================
+2025-12-01 23:18:08 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_231807.png
+2025-12-01 23:18:08 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 23:18:08 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 23:18:08 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_231808.png
+2025-12-01 23:18:09 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 23:18:10 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_231809.png
+2025-12-01 23:18:11 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_231811.png
+2025-12-01 23:18:14 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 23:18:14 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_231814.png
+2025-12-01 23:18:14 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 23:18:16 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 23:18:27 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:18:28 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_231827.png
+2025-12-01 23:18:28 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 23:18:29 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_231829.png
+2025-12-01 23:18:31 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:18:31 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_231831.png
+2025-12-01 23:18:31 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 23:18:34 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 23:18:34 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:18:39 - utils.logger - ERROR - Error seleccionando origen: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b914e5
+	0x7ff7d2beb833
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 23:18:40 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 23:18:40 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:18:43 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 23:18:43 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 23:18:44 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 23:18:45 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 23:18:46 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 23:18:47 - utils.logger - INFO - ✓ Fecha seleccionada: Día 3
+2025-12-01 23:19:01 - utils.logger - INFO - ================================================================================
+2025-12-01 23:19:01 - utils.logger - INFO - CASO 1: BOOKING ONE-WAY CON VALIDACIONES COMPLETAS
+2025-12-01 23:19:01 - utils.logger - INFO - ================================================================================
+2025-12-01 23:19:01 - utils.logger - INFO - 📸 Screenshot tomado: 00_test_inicio_20251201_231901.png
+2025-12-01 23:19:01 - utils.logger - INFO - Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:19:01 - utils.logger - INFO - Browser: firefox
+2025-12-01 23:19:01 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:19:05 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 23:19:09 - utils.logger - INFO - URL actual: https://nuxqa4.avtest.ink/es/
+2025-12-01 23:19:09 - utils.logger - INFO - ============================================================
+2025-12-01 23:19:09 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 23:19:09 - utils.logger - INFO - - Idioma: English
+2025-12-01 23:19:09 - utils.logger - INFO - - POS: Colombia
+2025-12-01 23:19:09 - utils.logger - INFO - - Origen: Bogota (BOG)
+2025-12-01 23:19:09 - utils.logger - INFO - - Destino: Medellin (MDE)
+2025-12-01 23:19:09 - utils.logger - INFO - - Pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante
+2025-12-01 23:19:09 - utils.logger - INFO - ============================================================
+2025-12-01 23:19:09 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_antes_configuracion_20251201_231909.png
+2025-12-01 23:19:09 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 23:19:09 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 23:19:09 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_231909.png
+2025-12-01 23:19:11 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 23:19:11 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_231911.png
+2025-12-01 23:19:12 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_231912.png
+2025-12-01 23:19:14 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 23:19:14 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_231914.png
+2025-12-01 23:19:14 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 23:19:16 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 23:19:27 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:19:28 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_231927.png
+2025-12-01 23:19:28 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 23:19:29 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_231929.png
+2025-12-01 23:19:31 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:19:31 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_231931.png
+2025-12-01 23:19:31 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 23:19:34 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 23:19:34 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:19:34 - utils.logger - ERROR - Error seleccionando origen: Message: Element <input id="departureStationInputId" class="control_field_input" name="departureStationInputId" type="text"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 23:19:35 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 23:19:35 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:19:39 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 23:19:39 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 23:19:41 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 23:19:42 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 23:19:43 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 23:19:44 - utils.logger - INFO - ✓ Fecha seleccionada: Día 3
+2025-12-01 23:24:49 - utils.logger - INFO - ✅ Page Objects inicializados correctamente
+2025-12-01 23:24:49 - utils.logger - INFO - 🛠  Browser: chrome
+2025-12-01 23:24:49 - utils.logger - INFO - 🌐 URL Base: https://nuxqa4.avtest.ink/
+2025-12-01 23:24:49 - utils.logger - INFO - ============================================================
+2025-12-01 23:24:49 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 23:24:49 - utils.logger - INFO - ============================================================
+2025-12-01 23:24:49 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:24:53 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 23:24:57 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_inicio_20251201_232457.png
+2025-12-01 23:24:57 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 23:24:57 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 23:24:58 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_232457.png
+2025-12-01 23:24:59 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 23:24:59 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_232459.png
+2025-12-01 23:25:01 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_232500.png
+2025-12-01 23:25:02 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 23:25:02 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b916dd
+	0x7ff7d2b7dfd8
+	0x7ff7d2b7c30d
+	0x7ff7d2b7cbcb
+	0x7ff7d2ba3080
+	0x7ff7d2c4b727
+	0x7ff7d2c12b0a
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 23:25:02 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 23:25:04 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 23:25:15 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:25:16 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_232515.png
+2025-12-01 23:25:16 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 23:25:17 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_232517.png
+2025-12-01 23:25:19 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:25:19 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_232519.png
+2025-12-01 23:25:19 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 23:25:22 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 23:25:22 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:25:27 - utils.logger - ERROR - Error seleccionando origen: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d30aa235
+	0x7ff7d2e02630
+	0x7ff7d2b914e5
+	0x7ff7d2beb833
+	0x7ff7d2bdd3a8
+	0x7ff7d2c12b0a
+	0x7ff7d2bdcc36
+	0x7ff7d2c3baba
+	0x7ff7d2bdb0ed
+	0x7ff7d2bdbf63
+	0x7ff7d30d5d60
+	0x7ff7d30cfe8a
+	0x7ff7d30f1005
+	0x7ff7d2e1d71e
+	0x7ff7d2e24e1f
+	0x7ff7d2e0b7c4
+	0x7ff7d2e0b97f
+	0x7ff7d2df18e8
+	0x7ffa0b707374
+	0x7ffa0ce9cc91
+
+2025-12-01 23:25:28 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 23:25:28 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:25:31 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 23:25:31 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 23:25:32 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 23:25:33 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 23:25:34 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 23:25:35 - utils.logger - INFO - ✓ Fecha seleccionada: Día 3
+2025-12-01 23:25:55 - utils.logger - INFO - ✅ Page Objects inicializados correctamente
+2025-12-01 23:25:55 - utils.logger - INFO - 🛠  Browser: firefox
+2025-12-01 23:25:55 - utils.logger - INFO - 🌐 URL Base: https://nuxqa4.avtest.ink/
+2025-12-01 23:25:55 - utils.logger - INFO - ============================================================
+2025-12-01 23:25:55 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-01 23:25:55 - utils.logger - INFO - ============================================================
+2025-12-01 23:25:55 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-01 23:25:57 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-01 23:26:01 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_inicio_20251201_232601.png
+2025-12-01 23:26:01 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-01 23:26:01 - utils.logger - INFO - Seleccionando idioma English
+2025-12-01 23:26:01 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_232601.png
+2025-12-01 23:26:03 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-01 23:26:03 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251201_232603.png
+2025-12-01 23:26:04 - utils.logger - INFO - 📸 Screenshot tomado: before_click_English option_20251201_232604.png
+2025-12-01 23:26:05 - utils.logger - INFO - ✅ Click realizado en: English option
+2025-12-01 23:26:05 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_232605.png
+2025-12-01 23:26:05 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-01 23:26:07 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-01 23:26:18 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-01 23:26:19 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251201_232618.png
+2025-12-01 23:26:19 - utils.logger - WARNING - Botón POS Colombia no encontrado, continuando sin seleccionar POS...
+2025-12-01 23:26:20 - utils.logger - INFO - 📸 Screenshot tomado: before_click_elemento_20251201_232620.png
+2025-12-01 23:26:21 - utils.logger - INFO - ✅ Click realizado en: elemento
+2025-12-01 23:26:22 - utils.logger - INFO - 📸 Screenshot tomado: after_click_elemento_20251201_232621.png
+2025-12-01 23:26:22 - utils.logger - INFO - One Way seleccionado por CSS selector
+2025-12-01 23:26:25 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-01 23:26:25 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:26:25 - utils.logger - ERROR - Error seleccionando origen: Message: Element <input id="departureStationInputId" class="control_field_input" name="departureStationInputId" type="text"> could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:371:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:165:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-12-01 23:26:26 - utils.logger - INFO - Seleccionando destino: Medellin (MDE)
+2025-12-01 23:26:26 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-01 23:26:29 - utils.logger - INFO - Buscando opción con XPath: //span[contains(text(), 'Medellin')]
+2025-12-01 23:26:29 - utils.logger - INFO - Opción encontrada: Medellin
+2025-12-01 23:26:30 - utils.logger - INFO - Valor actual del campo tras selección: MDE
+2025-12-01 23:26:31 - utils.logger - INFO - Seleccionando fecha automática: 03/12/2025
+2025-12-01 23:26:32 - utils.logger - INFO - Buscando día con XPath: //span[contains(@class, 'custom-day_day') and normalize-space(text())='3']
+2025-12-01 23:26:33 - utils.logger - INFO - ✓ Fecha seleccionada: Día 3

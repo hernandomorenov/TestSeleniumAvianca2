@@ -1,4 +1,4 @@
-2025-12-01 19:45:59,669 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[edge]_edge_20251201_194559.mp4
+2025-12-01 19:45:59,669 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[edge]_edge_20251201_194559.mp4
 2025-12-01 19:45:59,669 - conftest - INFO - Configurando driver para EDGE (headless=False)
 2025-12-01 19:45:59,669 - WDM - INFO - xdist worker is: gw0
 2025-12-01 19:45:59,669 - WDM - INFO - ====== WebDriver manager ======

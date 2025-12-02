@@ -1,4 +1,4 @@
-2025-12-01 19:45:02,356 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[chrome]_chrome_20251201_194502.mp4
+2025-12-01 19:45:02,356 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[chrome]_chrome_20251201_194502.mp4
 2025-12-01 19:45:02,356 - conftest - INFO - Configurando driver para CHROME (headless=False)
 2025-12-01 19:45:02,467 - WDM - INFO - xdist worker is: gw0
 2025-12-01 19:45:02,467 - WDM - INFO - ====== WebDriver manager ======
@@ -14,10 +14,10 @@
 2025-12-01 19:45:08,468 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:45:15 - utils.logger - INFO - ✅ Página cargada completamente
 2025-12-01 19:45:15,199 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:45:16 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:45:16,216 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:45:16 - utils.logger - INFO - Seleccionando idioma English según CSV
-2025-12-01 19:45:16,216 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:45:16 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:45:16,216 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:45:16 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 19:45:16,216 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:45:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194516.png
 2025-12-01 19:45:16,450 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_194516.png
 2025-12-01 19:45:17 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
@@ -30,6 +30,6 @@
 2025-12-01 19:45:22,263 - utils.logger - INFO - ✅ Click realizado en: English option
 2025-12-01 19:45:23 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_194522.png
 2025-12-01 19:45:23,415 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_194522.png
-2025-12-01 19:45:23,991 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking_csv[chrome]_20251201_194523.png
-2025-12-01 19:45:24,030 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking_csv[chrome]_chrome_20251201_194502.mp4
+2025-12-01 19:45:23,991 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[chrome]_20251201_194523.png
+2025-12-01 19:45:24,030 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[chrome]_chrome_20251201_194502.mp4
 2025-12-01 19:45:26,518 - conftest - INFO - Driver CHROME cerrado

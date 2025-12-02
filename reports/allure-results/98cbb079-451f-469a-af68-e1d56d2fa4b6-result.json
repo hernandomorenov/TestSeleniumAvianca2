@@ -1,1 +1,785 @@
-{"name": "Test 1: One-way booking with all passenger types following CSV steps", "status": "failed", "statusDetails": {"message": "AssertionError: No se pudo completar configuración home según CSV\nassert False\n +  where False = complete_home_configuration_csv()\n +    where complete_home_configuration_csv = <pages.home_page.HomePage object at 0x00000214EC12A350>.complete_home_configuration_csv", "trace": "tests\\test_case_1_one_way.py:54: in test_one_way_booking_csv\n    assert home_page.complete_home_configuration_csv(), \\\nE   AssertionError: No se pudo completar configuración home según CSV\nE   assert False\nE    +  where False = complete_home_configuration_csv()\nE    +    where complete_home_configuration_csv = <pages.home_page.HomePage object at 0x00000214EC12A350>.complete_home_configuration_csv"}, "description": "Complete one-way booking flow following CSV steps exactly", "steps": [{"name": "Tomar screenshot", "status": "passed", "steps": [{"name": "Tomar screenshot: 'test_start_csv'", "status": "passed", "attachments": [{"name": "test_start_csv", "source": "2a9624af-4a2b-4142-8117-4ccff441517f-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'test_start_csv'"}], "start": 1764621728363, "stop": 1764621728489}], "parameters": [{"name": "name", "value": "'test_start_csv'"}], "start": 1764621728363, "stop": 1764621728489}, {"name": "1. Home Page - Open website (CSV paso 1)", "status": "passed", "steps": [{"name": "Navegar a URL", "status": "passed", "steps": [{"name": "Esperar página cargada", "status": "passed", "parameters": [{"name": "timeout", "value": "20"}], "start": 1764621735804, "stop": 1764621737621}], "parameters": [{"name": "url", "value": "'https://nuxqa4.avtest.ink/'"}], "start": 1764621728493, "stop": 1764621737621}], "attachments": [{"name": "Browser Info", "source": "6f2b95aa-33e7-4780-8cb7-8697cfc26a06-attachment.txt", "type": "text/plain"}, {"name": "Test URL", "source": "716058b6-f47d-492e-b9f0-7ffd2ecdb0f3-attachment.txt", "type": "text/plain"}], "start": 1764621728489, "stop": 1764621737629}, {"name": "2. Complete home configuration following CSV steps 2-18", "status": "failed", "statusDetails": {"message": "AssertionError: No se pudo completar configuración home según CSV\nassert False\n +  where False = complete_home_configuration_csv()\n +    where complete_home_configuration_csv = <pages.home_page.HomePage object at 0x00000214EC12A350>.complete_home_configuration_csv\n", "trace": "  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\tests\\test_case_1_one_way.py\", line 54, in test_one_way_booking_csv\n    assert home_page.complete_home_configuration_csv(), \\\n"}, "steps": [{"name": "Complete home page configuration according to CSV", "status": "passed", "steps": [{"name": "Select language - English (CSV paso 2-3)", "status": "passed", "steps": [{"name": "Click en: 'Language dropdown'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_Language dropdown'", "status": "passed", "attachments": [{"name": "before_click_Language dropdown", "source": "99c25081-1ff4-4134-9f73-be60d76393b0-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_Language dropdown'"}], "start": 1764621737630, "stop": 1764621738092}, {"name": "Click con evidencias visuales en: 'Language dropdown'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"}, {"name": "element_name", "value": "'Language dropdown'"}], "start": 1764621738093, "stop": 1764621739847}, {"name": "Tomar screenshot: 'after_click_Language dropdown'", "status": "passed", "attachments": [{"name": "after_click_Language dropdown", "source": "d13af5cc-6b28-41b1-9070-af4f8a6918d7-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_click_Language dropdown'"}], "start": 1764621739847, "stop": 1764621740029}], "parameters": [{"name": "locator", "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"}, {"name": "element_name", "value": "'Language dropdown'"}], "start": 1764621737630, "stop": 1764621740029}, {"name": "Click en: 'English option'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_English option'", "status": "passed", "attachments": [{"name": "before_click_English option", "source": "c1438139-166b-4ed0-900f-03f259bf2864-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_English option'"}], "start": 1764621740029, "stop": 1764621740229}, {"name": "Click con evidencias visuales en: 'English option'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//span[contains(text(),'English')]\")"}, {"name": "element_name", "value": "'English option'"}], "start": 1764621740229, "stop": 1764621741594}, {"name": "Tomar screenshot: 'after_click_English option'", "status": "passed", "attachments": [{"name": "after_click_English option", "source": "6d06bffe-aa86-44cc-849c-6363010ab884-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_click_English option'"}], "start": 1764621741594, "stop": 1764621741761}], "parameters": [{"name": "locator", "value": "('xpath', \"//span[contains(text(),'English')]\")"}, {"name": "element_name", "value": "'English option'"}], "start": 1764621740029, "stop": 1764621741761}], "start": 1764621737630, "stop": 1764621741761}, {"name": "Select one way (CSV paso 4)", "status": "passed", "steps": [{"name": "Click en: 'One way radio'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_One way radio'", "status": "passed", "attachments": [{"name": "before_click_One way radio", "source": "394a9dde-d439-45c6-b1c2-fc35fa1bac7e-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_One way radio'"}], "start": 1764621741761, "stop": 1764621741982}, {"name": "Click con evidencias visuales en: 'One way radio'", "status": "passed", "attachments": [{"name": "error_click_One way radio", "source": "de63e78b-7bb1-4682-b861-2398543b1368-attachment.png", "type": "image/png"}], "parameters": [{"name": "locator", "value": "('xpath', \"//input[@id='journeytypeId_1']\")"}, {"name": "element_name", "value": "'One way radio'"}], "start": 1764621741982, "stop": 1764621752435}, {"name": "Tomar screenshot: 'after_click_One way radio'", "status": "passed", "attachments": [{"name": "after_click_One way radio", "source": "97cbe053-f2d9-46b6-8cc4-45c9c4a965ed-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_click_One way radio'"}], "start": 1764621752435, "stop": 1764621752578}], "parameters": [{"name": "locator", "value": "('xpath', \"//input[@id='journeytypeId_1']\")"}, {"name": "element_name", "value": "'One way radio'"}], "start": 1764621741761, "stop": 1764621752578}], "start": 1764621741761, "stop": 1764621752578}, {"name": "Configure destination MDE (CSV pasos 5-7)", "status": "passed", "steps": [{"name": "Click en: 'Destination container'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_Destination container'", "status": "passed", "attachments": [{"name": "before_click_Destination container", "source": "0b4693fd-b833-4ba3-9a34-64805f26b5c3-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_Destination container'"}], "start": 1764621752579, "stop": 1764621752733}, {"name": "Click con evidencias visuales en: 'Destination container'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//div[@class='station-control station-control--has-filter']\")"}, {"name": "element_name", "value": "'Destination container'"}], "start": 1764621752733, "stop": 1764621754572}, {"name": "Tomar screenshot: 'after_click_Destination container'", "status": "passed", "attachments": [{"name": "after_click_Destination container", "source": "918a259f-e201-4740-ae3c-4187b9cae779-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_click_Destination container'"}], "start": 1764621754572, "stop": 1764621754769}], "parameters": [{"name": "locator", "value": "('xpath', \"//div[@class='station-control station-control--has-filter']\")"}, {"name": "element_name", "value": "'Destination container'"}], "start": 1764621752579, "stop": 1764621754769}, {"name": "Ingresar texto en: 'Destination MDE'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_text_Destination MDE'", "status": "passed", "attachments": [{"name": "before_text_Destination MDE", "source": "39a74425-c17b-4d8e-ae4d-10f2f5704953-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_text_Destination MDE'"}], "start": 1764621754770, "stop": 1764621755052}, {"name": "Ingresar texto en: 'Destination MDE'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//input[@id='arrivalStationInputId']\")"}, {"name": "text", "value": "'MDE'"}, {"name": "element_name", "value": "'Destination MDE'"}], "start": 1764621755052, "stop": 1764621756933}, {"name": "Tomar screenshot: 'after_text_Destination MDE'", "status": "passed", "attachments": [{"name": "after_text_Destination MDE", "source": "c27156d4-65a2-47bf-b769-08e0f9801289-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_text_Destination MDE'"}], "start": 1764621756935, "stop": 1764621757220}], "parameters": [{"name": "locator", "value": "('xpath', \"//input[@id='arrivalStationInputId']\")"}, {"name": "text", "value": "'MDE'"}, {"name": "element_name", "value": "'Destination MDE'"}], "start": 1764621754770, "stop": 1764621757221}], "start": 1764621752578, "stop": 1764621757221}, {"name": "Configure passengers all types (CSV pasos 11-17)", "status": "passed", "steps": [{"name": "Click en: 'Passenger button - first click'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_Passenger button - first click'", "status": "passed", "attachments": [{"name": "before_click_Passenger button - first click", "source": "95db42ad-21e7-4412-becd-47c070ec2c0c-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_Passenger button - first click'"}], "start": 1764621757222, "stop": 1764621757437}, {"name": "Click con evidencias visuales en: 'Passenger button - first click'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//button[@aria-label='Passengers :1']\")"}, {"name": "element_name", "value": "'Passenger button - first click'"}], "start": 1764621757437, "stop": 1764621759602}, {"name": "Tomar screenshot: 'after_click_Passenger button - first click'", "status": "passed", "attachments": [{"name": "after_click_Passenger button - first click", "source": "7c23b07c-30d1-44b1-984e-7b877ebb1ea6-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_click_Passenger button - first click'"}], "start": 1764621759603, "stop": 1764621759944}], "parameters": [{"name": "locator", "value": "('xpath', \"//button[@aria-label='Passengers :1']\")"}, {"name": "element_name", "value": "'Passenger button - first click'"}], "start": 1764621757222, "stop": 1764621759944}], "start": 1764621757221, "stop": 1764621759948}, {"name": "Search flights CSV (CSV paso 18)", "status": "passed", "steps": [{"name": "Click en: 'Search flights'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_Search flights'", "status": "passed", "attachments": [{"name": "before_click_Search flights", "source": "c85405f0-a198-4f89-95f7-58ac94067191-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_Search flights'"}], "start": 1764621759950, "stop": 1764621760223}, {"name": "Click con evidencias visuales en: 'Search flights'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//button[@id='searchButton']//span[contains(text(), 'Search')]\")"}, {"name": "element_name", "value": "'Search flights'"}], "start": 1764621760223, "stop": 1764621762405}, {"name": "Tomar screenshot: 'after_click_Search flights'", "status": "passed", "attachments": [{"name": "after_click_Search flights", "source": "2fbb66f8-5d83-4305-adc1-5c2b50fa504c-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_click_Search flights'"}], "start": 1764621762406, "stop": 1764621762671}], "parameters": [{"name": "locator", "value": "('xpath', \"//button[@id='searchButton']//span[contains(text(), 'Search')]\")"}, {"name": "element_name", "value": "'Search flights'"}], "start": 1764621759949, "stop": 1764621762671}], "start": 1764621759948, "stop": 1764621762671}], "start": 1764621737629, "stop": 1764621762671}], "start": 1764621737629, "stop": 1764621762671}], "attachments": [{"name": "screenshot_on_failure", "source": "c22c1c91-b3e1-4aa2-b512-9389f56e1620-attachment.png", "type": "image/png"}, {"name": "log", "source": "5716aa9f-d890-4ddc-b1fd-53d68372bfe7-attachment.txt", "type": "text/plain"}, {"name": "stderr", "source": "59031251-5252-4230-a2f5-d6877d875995-attachment.txt", "type": "text/plain"}], "parameters": [{"name": "driver", "value": "'firefox'"}], "start": 1764621728359, "stop": 1764621762673, "uuid": "7e03c304-14af-44df-b4ff-9faf507a4a73", "historyId": "872e0e986c652e6695ada9a5d151f795", "testCaseId": "3c3a957788e3e2d5005828f00c497930", "fullName": "tests.test_case_1_one_way.TestCase1OneWay#test_one_way_booking_csv", "labels": [{"name": "epic", "value": "FLYR Automation Suite"}, {"name": "tag", "value": "complete-flow"}, {"name": "severity", "value": "critical"}, {"name": "tag", "value": "pom"}, {"name": "feature", "value": "Booking Flow"}, {"name": "tag", "value": "booking"}, {"name": "tag", "value": "csv-following"}, {"name": "story", "value": "One-way Booking"}, {"name": "tag", "value": "one-way"}, {"name": "tag", "value": "regression"}, {"name": "tag", "value": "smoke"}, {"name": "tag", "value": "booking"}, {"name": "parentSuite", "value": "tests"}, {"name": "suite", "value": "test_case_1_one_way"}, {"name": "subSuite", "value": "TestCase1OneWay"}, {"name": "host", "value": "DESKTOP-EV7L0IC"}, {"name": "thread", "value": "38664-MainThread"}, {"name": "framework", "value": "pytest"}, {"name": "language", "value": "cpython3"}, {"name": "package", "value": "tests.test_case_1_one_way"}], "titlePath": ["tests", "test_case_1_one_way.py", "TestCase1OneWay"]}
+{
+    "name": "Test 1: One-way booking with all passenger types following CSV steps",
+    "status": "failed",
+    "statusDetails": {
+        "message": "AssertionError: No se pudo completar configuración home \nassert False\n +  where False = complete_home_configuration()\n +    where complete_home_configuration = <pages.home_page.HomePage object at 0x00000214EC12A350>.complete_home_configuration",
+        "trace": "tests\\test_case_1_one_way.py:54: in test_one_way_booking\n    assert home_page.complete_home_configuration(), \\\nE   AssertionError: No se pudo completar configuración home \nE   assert False\nE    +  where False = complete_home_configuration()\nE    +    where complete_home_configuration = <pages.home_page.HomePage object at 0x00000214EC12A350>.complete_home_configuration"
+    },
+    "description": "Complete one-way booking flow following CSV steps exactly",
+    "steps": [
+        {
+            "name": "Tomar screenshot",
+            "status": "passed",
+            "steps": [
+                {
+                    "name": "Tomar screenshot: 'test_start'",
+                    "status": "passed",
+                    "attachments": [
+                        {
+                            "name": "test_start",
+                            "source": "2a9624af-4a2b-4142-8117-4ccff441517f-attachment.png",
+                            "type": "image/png"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "screenshot_name",
+                            "value": "'test_start'"
+                        }
+                    ],
+                    "start": 1764621728363,
+                    "stop": 1764621728489
+                }
+            ],
+            "parameters": [
+                {
+                    "name": "name",
+                    "value": "'test_start'"
+                }
+            ],
+            "start": 1764621728363,
+            "stop": 1764621728489
+        },
+        {
+            "name": "1. Home Page - Open website (CSV paso 1)",
+            "status": "passed",
+            "steps": [
+                {
+                    "name": "Navegar a URL",
+                    "status": "passed",
+                    "steps": [
+                        {
+                            "name": "Esperar página cargada",
+                            "status": "passed",
+                            "parameters": [
+                                {
+                                    "name": "timeout",
+                                    "value": "20"
+                                }
+                            ],
+                            "start": 1764621735804,
+                            "stop": 1764621737621
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "url",
+                            "value": "'https://nuxqa4.avtest.ink/'"
+                        }
+                    ],
+                    "start": 1764621728493,
+                    "stop": 1764621737621
+                }
+            ],
+            "attachments": [
+                {
+                    "name": "Browser Info",
+                    "source": "6f2b95aa-33e7-4780-8cb7-8697cfc26a06-attachment.txt",
+                    "type": "text/plain"
+                },
+                {
+                    "name": "Test URL",
+                    "source": "716058b6-f47d-492e-b9f0-7ffd2ecdb0f3-attachment.txt",
+                    "type": "text/plain"
+                }
+            ],
+            "start": 1764621728489,
+            "stop": 1764621737629
+        },
+        {
+            "name": "2. Complete home configuration following CSV steps 2-18",
+            "status": "failed",
+            "statusDetails": {
+                "message": "AssertionError: No se pudo completar configuración home \nassert False\n +  where False = complete_home_configuration()\n +    where complete_home_configuration = <pages.home_page.HomePage object at 0x00000214EC12A350>.complete_home_configuration\n",
+                "trace": "  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\tests\\test_case_1_one_way.py\", line 54, in test_one_way_booking\n    assert home_page.complete_home_configuration(), \\\n"
+            },
+            "steps": [
+                {
+                    "name": "Complete home page configuration according to CSV",
+                    "status": "passed",
+                    "steps": [
+                        {
+                            "name": "Select language - English (CSV paso 2-3)",
+                            "status": "passed",
+                            "steps": [
+                                {
+                                    "name": "Click en: 'Language dropdown'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_Language dropdown'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_Language dropdown",
+                                                    "source": "99c25081-1ff4-4134-9f73-be60d76393b0-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_Language dropdown'"
+                                                }
+                                            ],
+                                            "start": 1764621737630,
+                                            "stop": 1764621738092
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'Language dropdown'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'Language dropdown'"
+                                                }
+                                            ],
+                                            "start": 1764621738093,
+                                            "stop": 1764621739847
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_Language dropdown'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_click_Language dropdown",
+                                                    "source": "d13af5cc-6b28-41b1-9070-af4f8a6918d7-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_Language dropdown'"
+                                                }
+                                            ],
+                                            "start": 1764621739847,
+                                            "stop": 1764621740029
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'Language dropdown'"
+                                        }
+                                    ],
+                                    "start": 1764621737630,
+                                    "stop": 1764621740029
+                                },
+                                {
+                                    "name": "Click en: 'English option'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_English option'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_English option",
+                                                    "source": "c1438139-166b-4ed0-900f-03f259bf2864-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_English option'"
+                                                }
+                                            ],
+                                            "start": 1764621740029,
+                                            "stop": 1764621740229
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'English option'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//span[contains(text(),'English')]\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'English option'"
+                                                }
+                                            ],
+                                            "start": 1764621740229,
+                                            "stop": 1764621741594
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_English option'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_click_English option",
+                                                    "source": "6d06bffe-aa86-44cc-849c-6363010ab884-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_English option'"
+                                                }
+                                            ],
+                                            "start": 1764621741594,
+                                            "stop": 1764621741761
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//span[contains(text(),'English')]\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'English option'"
+                                        }
+                                    ],
+                                    "start": 1764621740029,
+                                    "stop": 1764621741761
+                                }
+                            ],
+                            "start": 1764621737630,
+                            "stop": 1764621741761
+                        },
+                        {
+                            "name": "Select one way (CSV paso 4)",
+                            "status": "passed",
+                            "steps": [
+                                {
+                                    "name": "Click en: 'One way radio'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_One way radio'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_One way radio",
+                                                    "source": "394a9dde-d439-45c6-b1c2-fc35fa1bac7e-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_One way radio'"
+                                                }
+                                            ],
+                                            "start": 1764621741761,
+                                            "stop": 1764621741982
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'One way radio'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "error_click_One way radio",
+                                                    "source": "de63e78b-7bb1-4682-b861-2398543b1368-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//input[@id='journeytypeId_1']\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'One way radio'"
+                                                }
+                                            ],
+                                            "start": 1764621741982,
+                                            "stop": 1764621752435
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_One way radio'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_click_One way radio",
+                                                    "source": "97cbe053-f2d9-46b6-8cc4-45c9c4a965ed-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_One way radio'"
+                                                }
+                                            ],
+                                            "start": 1764621752435,
+                                            "stop": 1764621752578
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//input[@id='journeytypeId_1']\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'One way radio'"
+                                        }
+                                    ],
+                                    "start": 1764621741761,
+                                    "stop": 1764621752578
+                                }
+                            ],
+                            "start": 1764621741761,
+                            "stop": 1764621752578
+                        },
+                        {
+                            "name": "Configure destination MDE (CSV pasos 5-7)",
+                            "status": "passed",
+                            "steps": [
+                                {
+                                    "name": "Click en: 'Destination container'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_Destination container'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_Destination container",
+                                                    "source": "0b4693fd-b833-4ba3-9a34-64805f26b5c3-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_Destination container'"
+                                                }
+                                            ],
+                                            "start": 1764621752579,
+                                            "stop": 1764621752733
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'Destination container'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//div[@class='station-control station-control--has-filter']\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'Destination container'"
+                                                }
+                                            ],
+                                            "start": 1764621752733,
+                                            "stop": 1764621754572
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_Destination container'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_click_Destination container",
+                                                    "source": "918a259f-e201-4740-ae3c-4187b9cae779-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_Destination container'"
+                                                }
+                                            ],
+                                            "start": 1764621754572,
+                                            "stop": 1764621754769
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//div[@class='station-control station-control--has-filter']\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'Destination container'"
+                                        }
+                                    ],
+                                    "start": 1764621752579,
+                                    "stop": 1764621754769
+                                },
+                                {
+                                    "name": "Ingresar texto en: 'Destination MDE'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_text_Destination MDE'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_text_Destination MDE",
+                                                    "source": "39a74425-c17b-4d8e-ae4d-10f2f5704953-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_text_Destination MDE'"
+                                                }
+                                            ],
+                                            "start": 1764621754770,
+                                            "stop": 1764621755052
+                                        },
+                                        {
+                                            "name": "Ingresar texto en: 'Destination MDE'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//input[@id='arrivalStationInputId']\")"
+                                                },
+                                                {
+                                                    "name": "text",
+                                                    "value": "'MDE'"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'Destination MDE'"
+                                                }
+                                            ],
+                                            "start": 1764621755052,
+                                            "stop": 1764621756933
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_text_Destination MDE'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_text_Destination MDE",
+                                                    "source": "c27156d4-65a2-47bf-b769-08e0f9801289-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_text_Destination MDE'"
+                                                }
+                                            ],
+                                            "start": 1764621756935,
+                                            "stop": 1764621757220
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//input[@id='arrivalStationInputId']\")"
+                                        },
+                                        {
+                                            "name": "text",
+                                            "value": "'MDE'"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'Destination MDE'"
+                                        }
+                                    ],
+                                    "start": 1764621754770,
+                                    "stop": 1764621757221
+                                }
+                            ],
+                            "start": 1764621752578,
+                            "stop": 1764621757221
+                        },
+                        {
+                            "name": "Configure passengers all types (CSV pasos 11-17)",
+                            "status": "passed",
+                            "steps": [
+                                {
+                                    "name": "Click en: 'Passenger button - first click'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_Passenger button - first click'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_Passenger button - first click",
+                                                    "source": "95db42ad-21e7-4412-becd-47c070ec2c0c-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_Passenger button - first click'"
+                                                }
+                                            ],
+                                            "start": 1764621757222,
+                                            "stop": 1764621757437
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'Passenger button - first click'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//button[@aria-label='Passengers :1']\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'Passenger button - first click'"
+                                                }
+                                            ],
+                                            "start": 1764621757437,
+                                            "stop": 1764621759602
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_Passenger button - first click'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_click_Passenger button - first click",
+                                                    "source": "7c23b07c-30d1-44b1-984e-7b877ebb1ea6-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_Passenger button - first click'"
+                                                }
+                                            ],
+                                            "start": 1764621759603,
+                                            "stop": 1764621759944
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//button[@aria-label='Passengers :1']\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'Passenger button - first click'"
+                                        }
+                                    ],
+                                    "start": 1764621757222,
+                                    "stop": 1764621759944
+                                }
+                            ],
+                            "start": 1764621757221,
+                            "stop": 1764621759948
+                        },
+                        {
+                            "name": "Search flights CSV (CSV paso 18)",
+                            "status": "passed",
+                            "steps": [
+                                {
+                                    "name": "Click en: 'Search flights'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_Search flights'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_Search flights",
+                                                    "source": "c85405f0-a198-4f89-95f7-58ac94067191-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_Search flights'"
+                                                }
+                                            ],
+                                            "start": 1764621759950,
+                                            "stop": 1764621760223
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'Search flights'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//button[@id='searchButton']//span[contains(text(), 'Search')]\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'Search flights'"
+                                                }
+                                            ],
+                                            "start": 1764621760223,
+                                            "stop": 1764621762405
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_Search flights'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_click_Search flights",
+                                                    "source": "2fbb66f8-5d83-4305-adc1-5c2b50fa504c-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_Search flights'"
+                                                }
+                                            ],
+                                            "start": 1764621762406,
+                                            "stop": 1764621762671
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//button[@id='searchButton']//span[contains(text(), 'Search')]\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'Search flights'"
+                                        }
+                                    ],
+                                    "start": 1764621759949,
+                                    "stop": 1764621762671
+                                }
+                            ],
+                            "start": 1764621759948,
+                            "stop": 1764621762671
+                        }
+                    ],
+                    "start": 1764621737629,
+                    "stop": 1764621762671
+                }
+            ],
+            "start": 1764621737629,
+            "stop": 1764621762671
+        }
+    ],
+    "attachments": [
+        {
+            "name": "screenshot_on_failure",
+            "source": "c22c1c91-b3e1-4aa2-b512-9389f56e1620-attachment.png",
+            "type": "image/png"
+        },
+        {
+            "name": "log",
+            "source": "5716aa9f-d890-4ddc-b1fd-53d68372bfe7-attachment.txt",
+            "type": "text/plain"
+        },
+        {
+            "name": "stderr",
+            "source": "59031251-5252-4230-a2f5-d6877d875995-attachment.txt",
+            "type": "text/plain"
+        }
+    ],
+    "parameters": [
+        {
+            "name": "driver",
+            "value": "'firefox'"
+        }
+    ],
+    "start": 1764621728359,
+    "stop": 1764621762673,
+    "uuid": "7e03c304-14af-44df-b4ff-9faf507a4a73",
+    "historyId": "872e0e986c652e6695ada9a5d151f795",
+    "testCaseId": "3c3a957788e3e2d5005828f00c497930",
+    "fullName": "tests.test_case_1_one_way.TestCase1OneWay#test_one_way_booking",
+    "labels": [
+        {
+            "name": "epic",
+            "value": "FLYR Automation Suite"
+        },
+        {
+            "name": "tag",
+            "value": "complete-flow"
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "tag",
+            "value": "pom"
+        },
+        {
+            "name": "feature",
+            "value": "Booking Flow"
+        },
+        {
+            "name": "tag",
+            "value": "booking"
+        },
+        {
+            "name": "tag",
+            "value": "csv-following"
+        },
+        {
+            "name": "story",
+            "value": "One-way Booking"
+        },
+        {
+            "name": "tag",
+            "value": "one-way"
+        },
+        {
+            "name": "tag",
+            "value": "regression"
+        },
+        {
+            "name": "tag",
+            "value": "smoke"
+        },
+        {
+            "name": "tag",
+            "value": "booking"
+        },
+        {
+            "name": "parentSuite",
+            "value": "tests"
+        },
+        {
+            "name": "suite",
+            "value": "test_case_1_one_way"
+        },
+        {
+            "name": "subSuite",
+            "value": "TestCase1OneWay"
+        },
+        {
+            "name": "host",
+            "value": "DESKTOP-EV7L0IC"
+        },
+        {
+            "name": "thread",
+            "value": "38664-MainThread"
+        },
+        {
+            "name": "framework",
+            "value": "pytest"
+        },
+        {
+            "name": "language",
+            "value": "cpython3"
+        },
+        {
+            "name": "package",
+            "value": "tests.test_case_1_one_way"
+        }
+    ],
+    "titlePath": [
+        "tests",
+        "test_case_1_one_way.py",
+        "TestCase1OneWay"
+    ]
+}

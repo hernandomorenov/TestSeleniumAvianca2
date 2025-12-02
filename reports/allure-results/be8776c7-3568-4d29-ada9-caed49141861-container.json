@@ -1,1 +1,31 @@
-{"uuid": "228f5de3-ec7d-46cb-836a-b6c73226266d", "children": ["62950243-ae88-4cbb-8104-f01ab0fd5a00"], "befores": [{"name": "driver", "status": "passed", "start": 1764636326526, "stop": 1764636338753}], "afters": [{"name": "driver::0", "status": "passed", "attachments": [{"name": "video_test_one_way_booking_csv[firefox]_firefox", "source": "37b08ea3-3511-466b-8aa9-293d80003bc9-attachment.mp4", "type": "video/mp4"}], "start": 1764636353714, "stop": 1764636359650}], "start": 1764636326526, "stop": 1764636359650}
+{
+    "uuid": "228f5de3-ec7d-46cb-836a-b6c73226266d",
+    "children": [
+        "62950243-ae88-4cbb-8104-f01ab0fd5a00"
+    ],
+    "befores": [
+        {
+            "name": "driver",
+            "status": "passed",
+            "start": 1764636326526,
+            "stop": 1764636338753
+        }
+    ],
+    "afters": [
+        {
+            "name": "driver::0",
+            "status": "passed",
+            "attachments": [
+                {
+                    "name": "video_test_one_way_booking[firefox]_firefox",
+                    "source": "37b08ea3-3511-466b-8aa9-293d80003bc9-attachment.mp4",
+                    "type": "video/mp4"
+                }
+            ],
+            "start": 1764636353714,
+            "stop": 1764636359650
+        }
+    ],
+    "start": 1764636326526,
+    "stop": 1764636359650
+}

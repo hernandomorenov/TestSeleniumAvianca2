@@ -1,4 +1,4 @@
-2025-12-01 19:34:53,050 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[firefox]_firefox_20251201_193453.mp4
+2025-12-01 19:34:53,050 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[firefox]_firefox_20251201_193453.mp4
 2025-12-01 19:34:53,050 - conftest - INFO - Configurando driver para FIREFOX (headless=False)
 2025-12-01 19:34:53,056 - WDM - INFO - xdist worker is: gw0
 2025-12-01 19:34:53,056 - WDM - INFO - ====== WebDriver manager ======
@@ -7,16 +7,16 @@
 2025-12-01 19:34:56,565 - WDM - INFO - Driver [C:\Users\HernandoMorenoVargas\.wdm\gw0\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
 2025-12-01 19:35:10,896 - conftest - INFO - Driver FIREFOX configurado exitosamente
 2025-12-01 19:35:10,900 - conftest - INFO - URL base configurada: https://nuxqa4.avtest.ink/
-2025-12-01 19:35:11 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193510.png
-2025-12-01 19:35:11,013 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193510.png
+2025-12-01 19:35:11 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_193510.png
+2025-12-01 19:35:11,013 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_193510.png
 2025-12-01 19:35:11 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:35:11,016 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:35:32 - utils.logger - INFO - ✅ Página cargada completamente
 2025-12-01 19:35:32,027 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:35:33 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:35:33,034 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:35:33 - utils.logger - INFO - Seleccionando idioma English según CSV
-2025-12-01 19:35:33,035 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:35:33 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:35:33,034 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:35:33 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 19:35:33,035 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:35:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193533.png
 2025-12-01 19:35:33,216 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193533.png
 2025-12-01 19:35:34 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
@@ -29,6 +29,6 @@
 2025-12-01 19:35:37,014 - utils.logger - INFO - ✅ Click realizado en: English option
 2025-12-01 19:35:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_193537.png
 2025-12-01 19:35:37,388 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_193537.png
-2025-12-01 19:35:38,119 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking_csv[firefox]_20251201_193537.png
-2025-12-01 19:35:38,212 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking_csv[firefox]_firefox_20251201_193453.mp4
+2025-12-01 19:35:38,119 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[firefox]_20251201_193537.png
+2025-12-01 19:35:38,212 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[firefox]_firefox_20251201_193453.mp4
 2025-12-01 19:35:44,341 - conftest - INFO - Driver FIREFOX cerrado

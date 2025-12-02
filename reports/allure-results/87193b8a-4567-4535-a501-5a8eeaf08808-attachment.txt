@@ -1,4 +1,4 @@
-2025-12-01 19:50:09,995 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[firefox]_firefox_20251201_195009.mp4
+2025-12-01 19:50:09,995 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[firefox]_firefox_20251201_195009.mp4
 2025-12-01 19:50:09,997 - conftest - INFO - Configurando driver para FIREFOX (headless=False)
 2025-12-01 19:50:10,000 - WDM - INFO - xdist worker is: gw0
 2025-12-01 19:50:10,000 - WDM - INFO - ====== WebDriver manager ======
@@ -13,10 +13,10 @@
 2025-12-01 19:50:22,272 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:50:31 - utils.logger - INFO - ✅ Página cargada completamente
 2025-12-01 19:50:31,828 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:50:32 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:50:32,842 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:50:32 - utils.logger - INFO - Seleccionando idioma English según CSV
-2025-12-01 19:50:32,851 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:50:32 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:50:32,842 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:50:32 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 19:50:32,851 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:50:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_195032.png
 2025-12-01 19:50:33,700 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_195032.png
 2025-12-01 19:50:35 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
@@ -29,6 +29,6 @@
 2025-12-01 19:50:37,362 - utils.logger - INFO - ✅ Click realizado en: English option
 2025-12-01 19:50:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_195037.png
 2025-12-01 19:50:37,806 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_195037.png
-2025-12-01 19:50:42,056 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking_csv[firefox]_20251201_195041.png
-2025-12-01 19:50:42,083 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking_csv[firefox]_firefox_20251201_195009.mp4
+2025-12-01 19:50:42,056 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[firefox]_20251201_195041.png
+2025-12-01 19:50:42,083 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[firefox]_firefox_20251201_195009.mp4
 2025-12-01 19:50:46,548 - conftest - INFO - Driver FIREFOX cerrado

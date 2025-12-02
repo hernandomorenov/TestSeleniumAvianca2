@@ -1,4 +1,4 @@
-2025-12-01 15:41:17,476 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[chrome]_chrome_20251201_154117.mp4
+2025-12-01 15:41:17,476 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[chrome]_chrome_20251201_154117.mp4
 2025-12-01 15:41:17,476 - conftest - INFO - Configurando driver para CHROME (headless=False)
 2025-12-01 15:41:17,609 - WDM - INFO - xdist worker is: gw0
 2025-12-01 15:41:17,609 - WDM - INFO - ====== WebDriver manager ======
@@ -8,16 +8,16 @@
 2025-12-01 15:41:20,143 - conftest - WARNING - WebDriver Manager falló: [WinError 193] %1 no es una aplicación Win32 válida. Usando driver local.
 2025-12-01 15:41:23,375 - conftest - INFO - Driver CHROME configurado exitosamente
 2025-12-01 15:41:23,379 - conftest - INFO - URL base configurada: https://nuxqa4.avtest.ink/
-2025-12-01 15:41:23 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154123.png
-2025-12-01 15:41:23,588 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_154123.png
+2025-12-01 15:41:23 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_154123.png
+2025-12-01 15:41:23,588 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_154123.png
 2025-12-01 15:41:23 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 15:41:23,591 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 15:41:26 - utils.logger - INFO - ✅ Página cargada completamente
 2025-12-01 15:41:26,855 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 15:41:27 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 15:41:27,969 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 15:41:27 - utils.logger - INFO - Seleccionando idioma English según CSV
-2025-12-01 15:41:27,971 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 15:41:27 - utils.logger - INFO - Completando configuración home 
+2025-12-01 15:41:27,969 - utils.logger - INFO - Completando configuración home 
+2025-12-01 15:41:27 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 15:41:27,971 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 15:41:28 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154127.png
 2025-12-01 15:41:28,252 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_154127.png
 2025-12-01 15:41:29 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
@@ -84,8 +84,8 @@ Symbols not available. Dumping unresolved backtrace:
 	0x7ffd4fe6e8d7
 	0x7ffd50eac53c
 
-2025-12-01 15:41:32 - utils.logger - INFO - Seleccionando One way según CSV
-2025-12-01 15:41:32,099 - utils.logger - INFO - Seleccionando One way según CSV
+2025-12-01 15:41:32 - utils.logger - INFO - Seleccionando One way 
+2025-12-01 15:41:32,099 - utils.logger - INFO - Seleccionando One way 
 2025-12-01 15:41:32 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
 from aborted by navigation: Not attached to an active page
   (Session info: chrome=142.0.7444.176)
@@ -148,8 +148,8 @@ Symbols not available. Dumping unresolved backtrace:
 
 2025-12-01 15:41:43 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154142.png
 2025-12-01 15:41:43,015 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One way radio_20251201_154142.png
-2025-12-01 15:41:43 - utils.logger - INFO - Configurando destino MDE según CSV
-2025-12-01 15:41:43,015 - utils.logger - INFO - Configurando destino MDE según CSV
+2025-12-01 15:41:43 - utils.logger - INFO - Configurando destino MDE 
+2025-12-01 15:41:43,015 - utils.logger - INFO - Configurando destino MDE 
 2025-12-01 15:41:43 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154143.png
 2025-12-01 15:41:43,279 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Destination container_20251201_154143.png
 2025-12-01 15:41:44 - utils.logger - INFO - ✅ Click realizado en: Destination container
@@ -164,8 +164,8 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 15:41:46,644 - utils.logger - INFO - 📸 Screenshot tomado: after_text_Destination MDE_20251201_154146.png
 2025-12-01 15:41:46 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
 2025-12-01 15:41:46,644 - utils.logger - ERROR - Error configurando destino: 'WebDriverWait' object is not callable
-2025-12-01 15:41:46 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
-2025-12-01 15:41:46,644 - utils.logger - INFO - Configurando pasajeros de todos los tipos según CSV
+2025-12-01 15:41:46 - utils.logger - INFO - Configurando pasajeros de todos los tipos 
+2025-12-01 15:41:46,644 - utils.logger - INFO - Configurando pasajeros de todos los tipos 
 2025-12-01 15:41:46 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154146.png
 2025-12-01 15:41:46,855 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Passenger button - first click_20251201_154146.png
 2025-12-01 15:41:48 - utils.logger - INFO - ✅ Click realizado en: Passenger button - first click
@@ -174,14 +174,14 @@ Symbols not available. Dumping unresolved backtrace:
 2025-12-01 15:41:48,945 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Passenger button - first click_20251201_154148.png
 2025-12-01 15:41:48 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
 2025-12-01 15:41:48,945 - utils.logger - ERROR - Error configurando pasajeros: 'WebDriverWait' object is not callable
-2025-12-01 15:41:48 - utils.logger - INFO - Buscando vuelos según CSV
-2025-12-01 15:41:48,945 - utils.logger - INFO - Buscando vuelos según CSV
+2025-12-01 15:41:48 - utils.logger - INFO - Buscando vuelos 
+2025-12-01 15:41:48,945 - utils.logger - INFO - Buscando vuelos 
 2025-12-01 15:41:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154148.png
 2025-12-01 15:41:49,231 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251201_154148.png
 2025-12-01 15:41:50 - utils.logger - INFO - ✅ Click realizado en: Search flights
 2025-12-01 15:41:50,893 - utils.logger - INFO - ✅ Click realizado en: Search flights
 2025-12-01 15:41:51 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154150.png
 2025-12-01 15:41:51,271 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251201_154150.png
-2025-12-01 15:41:52,010 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking_csv[chrome]_20251201_154151.png
-2025-12-01 15:41:52,042 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking_csv[chrome]_chrome_20251201_154117.mp4
+2025-12-01 15:41:52,010 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[chrome]_20251201_154151.png
+2025-12-01 15:41:52,042 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[chrome]_chrome_20251201_154117.mp4
 2025-12-01 15:41:54,550 - conftest - INFO - Driver CHROME cerrado

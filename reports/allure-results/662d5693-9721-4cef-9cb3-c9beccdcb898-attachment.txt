@@ -1,4 +1,4 @@
-2025-12-01 19:34:26,157 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking_csv[chrome]_chrome_20251201_193426.mp4
+2025-12-01 19:34:26,157 - utils.video_recorder - INFO - 🎥 Grabación iniciada: videos/test_one_way_booking[chrome]_chrome_20251201_193426.mp4
 2025-12-01 19:34:26,157 - conftest - INFO - Configurando driver para CHROME (headless=False)
 2025-12-01 19:34:26,327 - WDM - INFO - xdist worker is: gw0
 2025-12-01 19:34:26,327 - WDM - INFO - ====== WebDriver manager ======
@@ -8,16 +8,16 @@
 2025-12-01 19:34:29,435 - conftest - WARNING - WebDriver Manager falló: [WinError 193] %1 no es una aplicación Win32 válida. Usando driver local.
 2025-12-01 19:34:34,005 - conftest - INFO - Driver CHROME configurado exitosamente
 2025-12-01 19:34:34,008 - conftest - INFO - URL base configurada: https://nuxqa4.avtest.ink/
-2025-12-01 19:34:34 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193434.png
-2025-12-01 19:34:34,218 - utils.logger - INFO - 📸 Screenshot tomado: test_start_csv_20251201_193434.png
+2025-12-01 19:34:34 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_193434.png
+2025-12-01 19:34:34,218 - utils.logger - INFO - 📸 Screenshot tomado: test_start_20251201_193434.png
 2025-12-01 19:34:34 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:34:34,222 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
 2025-12-01 19:34:40 - utils.logger - INFO - ✅ Página cargada completamente
 2025-12-01 19:34:40,690 - utils.logger - INFO - ✅ Página cargada completamente
-2025-12-01 19:34:41 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:34:41,706 - utils.logger - INFO - Completando configuración home según CSV
-2025-12-01 19:34:41 - utils.logger - INFO - Seleccionando idioma English según CSV
-2025-12-01 19:34:41,706 - utils.logger - INFO - Seleccionando idioma English según CSV
+2025-12-01 19:34:41 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:34:41,706 - utils.logger - INFO - Completando configuración home 
+2025-12-01 19:34:41 - utils.logger - INFO - Seleccionando idioma English 
+2025-12-01 19:34:41,706 - utils.logger - INFO - Seleccionando idioma English 
 2025-12-01 19:34:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193441.png
 2025-12-01 19:34:41,930 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251201_193441.png
 2025-12-01 19:34:43 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
@@ -30,6 +30,6 @@
 2025-12-01 19:34:48,664 - utils.logger - INFO - ✅ Click realizado en: English option
 2025-12-01 19:34:49 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_193448.png
 2025-12-01 19:34:49,097 - utils.logger - INFO - 📸 Screenshot tomado: after_click_English option_20251201_193448.png
-2025-12-01 19:34:50,046 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking_csv[chrome]_20251201_193449.png
-2025-12-01 19:34:50,098 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking_csv[chrome]_chrome_20251201_193426.mp4
+2025-12-01 19:34:50,046 - conftest - INFO - Screenshot de fallo guardado: screenshots\test_one_way_booking[chrome]_20251201_193449.png
+2025-12-01 19:34:50,098 - utils.video_recorder - INFO - 🎥 Grabación detenida: videos/test_one_way_booking[chrome]_chrome_20251201_193426.mp4
 2025-12-01 19:34:53,041 - conftest - INFO - Driver CHROME cerrado

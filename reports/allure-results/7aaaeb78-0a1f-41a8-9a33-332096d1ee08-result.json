@@ -1,1 +1,380 @@
-{"name": "Test 1: One-way booking with all passenger types", "status": "broken", "statusDetails": {"message": "AttributeError: 'HomePage' object has no attribute 'select_one_way'", "trace": "tests\\test_case_1_one_way.py:54: in test_one_way_booking_csv\n    assert home_page.complete_home_configuration_csv(), \\\npages\\home_page.py:245: in complete_home_configuration_csv\n    success &= self.select_one_way()\nE   AttributeError: 'HomePage' object has no attribute 'select_one_way'"}, "description": "Complete one-way booking flow ", "steps": [{"name": "Tomar screenshot", "status": "passed", "steps": [{"name": "Tomar screenshot: 'test_start'", "status": "passed", "attachments": [{"name": "test_start", "source": "aa5e7797-9af9-44f0-91bd-dd460d12f813-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'test_start'"}], "start": 1764636593102, "stop": 1764636593301}], "parameters": [{"name": "name", "value": "'test_start'"}], "start": 1764636593102, "stop": 1764636593301}, {"name": "1. Home Page - Open website", "status": "passed", "steps": [{"name": "Navegar a URL", "status": "passed", "steps": [{"name": "Esperar página cargada", "status": "passed", "parameters": [{"name": "timeout", "value": "20"}], "start": 1764636597613, "stop": 1764636599222}], "parameters": [{"name": "url", "value": "'https://nuxqa4.avtest.ink/'"}], "start": 1764636593303, "stop": 1764636599222}], "attachments": [{"name": "Browser Info", "source": "3f3d2c74-32f4-4ad5-af58-5d237022c6e9-attachment.txt", "type": "text/plain"}, {"name": "Test URL", "source": "1ec85bfe-9aa3-4c2b-9d6d-a53ded5e44fa-attachment.txt", "type": "text/plain"}], "start": 1764636593301, "stop": 1764636599238}, {"name": "2. Complete home configuration", "status": "broken", "statusDetails": {"message": "AttributeError: 'HomePage' object has no attribute 'select_one_way'\n", "trace": "  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\tests\\test_case_1_one_way.py\", line 54, in test_one_way_booking_csv\n    assert home_page.complete_home_configuration_csv(), \\\n  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 202, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\pages\\home_page.py\", line 245, in complete_home_configuration_csv\n    success &= self.select_one_way()\n               ^^^^^^^^^^^^^^^^^^^\n"}, "steps": [{"name": "Complete home page configuration according to CSV", "status": "broken", "statusDetails": {"message": "AttributeError: 'HomePage' object has no attribute 'select_one_way'\n", "trace": "  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 202, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\pages\\home_page.py\", line 245, in complete_home_configuration_csv\n    success &= self.select_one_way()\n               ^^^^^^^^^^^^^^^^^^^\n"}, "steps": [{"name": "Select language - English", "status": "passed", "steps": [{"name": "Click en: 'Language dropdown'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_Language dropdown'", "status": "passed", "attachments": [{"name": "before_click_Language dropdown", "source": "bddc20d1-f0f7-44f4-85ec-828940380dc7-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_Language dropdown'"}], "start": 1764636599238, "stop": 1764636599451}, {"name": "Click con evidencias visuales en: 'Language dropdown'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"}, {"name": "element_name", "value": "'Language dropdown'"}], "start": 1764636599451, "stop": 1764636600904}, {"name": "Tomar screenshot: 'after_click_Language dropdown'", "status": "passed", "attachments": [{"name": "after_click_Language dropdown", "source": "7b918980-1954-45e3-8d3d-f6633a8c0c4e-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'after_click_Language dropdown'"}], "start": 1764636600905, "stop": 1764636601177}], "parameters": [{"name": "locator", "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"}, {"name": "element_name", "value": "'Language dropdown'"}], "start": 1764636599238, "stop": 1764636601177}, {"name": "Click en: 'English option'", "status": "passed", "steps": [{"name": "Tomar screenshot: 'before_click_English option'", "status": "passed", "attachments": [{"name": "before_click_English option", "source": "44403686-77d3-4ff8-900d-8e7f7d6a8c75-attachment.png", "type": "image/png"}], "parameters": [{"name": "screenshot_name", "value": "'before_click_English option'"}], "start": 1764636601177, "stop": 1764636601427}, {"name": "Click con evidencias visuales en: 'English option'", "status": "passed", "parameters": [{"name": "locator", "value": "('xpath', \"//span[contains(text(),'English')]\")"}, {"name": "element_name", "value": "'English option'"}], "start": 1764636601427, "stop": 1764636603073}, {"name": "Tomar screenshot: 'after_click_English option'", "status": "passed", "parameters": [{"name": "screenshot_name", "value": "'after_click_English option'"}], "start": 1764636603073, "stop": 1764636603080}], "parameters": [{"name": "locator", "value": "('xpath', \"//span[contains(text(),'English')]\")"}, {"name": "element_name", "value": "'English option'"}], "start": 1764636601177, "stop": 1764636603080}], "start": 1764636599238, "stop": 1764636603080}], "start": 1764636599238, "stop": 1764636603080}], "start": 1764636599238, "stop": 1764636603082}], "attachments": [{"name": "screenshot_on_failure", "source": "c202b5aa-1873-4cc1-8500-a005fbba2a03-attachment.png", "type": "image/png"}, {"name": "log", "source": "cea12c4c-5f70-4380-a8fd-07b3def83438-attachment.txt", "type": "text/plain"}, {"name": "stdout", "source": "0f4ad5ae-0f28-4ea2-bdca-f50ddfc052a8-attachment.txt", "type": "text/plain"}, {"name": "stderr", "source": "bb89f132-cf88-4f3f-99eb-c34cfe10c80a-attachment.txt", "type": "text/plain"}], "parameters": [{"name": "driver", "value": "'chrome'"}], "start": 1764636593093, "stop": 1764636603084, "uuid": "17199fa5-f7f7-4e54-8eea-a0750496624e", "historyId": "eee9f67b47421e051b5d0b81bb2b4075", "testCaseId": "3c3a957788e3e2d5005828f00c497930", "fullName": "tests.test_case_1_one_way.TestCase1OneWay#test_one_way_booking_csv", "labels": [{"name": "tag", "value": "one-way"}, {"name": "tag", "value": "pom"}, {"name": "severity", "value": "critical"}, {"name": "story", "value": "One-way Booking"}, {"name": "tag", "value": "booking"}, {"name": "tag", "value": "complete-flow"}, {"name": "feature", "value": "Booking Flow"}, {"name": "tag", "value": "following"}, {"name": "epic", "value": "FLYR Automation Suite"}, {"name": "tag", "value": "regression"}, {"name": "tag", "value": "smoke"}, {"name": "tag", "value": "booking"}, {"name": "parentSuite", "value": "tests"}, {"name": "suite", "value": "test_case_1_one_way"}, {"name": "subSuite", "value": "TestCase1OneWay"}, {"name": "host", "value": "DESKTOP-EV7L0IC"}, {"name": "thread", "value": "1460-MainThread"}, {"name": "framework", "value": "pytest"}, {"name": "language", "value": "cpython3"}, {"name": "package", "value": "tests.test_case_1_one_way"}], "titlePath": ["tests", "test_case_1_one_way.py", "TestCase1OneWay"]}
+{
+    "name": "Test 1: One-way booking with all passenger types",
+    "status": "broken",
+    "statusDetails": {
+        "message": "AttributeError: 'HomePage' object has no attribute 'select_one_way'",
+        "trace": "tests\\test_case_1_one_way.py:54: in test_one_way_booking\n    assert home_page.complete_home_configuration(), \\\npages\\home_page.py:245: in complete_home_configuration\n    success &= self.select_one_way()\nE   AttributeError: 'HomePage' object has no attribute 'select_one_way'"
+    },
+    "description": "Complete one-way booking flow ",
+    "steps": [
+        {
+            "name": "Tomar screenshot",
+            "status": "passed",
+            "steps": [
+                {
+                    "name": "Tomar screenshot: 'test_start'",
+                    "status": "passed",
+                    "attachments": [
+                        {
+                            "name": "test_start",
+                            "source": "aa5e7797-9af9-44f0-91bd-dd460d12f813-attachment.png",
+                            "type": "image/png"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "screenshot_name",
+                            "value": "'test_start'"
+                        }
+                    ],
+                    "start": 1764636593102,
+                    "stop": 1764636593301
+                }
+            ],
+            "parameters": [
+                {
+                    "name": "name",
+                    "value": "'test_start'"
+                }
+            ],
+            "start": 1764636593102,
+            "stop": 1764636593301
+        },
+        {
+            "name": "1. Home Page - Open website",
+            "status": "passed",
+            "steps": [
+                {
+                    "name": "Navegar a URL",
+                    "status": "passed",
+                    "steps": [
+                        {
+                            "name": "Esperar página cargada",
+                            "status": "passed",
+                            "parameters": [
+                                {
+                                    "name": "timeout",
+                                    "value": "20"
+                                }
+                            ],
+                            "start": 1764636597613,
+                            "stop": 1764636599222
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "url",
+                            "value": "'https://nuxqa4.avtest.ink/'"
+                        }
+                    ],
+                    "start": 1764636593303,
+                    "stop": 1764636599222
+                }
+            ],
+            "attachments": [
+                {
+                    "name": "Browser Info",
+                    "source": "3f3d2c74-32f4-4ad5-af58-5d237022c6e9-attachment.txt",
+                    "type": "text/plain"
+                },
+                {
+                    "name": "Test URL",
+                    "source": "1ec85bfe-9aa3-4c2b-9d6d-a53ded5e44fa-attachment.txt",
+                    "type": "text/plain"
+                }
+            ],
+            "start": 1764636593301,
+            "stop": 1764636599238
+        },
+        {
+            "name": "2. Complete home configuration",
+            "status": "broken",
+            "statusDetails": {
+                "message": "AttributeError: 'HomePage' object has no attribute 'select_one_way'\n",
+                "trace": "  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\tests\\test_case_1_one_way.py\", line 54, in test_one_way_booking\n    assert home_page.complete_home_configuration(), \\\n  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 202, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\pages\\home_page.py\", line 245, in complete_home_configuration\n    success &= self.select_one_way()\n               ^^^^^^^^^^^^^^^^^^^\n"
+            },
+            "steps": [
+                {
+                    "name": "Complete home page configuration according to CSV",
+                    "status": "broken",
+                    "statusDetails": {
+                        "message": "AttributeError: 'HomePage' object has no attribute 'select_one_way'\n",
+                        "trace": "  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 202, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\HernandoMorenoVargas\\Desktop\\avianca-selenium\\pages\\home_page.py\", line 245, in complete_home_configuration\n    success &= self.select_one_way()\n               ^^^^^^^^^^^^^^^^^^^\n"
+                    },
+                    "steps": [
+                        {
+                            "name": "Select language - English",
+                            "status": "passed",
+                            "steps": [
+                                {
+                                    "name": "Click en: 'Language dropdown'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_Language dropdown'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_Language dropdown",
+                                                    "source": "bddc20d1-f0f7-44f4-85ec-828940380dc7-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_Language dropdown'"
+                                                }
+                                            ],
+                                            "start": 1764636599238,
+                                            "stop": 1764636599451
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'Language dropdown'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'Language dropdown'"
+                                                }
+                                            ],
+                                            "start": 1764636599451,
+                                            "stop": 1764636600904
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_Language dropdown'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "after_click_Language dropdown",
+                                                    "source": "7b918980-1954-45e3-8d3d-f6633a8c0c4e-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_Language dropdown'"
+                                                }
+                                            ],
+                                            "start": 1764636600905,
+                                            "stop": 1764636601177
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//span[@class='dropdown_trigger_value']\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'Language dropdown'"
+                                        }
+                                    ],
+                                    "start": 1764636599238,
+                                    "stop": 1764636601177
+                                },
+                                {
+                                    "name": "Click en: 'English option'",
+                                    "status": "passed",
+                                    "steps": [
+                                        {
+                                            "name": "Tomar screenshot: 'before_click_English option'",
+                                            "status": "passed",
+                                            "attachments": [
+                                                {
+                                                    "name": "before_click_English option",
+                                                    "source": "44403686-77d3-4ff8-900d-8e7f7d6a8c75-attachment.png",
+                                                    "type": "image/png"
+                                                }
+                                            ],
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'before_click_English option'"
+                                                }
+                                            ],
+                                            "start": 1764636601177,
+                                            "stop": 1764636601427
+                                        },
+                                        {
+                                            "name": "Click con evidencias visuales en: 'English option'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "locator",
+                                                    "value": "('xpath', \"//span[contains(text(),'English')]\")"
+                                                },
+                                                {
+                                                    "name": "element_name",
+                                                    "value": "'English option'"
+                                                }
+                                            ],
+                                            "start": 1764636601427,
+                                            "stop": 1764636603073
+                                        },
+                                        {
+                                            "name": "Tomar screenshot: 'after_click_English option'",
+                                            "status": "passed",
+                                            "parameters": [
+                                                {
+                                                    "name": "screenshot_name",
+                                                    "value": "'after_click_English option'"
+                                                }
+                                            ],
+                                            "start": 1764636603073,
+                                            "stop": 1764636603080
+                                        }
+                                    ],
+                                    "parameters": [
+                                        {
+                                            "name": "locator",
+                                            "value": "('xpath', \"//span[contains(text(),'English')]\")"
+                                        },
+                                        {
+                                            "name": "element_name",
+                                            "value": "'English option'"
+                                        }
+                                    ],
+                                    "start": 1764636601177,
+                                    "stop": 1764636603080
+                                }
+                            ],
+                            "start": 1764636599238,
+                            "stop": 1764636603080
+                        }
+                    ],
+                    "start": 1764636599238,
+                    "stop": 1764636603080
+                }
+            ],
+            "start": 1764636599238,
+            "stop": 1764636603082
+        }
+    ],
+    "attachments": [
+        {
+            "name": "screenshot_on_failure",
+            "source": "c202b5aa-1873-4cc1-8500-a005fbba2a03-attachment.png",
+            "type": "image/png"
+        },
+        {
+            "name": "log",
+            "source": "cea12c4c-5f70-4380-a8fd-07b3def83438-attachment.txt",
+            "type": "text/plain"
+        },
+        {
+            "name": "stdout",
+            "source": "0f4ad5ae-0f28-4ea2-bdca-f50ddfc052a8-attachment.txt",
+            "type": "text/plain"
+        },
+        {
+            "name": "stderr",
+            "source": "bb89f132-cf88-4f3f-99eb-c34cfe10c80a-attachment.txt",
+            "type": "text/plain"
+        }
+    ],
+    "parameters": [
+        {
+            "name": "driver",
+            "value": "'chrome'"
+        }
+    ],
+    "start": 1764636593093,
+    "stop": 1764636603084,
+    "uuid": "17199fa5-f7f7-4e54-8eea-a0750496624e",
+    "historyId": "eee9f67b47421e051b5d0b81bb2b4075",
+    "testCaseId": "3c3a957788e3e2d5005828f00c497930",
+    "fullName": "tests.test_case_1_one_way.TestCase1OneWay#test_one_way_booking",
+    "labels": [
+        {
+            "name": "tag",
+            "value": "one-way"
+        },
+        {
+            "name": "tag",
+            "value": "pom"
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "story",
+            "value": "One-way Booking"
+        },
+        {
+            "name": "tag",
+            "value": "booking"
+        },
+        {
+            "name": "tag",
+            "value": "complete-flow"
+        },
+        {
+            "name": "feature",
+            "value": "Booking Flow"
+        },
+        {
+            "name": "tag",
+            "value": "following"
+        },
+        {
+            "name": "epic",
+            "value": "FLYR Automation Suite"
+        },
+        {
+            "name": "tag",
+            "value": "regression"
+        },
+        {
+            "name": "tag",
+            "value": "smoke"
+        },
+        {
+            "name": "tag",
+            "value": "booking"
+        },
+        {
+            "name": "parentSuite",
+            "value": "tests"
+        },
+        {
+            "name": "suite",
+            "value": "test_case_1_one_way"
+        },
+        {
+            "name": "subSuite",
+            "value": "TestCase1OneWay"
+        },
+        {
+            "name": "host",
+            "value": "DESKTOP-EV7L0IC"
+        },
+        {
+            "name": "thread",
+            "value": "1460-MainThread"
+        },
+        {
+            "name": "framework",
+            "value": "pytest"
+        },
+        {
+            "name": "language",
+            "value": "cpython3"
+        },
+        {
+            "name": "package",
+            "value": "tests.test_case_1_one_way"
+        }
+    ],
+    "titlePath": [
+        "tests",
+        "test_case_1_one_way.py",
+        "TestCase1OneWay"
+    ]
+}

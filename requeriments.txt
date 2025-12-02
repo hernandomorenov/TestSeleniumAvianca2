@@ -1,0 +1,13 @@
+selenium==4.15.0
+pytest==8.3.3
+pytest-xdist==3.6.1
+pytest-parallel==0.1.1
+allure-pytest==2.15.2
+pytest-html==4.1.1
+webdriver-manager==4.0.1
+Faker==24.14.0
+opencv-python==4.8.1.78
+pyautogui==0.9.54
+python-dotenv==1.0.0
+pytest-rerunfailures==14.0
+pytest-timeout==2.2.0

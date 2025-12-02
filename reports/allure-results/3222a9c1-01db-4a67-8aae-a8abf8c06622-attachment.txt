@@ -1,4 +1,4 @@
-[32mINFO    [0m utils.video_recorder:video_recorder.py:42 🎥 Grabación iniciada: videos/test_one_way_booking_csv[chrome]_chrome_20251201_194502.mp4
+[32mINFO    [0m utils.video_recorder:video_recorder.py:42 🎥 Grabación iniciada: videos/test_one_way_booking[chrome]_chrome_20251201_194502.mp4
 [32mINFO    [0m conftest:conftest.py:98 Configurando driver para CHROME (headless=False)
 [32mINFO    [0m WDM:logger.py:11 xdist worker is: gw0
 [32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
@@ -11,13 +11,13 @@
 [32mINFO    [0m utils.logger:screenshot_manager.py:33 📸 Screenshot tomado: test_start_20251201_194508.png
 [32mINFO    [0m utils.logger:base_page.py:88 🌐 Navegando a: https://nuxqa4.avtest.ink/
 [32mINFO    [0m utils.logger:base_page.py:78 ✅ Página cargada completamente
-[32mINFO    [0m utils.logger:home_page.py:178 Completando configuración home según CSV
-[32mINFO    [0m utils.logger:home_page.py:68 Seleccionando idioma English según CSV
+[32mINFO    [0m utils.logger:home_page.py:178 Completando configuración home 
+[32mINFO    [0m utils.logger:home_page.py:68 Seleccionando idioma English 
 [32mINFO    [0m utils.logger:screenshot_manager.py:33 📸 Screenshot tomado: before_click_Language dropdown_20251201_194516.png
 [32mINFO    [0m utils.logger:action_chains_helper.py:59 ✅ Click realizado en: Language dropdown
 [32mINFO    [0m utils.logger:screenshot_manager.py:33 📸 Screenshot tomado: after_click_Language dropdown_20251201_194517.png
 [32mINFO    [0m utils.logger:screenshot_manager.py:33 📸 Screenshot tomado: before_click_English option_20251201_194518.png
 [32mINFO    [0m utils.logger:action_chains_helper.py:59 ✅ Click realizado en: English option
 [32mINFO    [0m utils.logger:screenshot_manager.py:33 📸 Screenshot tomado: after_click_English option_20251201_194522.png
-[32mINFO    [0m utils.video_recorder:video_recorder.py:74 🎥 Grabación detenida: videos/test_one_way_booking_csv[chrome]_chrome_20251201_194502.mp4
+[32mINFO    [0m utils.video_recorder:video_recorder.py:74 🎥 Grabación detenida: videos/test_one_way_booking[chrome]_chrome_20251201_194502.mp4
 [32mINFO    [0m conftest:conftest.py:186 Driver CHROME cerrado
