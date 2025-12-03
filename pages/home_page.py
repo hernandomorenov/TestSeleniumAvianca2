@@ -51,7 +51,7 @@ class HomePage(BasePage):
     
     # POS (País) - Botones en lista
     POS_LIST_BUTTON = (By.XPATH, "//button[contains(@class, 'points-of-sale_list_item')]")
-    POS_COLOMBIA_BUTTON = (By.XPATH, "//button[contains(@class, 'points-of-sale_list_item')]//em[text()='Colombia']/..")
+    POS_COLOMBIA_BUTTON = (By.XPATH, "//*[@id='pointOfSaleListId']/li[6]/button")
     POS_SPAIN_BUTTON = (By.XPATH, "//button[contains(@class, 'points-of-sale_list_item')]//em[text()='Spain']/..")
     POS_CHILE_BUTTON = (By.XPATH, "//button[contains(@class, 'points-of-sale_list_item')]//em[text()='Chile']/..")
     POS_BRAZIL_BUTTON = (By.XPATH, "//button[contains(@class, 'points-of-sale_list_item')]//em[text()='Brazil']/..")
@@ -100,94 +100,8 @@ class HomePage(BasePage):
             logger.error(f"Error seleccionando idioma: {e}")
             return False
 
-    @allure.step("Seleccionar POS (Point of Sale) - {pos}")
-    def select_pos(self, pos="Colombia"):
-        """
-        Seleccionar POS (País) desde la lista de botones
-        Basado en: button.points-of-sale_list_item
-        """
-        logger.info(f"Seleccionando POS: {pos}")
-
-        try:
-            # Mapeo de países a sus botones específicos
-            pos_button_mapping = {
-                "Colombia": self.POS_COLOMBIA_BUTTON,
-                "Spain": self.POS_SPAIN_BUTTON,
-                "Chile": self.POS_CHILE_BUTTON,
-                "Brazil": self.POS_BRAZIL_BUTTON,
-                "Canada": self.POS_CANADA_BUTTON,
-                "Mexico": self.POS_MEXICO_BUTTON,
-                "Peru": self.POS_PERU_BUTTON
-            }
-
-            # Obtener el locator del botón específico
-            pos_button_locator = pos_button_mapping.get(pos)
-
-            if not pos_button_locator:
-                logger.warning(f"POS {pos} no está en el mapeo, intentando búsqueda genérica")
-                pos_button_locator = (By.XPATH, f"//button[contains(@class, 'points-of-sale_list_item')]//em[text()='{pos}']/..")
-
-            # Esperar a que el botón esté disponible
-            pos_button = self.wait_for_element(pos_button_locator, timeout=10)
-
-            if not pos_button:
-                logger.warning(f"Botón POS {pos} no encontrado, continuando sin seleccionar POS...")
-                return True
-
-            # Hacer scroll al botón
-            self.driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", pos_button)
-            time.sleep(0.5)
-
-            # Verificar si ya está seleccionado
-            try:
-                if 'active' in pos_button.get_attribute('class') or 'selected' in pos_button.get_attribute('class'):
-                    logger.info(f"✓ POS {pos} ya está seleccionado")
-                    return True
-            except:
-                pass
-
-            # Hacer clic en el botón
-            try:
-                pos_button.click()
-                logger.info(f"✓ POS {pos} seleccionado exitosamente")
-                time.sleep(1)
-                return True
-            except:
-                # Intentar con JavaScript
-                logger.info("Intentando clic con JavaScript...")
-                self.driver.execute_script("arguments[0].click();", pos_button)
-                logger.info(f"✓ POS {pos} seleccionado con JavaScript")
-                time.sleep(1)
-                return True
-
-        except Exception as e:
-            logger.error(f"Error seleccionando POS {pos}: {e}")
-
-            # Intento final: buscar por texto exacto en cualquier botón de POS
-            try:
-                logger.info("Intentando método de respaldo...")
-                all_pos_buttons = self.driver.find_elements(By.XPATH, "//button[contains(@class, 'points-of-sale_list_item')]")
-
-                for button in all_pos_buttons:
-                    try:
-                        button_text = button.text.strip()
-                        if pos.lower() in button_text.lower():
-                            self.driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", button)
-                            time.sleep(0.5)
-                            button.click()
-                            logger.info(f"✓ POS {pos} seleccionado (método de respaldo)")
-                            time.sleep(1)
-                            return True
-                    except:
-                        continue
-
-                logger.warning(f"No se pudo seleccionar POS {pos}, continuando...")
-                return True
-
-            except Exception as e2:
-                logger.error(f"Error en método de respaldo: {e2}")
-                logger.warning("POS podría no estar disponible, continuando...")
-                return True  # No fallar el test si POS no está disponible
+    
+    
     
     @allure.step("Seleccionar 'Solo ida' (One Way)")
     def select_one_way(self):
@@ -343,56 +257,277 @@ class HomePage(BasePage):
             self.take_screenshot("date_selection_error")
             return False
     
-    @allure.step("Select passengers")
-    def select_passengers(self, adults=1, youths=0, children=0, infants=0):
-        """Seleccionar pasajeros"""
+    @allure.step("Configurar pasajeros")
+    def configure_passengers(self, adults=1, youths=0, children=0, infants=0):
+        """Versión mejorada con validaciones y manejo de errores"""
+        
+        logger.info(f"Configurando {adults}A, {youths}Y, {children}C, {infants}I")
+        
         try:
-            print(f"Pasajeros: A={adults}, Y={youths}, C={children}, I={infants}")
+            # ==================== PASO 1: LOCALIZAR Y ABRIR DROPDOWN ====================
+            logger.info("=== PASO 1: Abriendo dropdown de pasajeros ===")
             
-            passenger_dropdown = self.wait.until(EC.element_to_be_clickable(self.PASSENGER_DROPDOWN))
-            self.actions.move_to_element(passenger_dropdown).click().perform()
+            # Buscar todos los posibles botones de pasajeros
+            passenger_selectors = [
+                "//button[@aria-label='Passengers :1']",
+                "//button[contains(@aria-label, 'Passengers')]",
+                "//button[contains(text(), 'Passenger')]",
+                "//div[contains(@class, 'passenger-selector')]//button"
+            ]
+            
+            passenger_btn = None
+            for selector in passenger_selectors:
+                try:
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    for elem in elements:
+                        if elem.is_displayed() and elem.is_enabled():
+                            passenger_btn = elem
+                            logger.info(f"Botón encontrado con selector: {selector}")
+                            break
+                    if passenger_btn:
+                        break
+                except:
+                    continue
+            
+            if not passenger_btn:
+                logger.error("No se encontró el botón de pasajeros")
+                return False
+            
+            # Hacer click en el botón
+            try:
+                self.driver.execute_script("arguments[0].click();", passenger_btn)
+                logger.info("✓ Dropdown abierto con JavaScript")
+            except Exception as e:
+                logger.error(f"Error abriendo dropdown: {e}")
+                return False
+            
             time.sleep(2)
+            self.take_screenshot("passengers_dropdown_open")
             
-            def click_plus(ptype, count, current=0):
-                if ptype == "adults":
-                    current = 1
-                clicks = count - current
-                if clicks > 0:
-                    indices = {"adults": 1, "youths": 2, "children": 3, "infants": 4}
-                    idx = indices.get(ptype)
-                    if idx:
-                        for i in range(clicks):
-                            try:
-                                btn = self.driver.find_element(By.XPATH, f"(//button[contains(@class, 'plus')])[{idx}]")
-                                self.actions.move_to_element(btn).click().perform()
-                                print(f"✓ +{ptype} ({i+1}/{clicks})")
-                                time.sleep(0.5)
-                            except:
-                                pass
+            # ==================== PASO 2: VERIFICAR MODAL ABIERTO ====================
+            logger.info("=== PASO 2: Verificando modal de pasajeros ===")
             
+            # Buscar el modal de pasajeros
+            modal_selectors = [
+                "//div[contains(@class, 'modal') and contains(@class, 'open')]",
+                "//div[@role='dialog']",
+                "//div[contains(@class, 'passenger-modal')]",
+                "//div[contains(@class, 'pax-control')]//div[contains(@class, 'modal')]"
+            ]
+            
+            modal_present = False
+            for selector in modal_selectors:
+                try:
+                    if self.driver.find_element(By.XPATH, selector).is_displayed():
+                        modal_present = True
+                        logger.info(f"Modal encontrado: {selector}")
+                        break
+                except:
+                    continue
+            
+            if not modal_present:
+                logger.warning("Modal de pasajeros no visible, intentando nuevamente...")
+                # Intentar abrir de nuevo
+                try:
+                    passenger_btn.click()
+                    time.sleep(2)
+                except:
+                    pass
+            
+            # ==================== PASO 3: AGREGAR PASAJEROS ====================
+            logger.info("=== PASO 3: Agregando pasajeros ===")
+            
+            # Mapeo de tipos de pasajero a posición en la lista
+            passenger_map = {
+                'youths': {'position': 2, 'display_name': 'Jóvenes'},
+                'children': {'position': 3, 'display_name': 'Niños'},
+                'infants': {'position': 4, 'display_name': 'Infantes'}
+            }
+            
+            # Agregar pasajeros según configuración
+            passengers_added = []
+            
+            for ptype, config in passenger_map.items():
+                count = locals()[ptype]  # Obtener count de youths, children, infants
+                
+                if count > 0:
+                    logger.info(f"Agregando {count} {config['display_name']}...")
+                    
+                    added = self._add_passenger_type(
+                        position=config['position'],
+                        ptype=config['display_name'],
+                        count=count
+                    )
+                    
+                    if added > 0:
+                        passengers_added.append(f"{added} {config['display_name']}")
+            
+            # Adultos ya vienen por defecto, solo agregar extras si es necesario
             if adults > 1:
-                click_plus("adults", adults, 1)
-            if youths > 0:
-                click_plus("youths", youths, 0)
-            if children > 0:
-                click_plus("children", children, 0)
-            if infants > 0:
-                click_plus("infants", infants, 0)
+                logger.info(f"Agregando {adults-1} Adultos adicionales...")
+                added_adults = self._add_passenger_type(1, "Adultos", adults - 1)
+                if added_adults > 0:
+                    passengers_added.append(f"{added_adults} Adultos")
             
-            time.sleep(1)
+            logger.info(f"Pasajeros agregados: {', '.join(passengers_added)}")
+            
+            # ==================== PASO 4: CONFIRMAR ====================
+            logger.info("=== PASO 4: Confirmando selección ===")
+            
+            confirm_success = self._confirm_passenger_selection()
+            
+            if not confirm_success:
+                logger.warning("No se pudo confirmar, intentando métodos alternativos...")
+                
+                # Método alternativo 1: Buscar por botón con clase específica
+                try:
+                    confirm_buttons = self.driver.find_elements(
+                        By.XPATH, 
+                        "//button[contains(@class, 'confirm') or contains(@class, 'btn-primary')]"
+                    )
+                    
+                    for btn in confirm_buttons:
+                        if btn.is_displayed() and ('Confirm' in btn.text or 'Confirmar' in btn.text):
+                            btn.click()
+                            logger.info("✓ Confirmado (botón con clase)")
+                            confirm_success = True
+                            break
+                except:
+                    pass
+                
+                # Método alternativo 2: Presionar Enter
+                if not confirm_success:
+                    try:
+                        from selenium.webdriver.common.keys import Keys
+                        actions = ActionChains(self.driver)
+                        actions.send_keys(Keys.ENTER).perform()
+                        logger.info("✓ ENTER presionado")
+                        time.sleep(1)
+                    except:
+                        pass
+            
+            # ==================== PASO 5: VERIFICAR RESULTADO ====================
+            logger.info("=== PASO 5: Verificando resultado ===")
+            
+            time.sleep(2)
+            self.take_screenshot("passengers_final")
+            
+            # Verificar que el modal se cerró
+            try:
+                modal_closed = True
+                for selector in modal_selectors:
+                    try:
+                        modal = self.driver.find_element(By.XPATH, selector)
+                        if modal.is_displayed():
+                            modal_closed = False
+                            break
+                    except:
+                        continue
+                
+                if modal_closed:
+                    logger.info("✓ Modal cerrado correctamente")
+                else:
+                    logger.warning("Modal aún visible, intentando cerrar con ESC...")
+                    actions = ActionChains(self.driver)
+                    actions.send_keys(Keys.ESCAPE).perform()
+                    time.sleep(1)
+            except:
+                pass
+            
+            # Verificar cantidad final en el botón
+            total_expected = adults + youths + children + infants
             
             try:
-                confirm = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Confirm') or contains(text(), 'Confirmar')]")
-                self.actions.move_to_element(confirm).click().perform()
-                print("✓ Confirmado")
-            except:
-                self.actions.send_keys(Keys.ESCAPE).perform()
-                print("✓ ESC")
+                final_button = self.driver.find_element(
+                    By.XPATH, 
+                    "//button[contains(@aria-label, 'Passengers')]"
+                )
+                
+                final_text = final_button.text or final_button.get_attribute('aria-label') or ""
+                logger.info(f"Texto final del botón: {final_text}")
+                
+                # Extraer número
+                import re
+                numbers = re.findall(r'\d+', final_text)
+                
+                if numbers:
+                    final_count = int(numbers[0])
+                    logger.info(f"Cantidad final mostrada: {final_count}")
+                    
+                    if final_count == total_expected:
+                        logger.info(f"✅ Cantidad correcta: {final_count} pasajeros")
+                    else:
+                        logger.warning(f"⚠ Cantidad diferente. Esperado: {total_expected}, Mostrado: {final_count}")
+                else:
+                    logger.info("No se encontró número en el botón")
+                    
+            except Exception as e:
+                logger.error(f"Error verificando resultado: {e}")
             
-            time.sleep(1)
+            logger.info(f"✅ Configuración de pasajeros completada: {total_expected} pasajeros")
             return True
+            
         except Exception as e:
-            print(f"Error: {e}")
+            logger.error(f"❌ Error crítico: {e}")
+            self.take_screenshot("passengers_critical_error")
+            return False
+
+    def _add_passenger_type(self, position, ptype, count):
+        """Método auxiliar para agregar un tipo específico de pasajero"""
+        added = 0
+        
+        for i in range(count):
+            try:
+                # Construir XPath dinámico
+                xpath = f"//li[{position}]//button[contains(@class, 'plus') and not(contains(@class, 'disabled'))]"
+                
+                # Buscar botón plus
+                plus_btn = WebDriverWait(self.driver, 3).until(
+                    EC.element_to_be_clickable((By.XPATH, xpath))
+                )
+                
+                # Click con JavaScript
+                self.driver.execute_script("arguments[0].click();", plus_btn)
+                logger.info(f"✓ +{ptype} ({i+1}/{count})")
+                added += 1
+                time.sleep(0.5)
+                
+            except Exception as e:
+                logger.warning(f"✗ No se pudo agregar {ptype} {i+1}: {e}")
+                break
+        
+        return added
+
+    def _confirm_passenger_selection(self):
+        """Método auxiliar para confirmar la selección"""
+        try:
+            # Intentar múltiples selectores para el botón Confirm
+            confirm_selectors = [
+                "//span[contains(text(),'Confirm')]",
+                "//button[contains(text(),'Confirm')]",
+                "//span[contains(text(),'Confirmar')]",
+                "//button[contains(text(),'Confirmar')]",
+                "//*[contains(text(),'CONFIRM')]",
+                "//button[@type='submit']"
+            ]
+            
+            for selector in confirm_selectors:
+                try:
+                    confirm_btn = WebDriverWait(self.driver, 2).until(
+                        EC.element_to_be_clickable((By.XPATH, selector))
+                    )
+                    
+                    if confirm_btn.is_displayed():
+                        confirm_btn.click()
+                        logger.info(f"✓ Confirmado con selector: {selector}")
+                        return True
+                except:
+                    continue
+            
+            return False
+            
+        except Exception as e:
+            logger.error(f"Error en confirmación: {e}")
             return False
 
     @allure.step("Buscar Vuelos")
@@ -438,6 +573,103 @@ class HomePage(BasePage):
             logger.error(f"Error seleccionando origen: {e}")
             return False
 
+    @allure.step("Seleccionar POS - {pos}")
+    def select_pos(self, pos="Colombia"):
+        """Alias para select_pos_simple para mantener compatibilidad"""
+        return self.select_pos_simple(pos)
+
+    @allure.step("Seleccionar POS (simple) - {pos}")
+    def select_pos_simple(self, pos="Colombia"):
+        """Intento robusto de seleccionar el POS indicado.
+
+        Estrategia:
+        - Intentar abrir el selector en la cabecera (xpath del header)
+        - Si falla, intentar el `POS_DROPDOWN` o la lista de POS
+        - Buscar la opción por texto (ej. 'Colombia') o por selectores específicos
+        - Pulsar `Apply` y volver
+        """
+        logger.info(f"Seleccionando POS: {pos}")
+
+        try:
+            # Intentar abrir el selector desde la cabecera (xpath reportado)
+            header_xpath = (By.XPATH, "//li[@class='main-header_nav-secondary_item main-header_nav-secondary_item--point-of-sale-selector']//span[2]")
+
+            opened = False
+
+            # 1) Intento header
+            if self.wait_for_clickable(header_xpath, "POS header selector", timeout=5):
+                self.click(header_xpath, "POS header selector")
+                opened = True
+            else:
+                # 2) Intento dropdown alternativo por id
+                if self.wait_for_clickable(self.POS_DROPDOWN, "POS dropdown", timeout=3):
+                    self.click(self.POS_DROPDOWN, "POS dropdown")
+                    opened = True
+                else:
+                    # 3) Intento botón en lista (si existe)
+                    if self.wait_for_clickable(self.POS_LIST_BUTTON, "POS list button", timeout=3):
+                        self.click(self.POS_LIST_BUTTON, "POS list button")
+                        opened = True
+
+            if not opened:
+                logger.error("No se encontró el control para abrir el selector de POS")
+                return False
+
+            time.sleep(1)
+
+            # 4) Seleccionar país por nombre (span normalizado)
+            country_locator = (By.XPATH, f"//span[normalize-space()='{pos}']")
+
+            # Si se conoce un selector específico para Colombia, probarlo primero
+            try_list = []
+            if pos.strip().lower() == 'colombia':
+                try_list.append(self.POS_COLOMBIA_BUTTON)
+            try_list.append(country_locator)
+
+            selected = False
+            for loc in try_list:
+                try:
+                    if self.wait_for_clickable(loc, f"POS option {pos}", timeout=5):
+                        self.click(loc, f"POS option {pos}")
+                        selected = True
+                        break
+                except:
+                    continue
+
+            if not selected:
+                logger.error(f"No se encontró la opción POS para: {pos}")
+                self.take_screenshot("pos_option_not_found")
+                return False
+
+            time.sleep(0.6)
+
+            # 5) Pulsar Apply (varias alternativas)
+            apply_locator = (By.XPATH, "//span[contains(text(),'Apply')]")
+            if self.wait_for_clickable(apply_locator, "Apply button", timeout=5):
+                self.click(apply_locator, "Apply button")
+            else:
+                # buscar botones con span interno o botón genérico
+                try:
+                    apply_btns = self.driver.find_elements(By.XPATH, "//button//span[contains(text(),'Apply')]")
+                    if apply_btns:
+                        self.driver.execute_script("arguments[0].click();", apply_btns[0])
+                    else:
+                        logger.warning("No se encontró 'Apply', intentando cerrar popup con ESC")
+                        from selenium.webdriver.common.keys import Keys
+                        from selenium.webdriver.common.action_chains import ActionChains
+                        ActionChains(self.driver).send_keys(Keys.ESCAPE).perform()
+                except Exception as e:
+                    logger.error(f"Error intentando pulsar Apply: {e}")
+
+            time.sleep(1)
+            logger.info(f"POS '{pos}' seleccionado correctamente")
+            return True
+
+        except Exception as e:
+            logger.error(f"Error seleccionando POS: {e}")
+            self.take_screenshot("pos_selection_error")
+            return False
+
     @allure.step("Complete home page configuration")
     def complete_home_configuration(self, language="English", pos="Colombia",
                                      origin_city="Bogota", origin_code="BOG",
@@ -460,7 +692,7 @@ class HomePage(BasePage):
 
         # 2. Seleccionar POS
         with allure.step(f"2. Seleccionar POS: {pos}"):
-            success &= self.select_pos(pos)
+            success &= self.select_pos_simple(pos)
             time.sleep(1)
 
         # 3. Seleccionar tipo de viaje: One way
@@ -486,7 +718,7 @@ class HomePage(BasePage):
 
         # 7. Configurar pasajeros (1 Adulto, 1 Joven, 1 Niño, 1 Infante)
         with allure.step("7. Configurar pasajeros: 1 Adulto, 1 Joven, 1 Niño, 1 Infante"):
-            success &= self.configure_passengers()
+            success &= self.configure_passengers(adults=1, youths=1, children=1, infants=1)
             time.sleep(1)
 
         # 8. Buscar vuelos

@@ -1,6 +1,6 @@
 import pytest
 import allure
-from pages.home_page import HomePage
+from pages.home_page_OPTIMIZED import HomePage
 from utils.config import Config
 from utils.logger import logger
 

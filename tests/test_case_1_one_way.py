@@ -4,7 +4,7 @@ import time
 from faker import Faker
 from utils.config import Config
 from utils.logger import logger
-from pages.home_page import HomePage
+from pages.home_page_OPTIMIZED import HomePage
 from pages.flight_selection_page import FlightSelectionPage
 from pages.passengers_page import PassengersPage
 from pages.services_page import ServicesPage
@@ -273,7 +273,7 @@ class TestCase1OneWay:
         """Generar datos para el pago"""
         return {
             "card": {
-                "card_number": "4242424242424242",
+                "card_number": "4111111111111111",
                 "card_holder": fake.name(),
                 "expiry_month": "12",
                 "expiry_year": "2025",
