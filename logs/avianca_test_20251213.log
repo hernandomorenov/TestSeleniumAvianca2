@@ -1,0 +1,1679 @@
+2025-12-13 16:43:08 - utils.logger - INFO - ✅ Page Objects inicializados correctamente
+2025-12-13 16:43:08 - utils.logger - INFO - 🛠  Browser: chrome
+2025-12-13 16:43:08 - utils.logger - INFO - 🌐 URL Base: https://nuxqa4.avtest.ink/
+2025-12-13 16:43:08 - utils.logger - INFO - ============================================================
+2025-12-13 16:43:08 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-13 16:43:08 - utils.logger - INFO - ============================================================
+2025-12-13 16:43:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 16:43:13 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 16:43:18 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_inicio_20251213_164317.png
+2025-12-13 16:43:18 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-13 16:43:18 - utils.logger - INFO - Seleccionando idioma English con ActionChains
+2025-12-13 16:43:18 - utils.logger - INFO - PASO 1: Abriendo dropdown de idiomas con ActionChains
+2025-12-13 16:43:18 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:43:18 - utils.logger - INFO -   → Moviendo cursor al dropdown de idiomas...
+2025-12-13 16:43:20 - utils.logger - INFO -   → Haciendo click en dropdown...
+2025-12-13 16:43:20 - utils.logger - INFO - ✓ Dropdown abierto con ActionChains
+2025-12-13 16:43:21 - utils.logger - INFO - PASO 2: Seleccionando English con ActionChains
+2025-12-13 16:43:21 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:43:22 - utils.logger - INFO -   → Moviendo cursor a English...
+2025-12-13 16:43:23 - utils.logger - INFO -   → English resaltado visualmente
+2025-12-13 16:43:24 - utils.logger - INFO -   → Haciendo click en English...
+2025-12-13 16:43:25 - utils.logger - ERROR - ❌ Error tomando screenshot: Message: timeout
+from aborted by navigation: Not attached to an active page
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d251dfd8
+	0x7ff6d251c30d
+	0x7ff6d251cbcb
+	0x7ff6d2543080
+	0x7ff6d25eb727
+	0x7ff6d25b2b0a
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 16:43:25 - utils.logger - INFO - ✅ Idioma English seleccionado con ActionChains
+2025-12-13 16:43:29 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-13 16:43:29 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:43:29 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS selector_20251213_164329.png
+2025-12-13 16:43:31 - utils.logger - INFO - ✅ Click realizado en: POS selector
+2025-12-13 16:43:31 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS selector_20251213_164331.png
+2025-12-13 16:43:31 - utils.logger - INFO - ✓ POS selector abierto
+2025-12-13 16:43:32 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:43:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS option Colombia_20251213_164332.png
+2025-12-13 16:43:34 - utils.logger - INFO - ✅ Click realizado en: POS option Colombia
+2025-12-13 16:43:34 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS option Colombia_20251213_164334.png
+2025-12-13 16:43:34 - utils.logger - INFO - ✓ POS Colombia seleccionado
+2025-12-13 16:43:35 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:43:35 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Apply button_20251213_164335.png
+2025-12-13 16:43:38 - utils.logger - INFO - ✅ Click realizado en: Apply button
+2025-12-13 16:43:39 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Apply button_20251213_164338.png
+2025-12-13 16:43:39 - utils.logger - INFO - ✓ Apply presionado
+2025-12-13 16:43:40 - utils.logger - INFO - ✓ POS 'Colombia' configurado correctamente
+2025-12-13 16:43:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_One Way_20251213_164341.png
+2025-12-13 16:43:42 - utils.logger - INFO - ✅ Click realizado en: One Way
+2025-12-13 16:43:43 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One Way_20251213_164342.png
+2025-12-13 16:43:43 - utils.logger - INFO - ✓ One Way seleccionado
+2025-12-13 16:43:45 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-13 16:43:45 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:43:55 - utils.logger - INFO - ✓ Origen seleccionado con ENTER
+2025-12-13 16:43:56 - utils.logger - INFO - Seleccionando destino: Medellin (MDE) con ActionChains
+2025-12-13 16:43:56 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:44:03 - utils.logger - INFO - ✓ Destino Medellin (MDE) seleccionado con ActionChains
+2025-12-13 16:44:04 - utils.logger - INFO - Seleccionando fecha automática con ActionChains: 15/12/2025
+2025-12-13 16:44:06 - utils.logger - INFO - ✓ Fecha seleccionada con ActionChains: Día 15
+2025-12-13 16:44:08 - utils.logger - INFO - Configurando 1A, 1Y, 1C, 1I
+2025-12-13 16:44:40 - utils.logger - INFO - ✅ Configuración de pasajeros completada
+2025-12-13 16:44:41 - utils.logger - INFO - 🔍 Buscando vuelos...
+2025-12-13 16:44:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251213_164441.png
+2025-12-13 16:44:46 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-13 16:44:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251213_164446.png
+2025-12-13 16:44:46 - utils.logger - INFO - ✓ Búsqueda iniciada
+2025-12-13 16:44:49 - utils.logger - INFO - === CONFIGURACIÓN HOME: ✅ EXITOSA ===
+2025-12-13 16:44:49 - utils.logger - INFO - ✅ REQUISITO 1 COMPLETADO: Configuración home exitosa
+2025-12-13 16:44:49 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_completado_20251213_164449.png
+2025-12-13 16:44:49 - utils.logger - INFO - ============================================================
+2025-12-13 16:44:49 - utils.logger - INFO - REQUISITO 2: SELECCIÓN DE VUELO
+2025-12-13 16:44:49 - utils.logger - INFO - ============================================================
+2025-12-13 16:44:49 - utils.logger - INFO - Esperando a que cargue la página de selección de vuelos...
+2025-12-13 16:44:50 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:44:50 - utils.logger - INFO - ✓ Página de selección de vuelos cargada
+2025-12-13 16:44:52 - utils.logger - INFO - 📸 Screenshot tomado: 02_flights_cargado_20251213_164452.png
+2025-12-13 16:44:52 - utils.logger - INFO - Seleccionando tarifa Basic con ActionChains (CSV)...
+2025-12-13 16:44:52 - utils.logger - INFO - ============================================================
+2025-12-13 16:44:52 - utils.logger - INFO - PASO 2: Click en Select fare label con ActionChains
+2025-12-13 16:44:52 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:44:54 - utils.logger - INFO - ✓ Click en Select fare label realizado con ActionChains
+2025-12-13 16:44:55 - utils.logger - INFO - PASO 3: Scroll down para ver tarifas
+2025-12-13 16:44:56 - utils.logger - INFO - ✓ Scroll down realizado
+2025-12-13 16:44:57 - utils.logger - INFO - PASO 4: Seleccionando tarifa Basic con ActionChains (DESTACADO)
+2025-12-13 16:44:57 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:44:57 - utils.logger - INFO - ✓ Botón Basic fare encontrado (selector específico)
+2025-12-13 16:44:58 - utils.logger - INFO -   → Moviendo cursor a tarifa Basic (hover)...
+2025-12-13 16:45:00 - utils.logger - INFO -   → Tarifa Basic resaltada visualmente
+2025-12-13 16:45:01 - utils.logger - INFO -   → Haciendo click en tarifa Basic...
+2025-12-13 16:45:01 - utils.logger - INFO - ✅ Tarifa Basic seleccionada con ActionChains (DESTACADO)
+2025-12-13 16:45:02 - utils.logger - INFO - 📸 Screenshot tomado: basic_fare_selected_20251213_164501.png
+2025-12-13 16:45:04 - utils.logger - INFO - PASO 5: Scroll up
+2025-12-13 16:45:04 - utils.logger - INFO - ✓ Scroll up realizado
+2025-12-13 16:45:05 - utils.logger - INFO - ============================================================
+2025-12-13 16:45:05 - utils.logger - INFO - ✅ Tarifa seleccionada correctamente
+2025-12-13 16:45:05 - utils.logger - INFO - Verificando precio del vuelo...
+2025-12-13 16:45:16 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-13 16:45:17 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251213_164516.png
+2025-12-13 16:45:17 - utils.logger - WARNING - No se encontró texto de precio
+2025-12-13 16:45:17 - utils.logger - INFO - PASO 6: Click en Continue button con ActionChains
+2025-12-13 16:45:17 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:45:18 - utils.logger - INFO -   → Moviendo cursor a botón Continue...
+2025-12-13 16:45:19 - utils.logger - INFO -   → Haciendo click en Continue...
+2025-12-13 16:45:19 - utils.logger - INFO - ✅ Continue button clicked con ActionChains - Navegando a pasajeros
+2025-12-13 16:45:22 - utils.logger - INFO - ✅ REQUISITO 2 COMPLETADO: Tarifa Basic seleccionada
+2025-12-13 16:45:25 - utils.logger - INFO - ============================================================
+2025-12-13 16:45:25 - utils.logger - INFO - REQUISITO 3: INFORMACIÓN DE PASAJEROS
+2025-12-13 16:45:25 - utils.logger - INFO - ============================================================
+2025-12-13 16:45:25 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 16:45:26 - utils.logger - INFO - 📸 Screenshot tomado: 03_passengers_cargado_20251213_164526.png
+2025-12-13 16:45:44 - utils.logger - INFO - ✅ Page Objects inicializados correctamente
+2025-12-13 16:45:44 - utils.logger - INFO - 🛠  Browser: firefox
+2025-12-13 16:45:44 - utils.logger - INFO - 🌐 URL Base: https://nuxqa4.avtest.ink/
+2025-12-13 16:45:44 - utils.logger - INFO - ============================================================
+2025-12-13 16:45:44 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-13 16:45:44 - utils.logger - INFO - ============================================================
+2025-12-13 16:45:44 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 16:45:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 16:45:51 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_inicio_20251213_164551.png
+2025-12-13 16:45:51 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-13 16:45:51 - utils.logger - INFO - Seleccionando idioma English con ActionChains
+2025-12-13 16:45:51 - utils.logger - INFO - PASO 1: Abriendo dropdown de idiomas con ActionChains
+2025-12-13 16:45:51 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:45:52 - utils.logger - INFO -   → Moviendo cursor al dropdown de idiomas...
+2025-12-13 16:45:54 - utils.logger - INFO -   → Haciendo click en dropdown...
+2025-12-13 16:45:54 - utils.logger - INFO - ✓ Dropdown abierto con ActionChains
+2025-12-13 16:45:55 - utils.logger - INFO - PASO 2: Seleccionando English con ActionChains
+2025-12-13 16:45:55 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:45:56 - utils.logger - INFO -   → Moviendo cursor a English...
+2025-12-13 16:45:57 - utils.logger - INFO -   → English resaltado visualmente
+2025-12-13 16:45:58 - utils.logger - INFO -   → Haciendo click en English...
+2025-12-13 16:45:58 - utils.logger - INFO - 📸 Screenshot tomado: language_selected_english_20251213_164558.png
+2025-12-13 16:45:58 - utils.logger - INFO - ✅ Idioma English seleccionado con ActionChains
+2025-12-13 16:46:02 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-13 16:46:02 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:46:03 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS selector_20251213_164602.png
+2025-12-13 16:46:04 - utils.logger - INFO - ✅ Click realizado en: POS selector
+2025-12-13 16:46:04 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS selector_20251213_164604.png
+2025-12-13 16:46:04 - utils.logger - INFO - ✓ POS selector abierto
+2025-12-13 16:46:05 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:46:05 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS option Colombia_20251213_164605.png
+2025-12-13 16:46:07 - utils.logger - INFO - ✅ Click realizado en: POS option Colombia
+2025-12-13 16:46:07 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS option Colombia_20251213_164607.png
+2025-12-13 16:46:07 - utils.logger - INFO - ✓ POS Colombia seleccionado
+2025-12-13 16:46:07 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 16:46:08 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Apply button_20251213_164607.png
+2025-12-13 17:15:09 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:15:14 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:15:15 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:15:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_171515.png
+2025-12-13 17:15:17 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:15:18 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_171517.png
+2025-12-13 17:15:19 - utils.logger - INFO - 📸 Screenshot tomado: before_click_english option_20251213_171519.png
+2025-12-13 17:15:30 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 17:15:30 - utils.logger - INFO - 📸 Screenshot tomado: after_click_english option_20251213_171530.png
+2025-12-13 17:15:30 - utils.logger - INFO - ✓ Idioma english seleccionado
+2025-12-13 17:15:34 - utils.logger - INFO - Intentando hacer click en el link del footer: about
+2025-12-13 17:15:45 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: about
+2025-12-13 17:15:45 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: about
+2025-12-13 17:15:45 - utils.logger - WARNING - No se pudo hacer click en footer link: about
+2025-12-13 17:15:46 - utils.logger - INFO - Intentando hacer click en el link del footer: contact
+2025-12-13 17:15:57 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: contact
+2025-12-13 17:15:57 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: contact
+2025-12-13 17:15:57 - utils.logger - WARNING - No se pudo hacer click en footer link: contact
+2025-12-13 17:15:58 - utils.logger - INFO - Intentando hacer click en el link del footer: privacy
+2025-12-13 17:16:09 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: privacy
+2025-12-13 17:16:09 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: privacy
+2025-12-13 17:16:09 - utils.logger - WARNING - No se pudo hacer click en footer link: privacy
+2025-12-13 17:16:10 - utils.logger - INFO - Intentando hacer click en el link del footer: terms
+2025-12-13 17:16:21 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: terms
+2025-12-13 17:16:21 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: terms
+2025-12-13 17:16:21 - utils.logger - WARNING - No se pudo hacer click en footer link: terms
+2025-12-13 17:16:21 - utils.logger - INFO - 📸 Screenshot tomado: footer_redirects_summary_20251213_171621.png
+2025-12-13 17:16:34 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:16:45 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:16:46 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:16:46 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_171646.png
+2025-12-13 17:16:48 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:16:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_171648.png
+2025-12-13 17:16:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_english option_20251213_171649.png
+2025-12-13 17:17:00 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 17:17:00 - utils.logger - INFO - 📸 Screenshot tomado: after_click_english option_20251213_171700.png
+2025-12-13 17:17:00 - utils.logger - INFO - ✓ Idioma english seleccionado
+2025-12-13 17:17:03 - utils.logger - INFO - Intentando hacer click en el link del footer: about
+2025-12-13 17:17:14 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: about
+2025-12-13 17:17:14 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: about
+2025-12-13 17:17:14 - utils.logger - WARNING - No se pudo hacer click en footer link: about
+2025-12-13 17:17:15 - utils.logger - INFO - Intentando hacer click en el link del footer: contact
+2025-12-13 17:17:26 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: contact
+2025-12-13 17:17:26 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: contact
+2025-12-13 17:17:26 - utils.logger - WARNING - No se pudo hacer click en footer link: contact
+2025-12-13 17:17:27 - utils.logger - INFO - Intentando hacer click en el link del footer: privacy
+2025-12-13 17:17:39 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: privacy
+2025-12-13 17:17:39 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: privacy
+2025-12-13 17:17:39 - utils.logger - WARNING - No se pudo hacer click en footer link: privacy
+2025-12-13 17:17:40 - utils.logger - INFO - Intentando hacer click en el link del footer: terms
+2025-12-13 17:17:51 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: terms
+2025-12-13 17:17:51 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: terms
+2025-12-13 17:17:51 - utils.logger - WARNING - No se pudo hacer click en footer link: terms
+2025-12-13 17:17:51 - utils.logger - INFO - 📸 Screenshot tomado: footer_redirects_summary_20251213_171751.png
+2025-12-13 17:18:01 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:18:04 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:18:07 - utils.logger - INFO - 📸 Screenshot tomado: footer_full_view_20251213_171807.png
+2025-12-13 17:18:07 - utils.logger - INFO - Total links en footer: 39
+2025-12-13 17:18:24 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:18:26 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:18:29 - utils.logger - INFO - 📸 Screenshot tomado: footer_full_view_20251213_171829.png
+2025-12-13 17:18:29 - utils.logger - INFO - Total links en footer: 39
+2025-12-13 17:19:35 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:19:38 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:19:39 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:19:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_171939.png
+2025-12-13 17:19:41 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:19:41 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_171941.png
+2025-12-13 17:19:42 - utils.logger - INFO - 📸 Screenshot tomado: before_click_english option_20251213_171942.png
+2025-12-13 17:19:54 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 17:19:54 - utils.logger - INFO - 📸 Screenshot tomado: after_click_english option_20251213_171954.png
+2025-12-13 17:19:56 - utils.logger - INFO - ✓ Idioma english seleccionado
+2025-12-13 17:19:59 - utils.logger - INFO - Intentando hacer click en el link del footer: about
+2025-12-13 17:20:10 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: about
+2025-12-13 17:20:10 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: about
+2025-12-13 17:20:10 - utils.logger - WARNING - No se pudo hacer click en footer link: about
+2025-12-13 17:20:11 - utils.logger - INFO - Intentando hacer click en el link del footer: contact
+2025-12-13 17:20:11 - utils.logger - INFO - ✅ Elemento clickeable: footer link: contact
+2025-12-13 17:20:12 - utils.logger - INFO - 📸 Screenshot tomado: before_click_footer link: contact_20251213_172011.png
+2025-12-13 17:20:16 - utils.logger - INFO - ✅ Click realizado en: footer link: contact
+2025-12-13 17:20:16 - utils.logger - INFO - 📸 Screenshot tomado: after_click_footer link: contact_20251213_172016.png
+2025-12-13 17:20:16 - utils.logger - INFO - ✓ Click exitoso en el link del footer: contact
+2025-12-13 17:20:16 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:20:18 - utils.logger - WARNING - Indicador de error encontrado: error
+2025-12-13 17:20:18 - utils.logger - INFO - 📸 Screenshot tomado: footer_contact_20251213_172018.png
+2025-12-13 17:20:18 - utils.logger - INFO - Footer link contact: click=True, url_changed=True, valid=False
+2025-12-13 17:20:21 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:20:26 - utils.logger - INFO - Intentando hacer click en el link del footer: privacy
+2025-12-13 17:20:37 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: privacy
+2025-12-13 17:20:37 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: privacy
+2025-12-13 17:20:37 - utils.logger - WARNING - No se pudo hacer click en footer link: privacy
+2025-12-13 17:20:38 - utils.logger - INFO - Intentando hacer click en el link del footer: terms
+2025-12-13 17:20:49 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: terms
+2025-12-13 17:20:49 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: terms
+2025-12-13 17:20:49 - utils.logger - WARNING - No se pudo hacer click en footer link: terms
+2025-12-13 17:20:50 - utils.logger - INFO - 📸 Screenshot tomado: footer_redirects_summary_20251213_172049.png
+2025-12-13 17:21:02 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:21:04 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:21:05 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:21:06 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_172105.png
+2025-12-13 17:21:07 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:21:07 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_172107.png
+2025-12-13 17:21:08 - utils.logger - INFO - 📸 Screenshot tomado: before_click_english option_20251213_172108.png
+2025-12-13 17:21:19 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 17:21:19 - utils.logger - INFO - 📸 Screenshot tomado: after_click_english option_20251213_172119.png
+2025-12-13 17:21:21 - utils.logger - INFO - ✓ Idioma english seleccionado
+2025-12-13 17:21:25 - utils.logger - INFO - Intentando hacer click en el link del footer: about
+2025-12-13 17:21:36 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: about
+2025-12-13 17:21:36 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: about
+2025-12-13 17:21:36 - utils.logger - WARNING - No se pudo hacer click en footer link: about
+2025-12-13 17:21:37 - utils.logger - INFO - Intentando hacer click en el link del footer: contact
+2025-12-13 17:21:37 - utils.logger - INFO - ✅ Elemento clickeable: footer link: contact
+2025-12-13 17:21:37 - utils.logger - INFO - 📸 Screenshot tomado: before_click_footer link: contact_20251213_172137.png
+2025-12-13 17:21:38 - utils.logger - INFO - ✅ Click realizado en: footer link: contact
+2025-12-13 17:21:38 - utils.logger - INFO - 📸 Screenshot tomado: after_click_footer link: contact_20251213_172138.png
+2025-12-13 17:21:38 - utils.logger - INFO - ✓ Click exitoso en el link del footer: contact
+2025-12-13 17:21:38 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:21:39 - utils.logger - WARNING - Indicador de error encontrado: error
+2025-12-13 17:21:40 - utils.logger - INFO - 📸 Screenshot tomado: footer_contact_20251213_172139.png
+2025-12-13 17:21:40 - utils.logger - INFO - Footer link contact: click=True, url_changed=True, valid=False
+2025-12-13 17:21:41 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:21:46 - utils.logger - INFO - Intentando hacer click en el link del footer: privacy
+2025-12-13 17:21:57 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: privacy
+2025-12-13 17:21:57 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: privacy
+2025-12-13 17:21:57 - utils.logger - WARNING - No se pudo hacer click en footer link: privacy
+2025-12-13 17:21:58 - utils.logger - INFO - Intentando hacer click en el link del footer: terms
+2025-12-13 17:22:09 - utils.logger - ERROR - ❌ Timeout esperando clickeable: footer link: terms
+2025-12-13 17:22:09 - utils.logger - WARNING - ❌ No se encontró o no se pudo hacer click en el link del footer: terms
+2025-12-13 17:22:09 - utils.logger - WARNING - No se pudo hacer click en footer link: terms
+2025-12-13 17:22:09 - utils.logger - INFO - 📸 Screenshot tomado: footer_redirects_summary_20251213_172209.png
+2025-12-13 17:22:20 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:22:27 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:22:30 - utils.logger - INFO - 📸 Screenshot tomado: footer_full_view_20251213_172230.png
+2025-12-13 17:22:30 - utils.logger - INFO - Total links en footer: 39
+2025-12-13 17:22:47 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:22:49 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:22:52 - utils.logger - INFO - 📸 Screenshot tomado: footer_full_view_20251213_172252.png
+2025-12-13 17:22:52 - utils.logger - INFO - Total links en footer: 39
+2025-12-13 17:25:31 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:25:34 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:25:35 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:25:35 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_172535.png
+2025-12-13 17:25:37 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:25:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_172537.png
+2025-12-13 17:25:49 - utils.logger - ERROR - ❌ Timeout esperando clickeable: english option
+2025-12-13 17:26:02 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:26:04 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:26:05 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:26:05 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_172605.png
+2025-12-13 17:26:07 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:26:07 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_172607.png
+2025-12-13 17:26:19 - utils.logger - ERROR - ❌ Timeout esperando clickeable: english option
+2025-12-13 17:26:29 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:26:32 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:26:35 - utils.logger - INFO - 📸 Screenshot tomado: footer_full_view_20251213_172635.png
+2025-12-13 17:26:35 - utils.logger - INFO - Total links en footer: 39
+2025-12-13 17:26:51 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:26:54 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:26:57 - utils.logger - INFO - 📸 Screenshot tomado: footer_full_view_20251213_172657.png
+2025-12-13 17:26:57 - utils.logger - INFO - Total links en footer: 39
+2025-12-13 17:29:25 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:29:28 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:29:29 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:29:30 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_172929.png
+2025-12-13 17:29:31 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:29:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_172931.png
+2025-12-13 17:29:45 - utils.logger - ERROR - ❌ Timeout esperando clickeable: english option
+2025-12-13 17:38:11 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:38:15 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:38:16 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:38:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_173816.png
+2025-12-13 17:38:17 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:38:18 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_173817.png
+2025-12-13 17:38:31 - utils.logger - ERROR - ❌ Timeout esperando clickeable: english option
+2025-12-13 17:38:44 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:38:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:38:48 - utils.logger - INFO - Seleccionando idioma english
+2025-12-13 17:38:48 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_173848.png
+2025-12-13 17:38:49 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:38:49 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_173849.png
+2025-12-13 17:39:40 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:39:44 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:39:48 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_173948.png
+2025-12-13 17:39:52 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 17:39:52 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_173952.png
+2025-12-13 17:39:56 - utils.logger - INFO - 📸 Screenshot tomado: footer_Somos_avianca_20251213_173956.png
+2025-12-13 17:40:00 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_174000.png
+2025-12-13 17:40:04 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 17:40:05 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_174004.png
+2025-12-13 17:40:09 - utils.logger - INFO - 📸 Screenshot tomado: footer_Sostenibilidad_20251213_174009.png
+2025-12-13 17:40:13 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_174013.png
+2025-12-13 17:40:16 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 17:40:16 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_174016.png
+2025-12-13 17:40:20 - utils.logger - INFO - 📸 Screenshot tomado: footer_Plan_de_accesibilidad_20251213_174020.png
+2025-12-13 17:40:25 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_174025.png
+2025-12-13 17:40:27 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 17:40:27 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_174027.png
+2025-12-13 17:40:32 - utils.logger - INFO - 📸 Screenshot tomado: footer_Información_legal_20251213_174031.png
+2025-12-13 17:40:32 - utils.logger - INFO - Clicks exitosos: 4/4
+2025-12-13 17:40:32 - utils.logger - INFO - Redirecciones exitosas: 4/4
+2025-12-13 17:40:48 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:40:50 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:40:55 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_174055.png
+2025-12-13 17:40:56 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 17:40:56 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_174056.png
+2025-12-13 17:41:01 - utils.logger - INFO - 📸 Screenshot tomado: footer_Somos_avianca_20251213_174100.png
+2025-12-13 17:41:05 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_174105.png
+2025-12-13 17:41:07 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 17:41:07 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_174107.png
+2025-12-13 17:41:11 - utils.logger - INFO - 📸 Screenshot tomado: footer_Sostenibilidad_20251213_174111.png
+2025-12-13 17:41:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_174116.png
+2025-12-13 17:41:18 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 17:41:18 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_174118.png
+2025-12-13 17:41:22 - utils.logger - INFO - 📸 Screenshot tomado: footer_Plan_de_accesibilidad_20251213_174122.png
+2025-12-13 17:41:27 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_174127.png
+2025-12-13 17:41:29 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 17:41:29 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_174129.png
+2025-12-13 17:41:33 - utils.logger - INFO - 📸 Screenshot tomado: footer_Información_legal_20251213_174133.png
+2025-12-13 17:41:33 - utils.logger - INFO - Clicks exitosos: 4/4
+2025-12-13 17:41:33 - utils.logger - INFO - Redirecciones exitosas: 4/4
+2025-12-13 17:53:02 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:53:06 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:53:10 - utils.logger - INFO - ✅ Elemento encontrado: Language dropdown
+2025-12-13 17:53:10 - utils.logger - INFO - Idioma inicial: Español
+2025-12-13 17:53:11 - utils.logger - INFO - 📸 Screenshot tomado: idioma_Español_20251213_175310.png
+2025-12-13 17:53:11 - utils.logger - INFO - === Probando footer links en Español ===
+2025-12-13 17:53:12 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 17:53:13 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_175313.png
+2025-12-13 17:53:16 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 17:53:16 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_175316.png
+2025-12-13 17:53:20 - utils.logger - INFO - 📸 Screenshot tomado: Español_Somos_avianca_20251213_175320.png
+2025-12-13 17:53:20 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 17:53:23 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 17:53:23 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175323.png
+2025-12-13 17:53:24 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:53:25 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175324.png
+2025-12-13 17:53:27 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 17:53:29 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 17:53:31 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Sostenibilidad
+2025-12-13 17:53:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_175332.png
+2025-12-13 17:53:35 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 17:53:36 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_175335.png
+2025-12-13 17:53:40 - utils.logger - INFO - 📸 Screenshot tomado: Español_Sostenibilidad_20251213_175340.png
+2025-12-13 17:53:40 - utils.logger - INFO -   ✓ Sostenibilidad: URL cambió
+2025-12-13 17:53:42 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 17:53:43 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175342.png
+2025-12-13 17:53:44 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:53:44 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175344.png
+2025-12-13 17:53:46 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 17:53:48 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 17:53:51 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Plan de accesibilidad
+2025-12-13 17:53:52 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_175351.png
+2025-12-13 17:53:54 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 17:53:54 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_175354.png
+2025-12-13 17:53:59 - utils.logger - INFO - 📸 Screenshot tomado: Español_Plan_de_accesibilidad_20251213_175359.png
+2025-12-13 17:53:59 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL cambió
+2025-12-13 17:54:01 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 17:54:02 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175401.png
+2025-12-13 17:54:03 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:54:03 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175403.png
+2025-12-13 17:54:05 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 17:54:07 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 17:54:10 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Información legal
+2025-12-13 17:54:11 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_175411.png
+2025-12-13 17:54:13 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 17:54:13 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_175413.png
+2025-12-13 17:54:18 - utils.logger - INFO - 📸 Screenshot tomado: Español_Información_legal_20251213_175417.png
+2025-12-13 17:54:18 - utils.logger - INFO -   ✓ Información legal: URL cambió
+2025-12-13 17:54:18 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:54:19 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:54:22 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 17:54:22 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175422.png
+2025-12-13 17:54:24 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:54:24 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175424.png
+2025-12-13 17:54:26 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 17:54:32 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 17:54:34 - utils.logger - INFO - 📸 Screenshot tomado: idioma_English_20251213_175434.png
+2025-12-13 17:54:34 - utils.logger - INFO - === Probando footer links en English ===
+2025-12-13 17:54:47 - utils.logger - ERROR - ❌ Timeout esperando elemento: Footer link: Somos avianca
+2025-12-13 17:54:47 - utils.logger - INFO - 📸 Screenshot tomado: timeout_Footer link: Somos avianca_20251213_175447.png
+2025-12-13 17:54:47 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_175447.png
+2025-12-13 17:54:58 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 17:54:59 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_175459.png
+2025-12-13 17:55:03 - utils.logger - INFO - 📸 Screenshot tomado: English_Somos_avianca_20251213_175503.png
+2025-12-13 17:55:03 - utils.logger - INFO -   ✓ Somos avianca: URL igual
+2025-12-13 17:55:05 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 17:55:06 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175505.png
+2025-12-13 17:55:07 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:55:07 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175507.png
+2025-12-13 17:55:09 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 17:55:12 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 17:55:25 - utils.logger - ERROR - ❌ Timeout esperando elemento: Footer link: Sostenibilidad
+2025-12-13 17:55:26 - utils.logger - INFO - 📸 Screenshot tomado: timeout_Footer link: Sostenibilidad_20251213_175525.png
+2025-12-13 17:55:26 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_175526.png
+2025-12-13 17:55:37 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 17:55:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_175537.png
+2025-12-13 17:55:41 - utils.logger - INFO - 📸 Screenshot tomado: English_Sostenibilidad_20251213_175541.png
+2025-12-13 17:55:41 - utils.logger - INFO -   ✓ Sostenibilidad: URL igual
+2025-12-13 17:55:44 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 17:55:44 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175544.png
+2025-12-13 17:55:46 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:55:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175546.png
+2025-12-13 17:55:48 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 17:55:50 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 17:56:04 - utils.logger - ERROR - ❌ Timeout esperando elemento: Footer link: Plan de accesibilidad
+2025-12-13 17:56:04 - utils.logger - INFO - 📸 Screenshot tomado: timeout_Footer link: Plan de accesibilidad_20251213_175604.png
+2025-12-13 17:56:05 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_175604.png
+2025-12-13 17:56:16 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 17:56:16 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_175616.png
+2025-12-13 17:56:23 - utils.logger - INFO - 📸 Screenshot tomado: English_Plan_de_accesibilidad_20251213_175620.png
+2025-12-13 17:56:23 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL igual
+2025-12-13 17:56:25 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 17:56:25 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175625.png
+2025-12-13 17:56:27 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:56:27 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175627.png
+2025-12-13 17:56:29 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 17:56:31 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 17:56:45 - utils.logger - ERROR - ❌ Timeout esperando elemento: Footer link: Información legal
+2025-12-13 17:56:45 - utils.logger - INFO - 📸 Screenshot tomado: timeout_Footer link: Información legal_20251213_175645.png
+2025-12-13 17:56:45 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_175645.png
+2025-12-13 17:56:57 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 17:56:57 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_175657.png
+2025-12-13 17:57:01 - utils.logger - INFO - 📸 Screenshot tomado: English_Información_legal_20251213_175701.png
+2025-12-13 17:57:01 - utils.logger - INFO -   ✓ Información legal: URL igual
+2025-12-13 17:57:01 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 17:57:04 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 17:57:07 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 17:57:07 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175707.png
+2025-12-13 17:57:08 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:57:09 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175708.png
+2025-12-13 17:57:11 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 17:57:21 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 17:57:23 - utils.logger - INFO - 📸 Screenshot tomado: idioma_Français_20251213_175723.png
+2025-12-13 17:57:23 - utils.logger - INFO - === Probando footer links en Français ===
+2025-12-13 17:57:36 - utils.logger - ERROR - ❌ Timeout esperando elemento: Footer link: Somos avianca
+2025-12-13 17:57:36 - utils.logger - INFO - 📸 Screenshot tomado: timeout_Footer link: Somos avianca_20251213_175736.png
+2025-12-13 17:57:36 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_175736.png
+2025-12-13 17:57:47 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 17:57:48 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_175747.png
+2025-12-13 17:57:52 - utils.logger - INFO - 📸 Screenshot tomado: Français_Somos_avianca_20251213_175752.png
+2025-12-13 17:57:52 - utils.logger - INFO -   ✓ Somos avianca: URL igual
+2025-12-13 17:57:54 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 17:57:55 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_175754.png
+2025-12-13 17:57:56 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 17:57:57 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_175756.png
+2025-12-13 19:29:27 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 19:29:34 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 19:29:38 - utils.logger - INFO - ✅ Elemento encontrado: Language dropdown
+2025-12-13 19:29:38 - utils.logger - INFO - Idioma inicial: Español
+2025-12-13 19:29:38 - utils.logger - INFO - 📸 Screenshot tomado: idioma_Español_20251213_192938.png
+2025-12-13 19:29:38 - utils.logger - INFO - === Probando footer links en Español ===
+2025-12-13 19:29:40 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 19:29:41 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_192940.png
+2025-12-13 19:29:44 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 19:29:44 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_192944.png
+2025-12-13 19:29:48 - utils.logger - INFO - 📸 Screenshot tomado: Español_Somos_avianca_20251213_192948.png
+2025-12-13 19:29:48 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 19:29:50 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 19:29:51 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_192950.png
+2025-12-13 19:29:53 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:29:53 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_192953.png
+2025-12-13 19:29:55 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 19:29:57 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 19:30:00 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Sostenibilidad
+2025-12-13 19:30:01 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_193000.png
+2025-12-13 19:30:03 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 19:30:04 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_193003.png
+2025-12-13 19:30:08 - utils.logger - INFO - 📸 Screenshot tomado: Español_Sostenibilidad_20251213_193008.png
+2025-12-13 19:30:08 - utils.logger - INFO -   ✓ Sostenibilidad: URL cambió
+2025-12-13 19:30:10 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 19:30:11 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193010.png
+2025-12-13 19:30:12 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:30:12 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193012.png
+2025-12-13 19:30:15 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 19:30:17 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 19:30:19 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Plan de accesibilidad
+2025-12-13 19:30:20 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_193020.png
+2025-12-13 19:30:23 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 19:30:23 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_193023.png
+2025-12-13 19:30:27 - utils.logger - INFO - 📸 Screenshot tomado: Español_Plan_de_accesibilidad_20251213_193027.png
+2025-12-13 19:30:27 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL cambió
+2025-12-13 19:30:29 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 19:30:30 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193029.png
+2025-12-13 19:30:31 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:30:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193031.png
+2025-12-13 19:30:34 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 19:30:36 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 19:30:38 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Información legal
+2025-12-13 19:30:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_193039.png
+2025-12-13 19:30:41 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 19:30:42 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_193041.png
+2025-12-13 19:30:46 - utils.logger - INFO - 📸 Screenshot tomado: Español_Información_legal_20251213_193046.png
+2025-12-13 19:30:46 - utils.logger - INFO -   ✓ Información legal: URL cambió
+2025-12-13 19:30:46 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 19:30:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 19:30:50 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 19:30:51 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193050.png
+2025-12-13 19:30:52 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:30:52 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193052.png
+2025-12-13 19:30:54 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 19:31:00 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 19:31:02 - utils.logger - INFO - 📸 Screenshot tomado: idioma_English_20251213_193102.png
+2025-12-13 19:31:02 - utils.logger - INFO - === Probando footer links en English ===
+2025-12-13 19:31:04 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 19:31:05 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_193104.png
+2025-12-13 19:31:08 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 19:31:09 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_193108.png
+2025-12-13 19:31:13 - utils.logger - INFO - 📸 Screenshot tomado: English_Somos_avianca_20251213_193113.png
+2025-12-13 19:31:13 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 19:31:15 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 19:31:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193115.png
+2025-12-13 19:31:17 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:31:17 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193117.png
+2025-12-13 19:31:19 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 19:31:21 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 19:31:24 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Sostenibilidad
+2025-12-13 19:31:25 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_193125.png
+2025-12-13 19:31:28 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 19:31:28 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_193128.png
+2025-12-13 19:31:33 - utils.logger - INFO - 📸 Screenshot tomado: English_Sostenibilidad_20251213_193132.png
+2025-12-13 19:31:33 - utils.logger - INFO -   ✓ Sostenibilidad: URL cambió
+2025-12-13 19:31:35 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 19:31:35 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193135.png
+2025-12-13 19:31:45 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+
+2025-12-13 19:31:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193145.png
+2025-12-13 19:31:58 - utils.logger - ERROR - ❌ Timeout esperando clickeable: English option
+2025-12-13 19:32:00 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Plan de accesibilidad
+2025-12-13 19:32:01 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_193201.png
+2025-12-13 19:32:05 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 19:32:05 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_193205.png
+2025-12-13 19:32:09 - utils.logger - INFO - 📸 Screenshot tomado: English_Plan_de_accesibilidad_20251213_193209.png
+2025-12-13 19:32:09 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL cambió
+2025-12-13 19:32:11 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 19:32:12 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193211.png
+2025-12-13 19:32:13 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:32:14 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193213.png
+2025-12-13 19:32:16 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 19:32:18 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 19:32:20 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Información legal
+2025-12-13 19:32:21 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_193221.png
+2025-12-13 19:32:24 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 19:32:24 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_193224.png
+2025-12-13 19:32:29 - utils.logger - INFO - 📸 Screenshot tomado: English_Información_legal_20251213_193229.png
+2025-12-13 19:32:29 - utils.logger - INFO -   ✓ Información legal: URL cambió
+2025-12-13 19:32:29 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 19:32:31 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 19:32:34 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 19:32:35 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193234.png
+2025-12-13 19:32:37 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:32:38 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193237.png
+2025-12-13 19:32:41 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 19:32:48 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 19:32:50 - utils.logger - INFO - 📸 Screenshot tomado: idioma_Français_20251213_193250.png
+2025-12-13 19:32:50 - utils.logger - INFO - === Probando footer links en Français ===
+2025-12-13 19:32:52 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 19:32:52 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_193252.png
+2025-12-13 19:32:56 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 19:32:56 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_193256.png
+2025-12-13 19:33:00 - utils.logger - INFO - 📸 Screenshot tomado: Français_Somos_avianca_20251213_193300.png
+2025-12-13 19:33:00 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 19:33:02 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 19:33:03 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193302.png
+2025-12-13 19:33:13 - utils.logger - ERROR - ❌ Error en click con evidencias: Message: 
+
+2025-12-13 19:33:13 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193313.png
+2025-12-13 19:33:25 - utils.logger - ERROR - ❌ Timeout esperando clickeable: Français option
+2025-12-13 19:33:28 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Sostenibilidad
+2025-12-13 19:33:29 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_193329.png
+2025-12-13 19:33:32 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 19:33:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_193332.png
+2025-12-13 19:33:37 - utils.logger - INFO - 📸 Screenshot tomado: Français_Sostenibilidad_20251213_193336.png
+2025-12-13 19:33:37 - utils.logger - INFO -   ✓ Sostenibilidad: URL cambió
+2025-12-13 19:33:39 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 19:33:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193339.png
+2025-12-13 19:33:41 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:33:41 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193341.png
+2025-12-13 19:33:43 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 19:33:45 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 19:33:48 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Plan de accesibilidad
+2025-12-13 19:33:48 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_193348.png
+2025-12-13 19:33:52 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 19:33:52 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_193352.png
+2025-12-13 19:33:56 - utils.logger - INFO - 📸 Screenshot tomado: Français_Plan_de_accesibilidad_20251213_193356.png
+2025-12-13 19:33:56 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL cambió
+2025-12-13 19:33:59 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 19:34:00 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193359.png
+2025-12-13 19:34:01 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 19:34:01 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_193401.png
+2025-12-13 19:34:03 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 19:34:05 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 19:34:08 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Información legal
+2025-12-13 19:34:09 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_193408.png
+2025-12-13 19:34:12 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 19:34:12 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_193412.png
+2025-12-13 19:34:16 - utils.logger - INFO - 📸 Screenshot tomado: Français_Información_legal_20251213_193416.png
+2025-12-13 19:34:16 - utils.logger - INFO -   ✓ Información legal: URL cambió
+2025-12-13 19:34:16 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 19:34:18 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 19:34:21 - utils.logger - INFO - Seleccionando idioma Português
+2025-12-13 19:34:21 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_193421.png
+2025-12-13 20:03:04 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 20:03:10 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 20:03:14 - utils.logger - INFO - ✅ Elemento encontrado: Language dropdown
+2025-12-13 20:03:14 - utils.logger - INFO - Idioma inicial: Español
+2025-12-13 20:03:14 - utils.logger - INFO - 📸 Screenshot tomado: idioma_Español_20251213_200314.png
+2025-12-13 20:03:14 - utils.logger - INFO - === Probando footer links en Español ===
+2025-12-13 20:03:16 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 20:03:16 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_200316.png
+2025-12-13 20:03:20 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 20:03:20 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_200320.png
+2025-12-13 20:03:24 - utils.logger - INFO - 📸 Screenshot tomado: Español_Somos_avianca_20251213_200324.png
+2025-12-13 20:03:24 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 20:03:29 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 20:03:30 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200329.png
+2025-12-13 20:03:31 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:03:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200331.png
+2025-12-13 20:03:34 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 20:03:36 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 20:03:38 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Sostenibilidad
+2025-12-13 20:03:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_200339.png
+2025-12-13 20:03:42 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 20:03:42 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_200342.png
+2025-12-13 20:03:47 - utils.logger - INFO - 📸 Screenshot tomado: Español_Sostenibilidad_20251213_200346.png
+2025-12-13 20:03:47 - utils.logger - INFO -   ✓ Sostenibilidad: URL cambió
+2025-12-13 20:03:49 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 20:03:49 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200349.png
+2025-12-13 20:03:51 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:03:51 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200351.png
+2025-12-13 20:03:53 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 20:03:55 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 20:03:58 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Plan de accesibilidad
+2025-12-13 20:03:59 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_200358.png
+2025-12-13 20:04:01 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 20:04:02 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_200401.png
+2025-12-13 20:04:06 - utils.logger - INFO - 📸 Screenshot tomado: Español_Plan_de_accesibilidad_20251213_200406.png
+2025-12-13 20:04:06 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL cambió
+2025-12-13 20:04:08 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 20:04:09 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200408.png
+2025-12-13 20:04:10 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:04:11 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200410.png
+2025-12-13 20:04:13 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 20:04:15 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 20:04:17 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Información legal
+2025-12-13 20:04:18 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_200418.png
+2025-12-13 20:04:20 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 20:04:21 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_200420.png
+2025-12-13 20:04:25 - utils.logger - INFO - 📸 Screenshot tomado: Español_Información_legal_20251213_200425.png
+2025-12-13 20:04:25 - utils.logger - INFO -   ✓ Información legal: URL cambió
+2025-12-13 20:04:25 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 20:04:26 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 20:04:29 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 20:04:29 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200429.png
+2025-12-13 20:04:31 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:04:31 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200431.png
+2025-12-13 20:04:33 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 20:04:38 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 20:04:41 - utils.logger - INFO - 📸 Screenshot tomado: idioma_English_20251213_200440.png
+2025-12-13 20:04:41 - utils.logger - INFO - === Probando footer links en English ===
+2025-12-13 20:04:42 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 20:04:43 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_200443.png
+2025-12-13 20:04:46 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 20:04:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_200446.png
+2025-12-13 20:04:51 - utils.logger - INFO - 📸 Screenshot tomado: English_Somos_avianca_20251213_200450.png
+2025-12-13 20:04:51 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 20:04:53 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 20:04:53 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200453.png
+2025-12-13 20:04:55 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:04:55 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200455.png
+2025-12-13 20:04:57 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 20:04:59 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 20:05:02 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Sostenibilidad
+2025-12-13 20:05:03 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_200502.png
+2025-12-13 20:05:06 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 20:05:06 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_200506.png
+2025-12-13 20:05:10 - utils.logger - INFO - 📸 Screenshot tomado: English_Sostenibilidad_20251213_200510.png
+2025-12-13 20:05:10 - utils.logger - INFO -   ✓ Sostenibilidad: URL cambió
+2025-12-13 20:05:12 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 20:05:13 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200512.png
+2025-12-13 20:05:14 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:05:15 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200514.png
+2025-12-13 20:05:17 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 20:05:19 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 20:05:21 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Plan de accesibilidad
+2025-12-13 20:05:22 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_200522.png
+2025-12-13 20:05:25 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 20:05:25 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_200525.png
+2025-12-13 20:05:29 - utils.logger - INFO - 📸 Screenshot tomado: English_Plan_de_accesibilidad_20251213_200529.png
+2025-12-13 20:05:29 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL cambió
+2025-12-13 20:05:32 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 20:05:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200532.png
+2025-12-13 20:05:34 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:05:34 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200534.png
+2025-12-13 20:05:36 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 20:05:38 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 20:05:41 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Información legal
+2025-12-13 20:05:42 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_200541.png
+2025-12-13 20:05:44 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 20:05:44 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_200544.png
+2025-12-13 20:05:48 - utils.logger - INFO - 📸 Screenshot tomado: English_Información_legal_20251213_200548.png
+2025-12-13 20:05:48 - utils.logger - INFO -   ✓ Información legal: URL cambió
+2025-12-13 20:05:48 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 20:05:50 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 20:05:53 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 20:05:53 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200553.png
+2025-12-13 20:05:55 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:05:55 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200555.png
+2025-12-13 20:05:57 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 20:06:02 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 20:06:05 - utils.logger - INFO - 📸 Screenshot tomado: idioma_Français_20251213_200604.png
+2025-12-13 20:06:05 - utils.logger - INFO - === Probando footer links en Français ===
+2025-12-13 20:06:07 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 20:06:08 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_200608.png
+2025-12-13 20:06:12 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 20:06:13 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_200612.png
+2025-12-13 20:06:17 - utils.logger - INFO - 📸 Screenshot tomado: Français_Somos_avianca_20251213_200617.png
+2025-12-13 20:06:17 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 20:06:23 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 20:06:23 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200623.png
+2025-12-13 20:06:25 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:06:26 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200625.png
+2025-12-13 20:06:28 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 20:06:30 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 20:06:32 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Sostenibilidad
+2025-12-13 20:06:33 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Sostenibilidad_20251213_200633.png
+2025-12-13 20:06:36 - utils.logger - INFO - ✅ Click realizado en: Footer: Sostenibilidad
+2025-12-13 20:06:36 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Sostenibilidad_20251213_200636.png
+2025-12-13 20:06:40 - utils.logger - INFO - 📸 Screenshot tomado: Français_Sostenibilidad_20251213_200640.png
+2025-12-13 20:06:40 - utils.logger - INFO -   ✓ Sostenibilidad: URL cambió
+2025-12-13 20:06:42 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 20:06:43 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200642.png
+2025-12-13 20:06:44 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:06:45 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200644.png
+2025-12-13 20:06:47 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 20:06:49 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 20:06:51 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Plan de accesibilidad
+2025-12-13 20:06:52 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Plan de accesibilidad_20251213_200652.png
+2025-12-13 20:06:55 - utils.logger - INFO - ✅ Click realizado en: Footer: Plan de accesibilidad
+2025-12-13 20:06:55 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Plan de accesibilidad_20251213_200655.png
+2025-12-13 20:06:59 - utils.logger - INFO - 📸 Screenshot tomado: Français_Plan_de_accesibilidad_20251213_200659.png
+2025-12-13 20:06:59 - utils.logger - INFO -   ✓ Plan de accesibilidad: URL cambió
+2025-12-13 20:07:02 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 20:07:02 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200702.png
+2025-12-13 20:07:03 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:07:04 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200703.png
+2025-12-13 20:07:06 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 20:07:08 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 20:07:10 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Información legal
+2025-12-13 20:07:11 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Información legal_20251213_200711.png
+2025-12-13 20:07:13 - utils.logger - INFO - ✅ Click realizado en: Footer: Información legal
+2025-12-13 20:07:14 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Información legal_20251213_200713.png
+2025-12-13 20:07:18 - utils.logger - INFO - 📸 Screenshot tomado: Français_Información_legal_20251213_200718.png
+2025-12-13 20:07:18 - utils.logger - INFO -   ✓ Información legal: URL cambió
+2025-12-13 20:07:18 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 20:07:19 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 20:07:22 - utils.logger - INFO - Seleccionando idioma Português
+2025-12-13 20:07:22 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200722.png
+2025-12-13 20:07:24 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:07:24 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200724.png
+2025-12-13 20:07:26 - utils.logger - INFO - ✅ Elemento clickeable: Português option
+2025-12-13 20:07:35 - utils.logger - INFO - ✓ Idioma Português seleccionado
+2025-12-13 20:07:38 - utils.logger - INFO - 📸 Screenshot tomado: idioma_Português_20251213_200737.png
+2025-12-13 20:07:38 - utils.logger - INFO - === Probando footer links en Português ===
+2025-12-13 20:07:39 - utils.logger - INFO - ✅ Elemento encontrado: Footer link: Somos avianca
+2025-12-13 20:07:40 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Footer: Somos avianca_20251213_200740.png
+2025-12-13 20:07:43 - utils.logger - INFO - ✅ Click realizado en: Footer: Somos avianca
+2025-12-13 20:07:44 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Footer: Somos avianca_20251213_200743.png
+2025-12-13 20:07:48 - utils.logger - INFO - 📸 Screenshot tomado: Português_Somos_avianca_20251213_200748.png
+2025-12-13 20:07:48 - utils.logger - INFO -   ✓ Somos avianca: URL cambió
+2025-12-13 20:07:50 - utils.logger - INFO - Seleccionando idioma Português
+2025-12-13 20:07:50 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_200750.png
+2025-12-13 20:07:52 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 20:07:52 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_200752.png
+2025-12-13 20:07:54 - utils.logger - INFO - ✅ Elemento clickeable: Português option
+2025-12-13 20:07:56 - utils.logger - INFO - ✓ Idioma Português seleccionado
+2025-12-13 21:00:37 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:00:40 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:00:44 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Open website_20251213_210043.png
+2025-12-13 21:00:44 - utils.logger - INFO - Paso 'Open website': ✅
+2025-12-13 21:00:44 - utils.logger - INFO - Buscando elemento con XPath: //span[normalize-space()='reservar']
+2025-12-13 21:00:55 - utils.logger - ERROR - Error haciendo click en 'reservar': Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:00:56 - utils.logger - INFO - ✓ Click usando CSS selector: reservar
+2025-12-13 21:00:58 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_reservar_20251213_210057.png
+2025-12-13 21:01:00 - utils.logger - INFO - Paso 'reservar': ✅
+2025-12-13 21:01:00 - utils.logger - INFO - ✓ Scroll down (500px)
+2025-12-13 21:01:01 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Scroll down_20251213_210100.png
+2025-12-13 21:01:01 - utils.logger - INFO - Paso 'Scroll down': ✅
+2025-12-13 21:01:01 - utils.logger - INFO - ✓ Scroll up (500px)
+2025-12-13 21:01:01 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Scroll up_20251213_210101.png
+2025-12-13 21:01:01 - utils.logger - INFO - Paso 'Scroll up': ✅
+2025-12-13 21:01:01 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='ofertas y destinos']
+2025-12-13 21:01:13 - utils.logger - ERROR - Error haciendo click en 'ofertas y destinos': Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:01:13 - utils.logger - INFO - ✓ Click usando CSS selector: ofertas y destinos
+2025-12-13 21:01:14 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_ofertas y destinos_20251213_210114.png
+2025-12-13 21:01:14 - utils.logger - INFO - Paso 'ofertas y destinos': ✅
+2025-12-13 21:01:14 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='ofertas y destinos']
+2025-12-13 21:01:25 - utils.logger - ERROR - Error haciendo click en 'ofertas y destinos': Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:01:25 - utils.logger - INFO - ✓ Click usando CSS selector: ofertas y destinos
+2025-12-13 21:01:27 - utils.logger - INFO - Buscando elemento con XPath: //span[normalize-space()='destinos']
+2025-12-13 21:01:38 - utils.logger - ERROR - Error haciendo click en 'destinos': Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:01:48 - utils.logger - ERROR - Fallback CSS también falló: Message: 
+
+2025-12-13 21:01:48 - utils.logger - ERROR - No se pudo seleccionar submenú: destinos
+2025-12-13 21:01:48 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_destinos_20251213_210148.png
+2025-12-13 21:01:48 - utils.logger - INFO - Paso 'destinos': ❌
+2025-12-13 21:01:48 - utils.logger - INFO - ✓ Scroll down (500px)
+2025-12-13 21:01:49 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Scroll down_20251213_210149.png
+2025-12-13 21:01:49 - utils.logger - INFO - Paso 'Scroll down': ✅
+2025-12-13 21:01:49 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='información y ayuda']
+2025-12-13 21:02:00 - utils.logger - ERROR - Error haciendo click en 'información y ayuda': Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:02:11 - utils.logger - ERROR - Fallback CSS también falló: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:02:12 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_información y ayuda_20251213_210211.png
+2025-12-13 21:02:12 - utils.logger - INFO - Paso 'información y ayuda': ❌
+2025-12-13 21:02:12 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='información y ayuda']
+2025-12-13 21:02:23 - utils.logger - ERROR - Error haciendo click en 'información y ayuda': Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:02:34 - utils.logger - ERROR - Fallback CSS también falló: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:02:34 - utils.logger - ERROR - No se pudo abrir el menú: información y ayuda
+2025-12-13 21:02:34 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_tipos de tarifas_20251213_210234.png
+2025-12-13 21:02:34 - utils.logger - INFO - Paso 'tipos de tarifas': ❌
+2025-12-13 21:02:47 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:02:51 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:02:54 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Open website_20251213_210254.png
+2025-12-13 21:02:54 - utils.logger - INFO - Paso 'Open website': ✅
+2025-12-13 21:02:54 - utils.logger - INFO - Buscando elemento con XPath: //span[normalize-space()='reservar']
+2025-12-13 21:03:05 - utils.logger - ERROR - Error haciendo click en 'reservar': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:03:07 - utils.logger - INFO - ✓ Click usando CSS selector: reservar
+2025-12-13 21:03:08 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_reservar_20251213_210308.png
+2025-12-13 21:03:10 - utils.logger - INFO - Paso 'reservar': ✅
+2025-12-13 21:03:10 - utils.logger - INFO - ✓ Scroll down (500px)
+2025-12-13 21:03:10 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Scroll down_20251213_210310.png
+2025-12-13 21:03:10 - utils.logger - INFO - Paso 'Scroll down': ✅
+2025-12-13 21:03:10 - utils.logger - INFO - ✓ Scroll up (500px)
+2025-12-13 21:03:11 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Scroll up_20251213_210311.png
+2025-12-13 21:03:11 - utils.logger - INFO - Paso 'Scroll up': ✅
+2025-12-13 21:03:11 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='ofertas y destinos']
+2025-12-13 21:03:22 - utils.logger - ERROR - Error haciendo click en 'ofertas y destinos': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:03:22 - utils.logger - INFO - ✓ Click usando CSS selector: ofertas y destinos
+2025-12-13 21:03:23 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_ofertas y destinos_20251213_210323.png
+2025-12-13 21:03:23 - utils.logger - INFO - Paso 'ofertas y destinos': ✅
+2025-12-13 21:03:23 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='ofertas y destinos']
+2025-12-13 21:03:35 - utils.logger - ERROR - Error haciendo click en 'ofertas y destinos': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:03:35 - utils.logger - INFO - ✓ Click usando CSS selector: ofertas y destinos
+2025-12-13 21:03:36 - utils.logger - INFO - Buscando elemento con XPath: //span[normalize-space()='destinos']
+2025-12-13 21:03:47 - utils.logger - ERROR - Error haciendo click en 'destinos': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:03:58 - utils.logger - ERROR - Fallback CSS también falló: Message: 
+
+2025-12-13 21:03:58 - utils.logger - ERROR - No se pudo seleccionar submenú: destinos
+2025-12-13 21:03:58 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_destinos_20251213_210358.png
+2025-12-13 21:03:58 - utils.logger - INFO - Paso 'destinos': ❌
+2025-12-13 21:03:58 - utils.logger - INFO - ✓ Scroll down (500px)
+2025-12-13 21:03:59 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_Scroll down_20251213_210358.png
+2025-12-13 21:03:59 - utils.logger - INFO - Paso 'Scroll down': ✅
+2025-12-13 21:03:59 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='información y ayuda']
+2025-12-13 21:04:10 - utils.logger - ERROR - Error haciendo click en 'información y ayuda': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:04:21 - utils.logger - ERROR - Fallback CSS también falló: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:04:21 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_información y ayuda_20251213_210421.png
+2025-12-13 21:04:21 - utils.logger - INFO - Paso 'información y ayuda': ❌
+2025-12-13 21:04:21 - utils.logger - INFO - Buscando elemento con XPath: //span[@class='button_label'][normalize-space()='información y ayuda']
+2025-12-13 21:04:32 - utils.logger - ERROR - Error haciendo click en 'información y ayuda': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:04:43 - utils.logger - ERROR - Fallback CSS también falló: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:04:43 - utils.logger - ERROR - No se pudo abrir el menú: información y ayuda
+2025-12-13 21:04:43 - utils.logger - INFO - 📸 Screenshot tomado: csv_step_tipos de tarifas_20251213_210443.png
+2025-12-13 21:04:43 - utils.logger - INFO - Paso 'tipos de tarifas': ❌
+2025-12-13 21:04:54 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:04:57 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:04:58 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 21:04:58 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_210458.png
+2025-12-13 21:04:59 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 21:05:00 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_210459.png
+2025-12-13 21:05:02 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 21:05:07 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 21:05:09 - utils.logger - INFO - Buscando elemento con XPath: //span[normalize-space()='Reservar']
+2025-12-13 21:05:20 - utils.logger - ERROR - Error haciendo click en 'reservar': Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d258a27e
+	0x7ff6d258a58c
+	0x7ff6d25ded77
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:05:21 - utils.logger - INFO - ✓ Click usando CSS selector: reservar
+2025-12-13 21:05:35 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:05:38 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:05:39 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 21:05:39 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_210539.png
+2025-12-13 21:05:41 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 21:05:41 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_210541.png
+2025-12-13 21:05:43 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 21:05:45 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 21:05:47 - utils.logger - INFO - Buscando elemento con XPath: //span[normalize-space()='Reservar']
+2025-12-13 21:05:58 - utils.logger - ERROR - Error haciendo click en 'reservar': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-13 21:06:00 - utils.logger - INFO - ✓ Click usando CSS selector: reservar
+2025-12-13 21:19:16 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:19:21 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:19:22 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:19:22 - utils.logger - ERROR - Error clickeando Header: Reservar: name 'ActionChains' is not defined
+2025-12-13 21:19:35 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:19:37 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:19:38 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:19:39 - utils.logger - ERROR - Error clickeando Header: Reservar: name 'ActionChains' is not defined
+2025-12-13 21:25:53 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:25:56 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:25:57 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:26:00 - utils.logger - INFO - ✓ Click realizado en: Header: Reservar
+2025-12-13 21:26:00 - utils.logger - ERROR - Error clickeando Header: Reservar: Message: stale element reference: stale element not found
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6d2a4a235
+	0x7ff6d27a2630
+	0x7ff6d25316dd
+	0x7ff6d2548175
+	0x7ff6d2546c63
+	0x7ff6d253a168
+	0x7ff6d253a2e2
+	0x7ff6d253805c
+	0x7ff6d253c8c2
+	0x7ff6d25dce53
+	0x7ff6d25b2b0a
+	0x7ff6d25dbaba
+	0x7ff6d257b0ed
+	0x7ff6d257bf63
+	0x7ff6d2a75d60
+	0x7ff6d2a6fe8a
+	0x7ff6d2a91005
+	0x7ff6d27bd71e
+	0x7ff6d27c4e1f
+	0x7ff6d27ab7c4
+	0x7ff6d27ab97f
+	0x7ff6d27918e8
+	0x7ffff3497374
+	0x7ffff4cdcc91
+
+2025-12-13 21:26:20 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:26:22 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:26:23 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:26:25 - utils.logger - INFO - ✓ Click realizado en: Header: Reservar
+2025-12-13 21:26:30 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:26:31 - utils.logger - INFO - ✓ Click realizado en: Header: Ofertas y destinos
+2025-12-13 21:26:32 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:26:34 - utils.logger - INFO - ✓ Click realizado en: Submenu: Destinos
+2025-12-13 21:26:37 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:26:38 - utils.logger - INFO - ✓ Click realizado en: Header: Información y ayuda
+2025-12-13 21:26:40 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-13 21:26:41 - utils.logger - INFO - ✓ Click realizado en: Submenu: Tipos de tarifas
+2025-12-13 21:31:43 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:31:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:31:49 - utils.logger - INFO - ✅ Elemento encontrado: Header: Reservar
+2025-12-13 21:31:52 - utils.logger - INFO - ✓ Click realizado en: Header: Reservar
+2025-12-13 21:32:10 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:32:13 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:32:14 - utils.logger - INFO - ✅ Elemento encontrado: Header: Reservar
+2025-12-13 21:32:16 - utils.logger - INFO - ✓ Click realizado en: Header: Reservar
+2025-12-13 21:32:21 - utils.logger - INFO - ✅ Elemento encontrado: Header: Ofertas y destinos
+2025-12-13 21:32:23 - utils.logger - INFO - ✓ Click realizado en: Header: Ofertas y destinos
+2025-12-13 21:32:24 - utils.logger - INFO - ✅ Elemento encontrado: Submenu: Destinos
+2025-12-13 21:32:26 - utils.logger - INFO - ✓ Click realizado en: Submenu: Destinos
+2025-12-13 21:32:30 - utils.logger - INFO - ✅ Elemento encontrado: Header: Información y ayuda
+2025-12-13 21:32:32 - utils.logger - INFO - ✓ Click realizado en: Header: Información y ayuda
+2025-12-13 21:32:33 - utils.logger - INFO - ✅ Elemento encontrado: Submenu: Tipos de tarifas
+2025-12-13 21:32:35 - utils.logger - INFO - ✓ Click realizado en: Submenu: Tipos de tarifas
+2025-12-13 21:45:09 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:45:13 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:45:24 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:45:42 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:45:50 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:45:53 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:46:06 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:46:09 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:46:22 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:46:42 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:46:57 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:47:00 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:47:15 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:47:16 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 21:47:31 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 21:47:33 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:09:39 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:09:44 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:09:45 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 22:09:45 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_220945.png
+2025-12-13 22:09:47 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:09:47 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_220947.png
+2025-12-13 22:09:49 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 22:09:51 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 22:09:51 - utils.logger - ERROR - Error en paso Click en Reservar/Book: name 'By' is not defined
+2025-12-13 22:09:52 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:09:52 - utils.logger - ERROR - Error en paso Scroll Down: 'key'
+2025-12-13 22:09:52 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:09:52 - utils.logger - ERROR - Error en paso Scroll Up: 'key'
+2025-12-13 22:09:52 - utils.logger - ERROR - Error en paso Click en Ofertas y destinos: name 'By' is not defined
+2025-12-13 22:09:52 - utils.logger - ERROR - Error en paso Click en Destinos: name 'By' is not defined
+2025-12-13 22:09:52 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:09:52 - utils.logger - ERROR - Error en paso Scroll Down: 'key'
+2025-12-13 22:09:52 - utils.logger - ERROR - Error en paso Click en Información y ayuda: name 'By' is not defined
+2025-12-13 22:09:52 - utils.logger - ERROR - Error en paso Click en Tipos de tarifas: name 'By' is not defined
+2025-12-13 22:10:02 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:10:04 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:10:05 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 22:10:06 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221005.png
+2025-12-13 22:10:07 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:10:08 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221007.png
+2025-12-13 22:10:10 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 22:10:14 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Click en Reservar/Book: name 'By' is not defined
+2025-12-13 22:10:14 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Scroll Down: 'key'
+2025-12-13 22:10:14 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Scroll Up: 'key'
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Click en Ofertas y destinos: name 'By' is not defined
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Click en Destinos: name 'By' is not defined
+2025-12-13 22:10:14 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Scroll Down: 'key'
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Click en Información y ayuda: name 'By' is not defined
+2025-12-13 22:10:14 - utils.logger - ERROR - Error en paso Click en Tipos de tarifas: name 'By' is not defined
+2025-12-13 22:12:50 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:12:53 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:12:54 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 22:12:55 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221254.png
+2025-12-13 22:12:56 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:12:56 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221256.png
+2025-12-13 22:12:58 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 22:13:00 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 22:13:03 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:13:03 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_221303.png
+2025-12-13 22:13:04 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:13:05 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:13:07 - utils.logger - INFO - ✓ Click en 'Ofertas y destinos' (Ofertas y destinos)
+2025-12-13 22:13:08 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_221307.png
+2025-12-13 22:13:11 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:13:12 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_221311.png
+2025-12-13 22:13:13 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:13:15 - utils.logger - INFO - ✓ Click en 'Información y ayuda' (Información y ayuda)
+2025-12-13 22:13:16 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_221315.png
+2025-12-13 22:13:19 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:13:20 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_221319.png
+2025-12-13 22:13:21 - utils.logger - WARNING - Algunos fallos en 'Español' pero continuando: ['No se pudo hacer click en: Reservar', 'No se pudo hacer click en: Destinos', 'No se pudo hacer click en: Tipos de tarifas']
+2025-12-13 22:13:31 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:13:34 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:13:35 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 22:13:36 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221335.png
+2025-12-13 22:13:37 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:13:37 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221337.png
+2025-12-13 22:13:39 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 22:13:42 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 22:13:44 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:13:44 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_221344.png
+2025-12-13 22:13:45 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:13:47 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:13:53 - utils.logger - WARNING - ❌ No se pudo hacer click en: Ofertas y destinos
+2025-12-13 22:13:53 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_221353.png
+2025-12-13 22:13:59 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:13:59 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_221359.png
+2025-12-13 22:14:00 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:14:02 - utils.logger - INFO - ✓ Click en 'Information and help' (Información y ayuda)
+2025-12-13 22:14:03 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_221402.png
+2025-12-13 22:14:09 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:14:09 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_221409.png
+2025-12-13 22:14:18 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:14:21 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:14:22 - utils.logger - INFO - Seleccionando idioma Português
+2025-12-13 22:14:22 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221422.png
+2025-12-13 22:14:24 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:14:24 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221424.png
+2025-12-13 22:14:26 - utils.logger - INFO - ✅ Elemento clickeable: Português option
+2025-12-13 22:14:32 - utils.logger - INFO - ✓ Idioma Português seleccionado
+2025-12-13 22:14:35 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:14:35 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_221435.png
+2025-12-13 22:14:36 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:14:37 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:14:39 - utils.logger - INFO - ✓ Click en 'Ofertas e destinos' (Ofertas y destinos)
+2025-12-13 22:14:40 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_221439.png
+2025-12-13 22:14:46 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:14:46 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_221446.png
+2025-12-13 22:14:47 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:14:53 - utils.logger - WARNING - ❌ No se pudo hacer click en: Información y ayuda
+2025-12-13 22:14:54 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_221453.png
+2025-12-13 22:15:00 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:15:00 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_221500.png
+2025-12-13 22:15:11 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:15:31 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:15:32 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 22:15:32 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221532.png
+2025-12-13 22:15:34 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:15:34 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221534.png
+2025-12-13 22:15:36 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 22:15:48 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 22:15:50 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:15:51 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_221550.png
+2025-12-13 22:15:52 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:15:53 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:15:55 - utils.logger - INFO - ✓ Click en 'Offres et destinations' (Ofertas y destinos)
+2025-12-13 22:15:55 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_221555.png
+2025-12-13 22:16:27 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:16:28 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_221627.png
+2025-12-13 22:16:29 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:16:35 - utils.logger - WARNING - ❌ No se pudo hacer click en: Información y ayuda
+2025-12-13 22:16:35 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_221635.png
+2025-12-13 22:16:36 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:16:36 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_221636.png
+2025-12-13 22:16:49 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:17:11 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:17:12 - utils.logger - INFO - Seleccionando idioma Español
+2025-12-13 22:17:12 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221712.png
+2025-12-13 22:17:13 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:17:13 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221713.png
+2025-12-13 22:17:15 - utils.logger - INFO - ✅ Elemento clickeable: Español option
+2025-12-13 22:17:18 - utils.logger - INFO - ✓ Idioma Español seleccionado
+2025-12-13 22:17:21 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:17:21 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_221721.png
+2025-12-13 22:17:22 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:17:23 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:17:25 - utils.logger - INFO - ✓ Click en 'Ofertas y destinos' (Ofertas y destinos)
+2025-12-13 22:17:25 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_221725.png
+2025-12-13 22:17:57 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:17:57 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_221757.png
+2025-12-13 22:17:58 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:17:59 - utils.logger - WARNING - ❌ No se pudo hacer click en: Información y ayuda
+2025-12-13 22:17:59 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_221759.png
+2025-12-13 22:18:00 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:18:00 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_221800.png
+2025-12-13 22:18:15 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:18:43 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:18:44 - utils.logger - INFO - Seleccionando idioma English
+2025-12-13 22:18:44 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221844.png
+2025-12-13 22:18:46 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:18:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221846.png
+2025-12-13 22:18:48 - utils.logger - INFO - ✅ Elemento clickeable: English option
+2025-12-13 22:18:50 - utils.logger - INFO - ✓ Idioma English seleccionado
+2025-12-13 22:18:50 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:18:50 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_221850.png
+2025-12-13 22:18:51 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:18:52 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:18:58 - utils.logger - WARNING - ❌ No se pudo hacer click en: Ofertas y destinos
+2025-12-13 22:18:58 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_221858.png
+2025-12-13 22:19:04 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:19:04 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_221904.png
+2025-12-13 22:19:05 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:19:06 - utils.logger - WARNING - ❌ No se pudo hacer click en: Información y ayuda
+2025-12-13 22:19:06 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_221906.png
+2025-12-13 22:19:12 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:19:12 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_221912.png
+2025-12-13 22:19:27 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:19:30 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:19:31 - utils.logger - INFO - Seleccionando idioma Português
+2025-12-13 22:19:31 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_221931.png
+2025-12-13 22:19:32 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:19:32 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_221932.png
+2025-12-13 22:19:34 - utils.logger - INFO - ✅ Elemento clickeable: Português option
+2025-12-13 22:19:36 - utils.logger - INFO - ✓ Idioma Português seleccionado
+2025-12-13 22:19:39 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:19:39 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_221939.png
+2025-12-13 22:19:41 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:19:42 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:19:44 - utils.logger - INFO - ✓ Click en 'Ofertas e destinos' (Ofertas y destinos)
+2025-12-13 22:19:44 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_221944.png
+2025-12-13 22:19:50 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:19:50 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_221950.png
+2025-12-13 22:19:51 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:19:57 - utils.logger - WARNING - ❌ No se pudo hacer click en: Información y ayuda
+2025-12-13 22:19:57 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_221957.png
+2025-12-13 22:20:03 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:20:03 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_222003.png
+2025-12-13 22:20:18 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:20:43 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:20:44 - utils.logger - INFO - Seleccionando idioma Français
+2025-12-13 22:20:44 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Language dropdown_20251213_222044.png
+2025-12-13 22:20:45 - utils.logger - INFO - ✅ Click realizado en: Language dropdown
+2025-12-13 22:20:46 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Language dropdown_20251213_222045.png
+2025-12-13 22:20:48 - utils.logger - INFO - ✅ Elemento clickeable: Français option
+2025-12-13 22:20:50 - utils.logger - INFO - ✓ Idioma Français seleccionado
+2025-12-13 22:20:50 - utils.logger - WARNING - ❌ No se pudo hacer click en: Reservar
+2025-12-13 22:20:50 - utils.logger - INFO - 📸 Screenshot tomado: paso_1_Reservar_20251213_222050.png
+2025-12-13 22:20:51 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:20:52 - utils.logger - INFO - ✓ Scroll up
+2025-12-13 22:20:53 - utils.logger - WARNING - ❌ No se pudo hacer click en: Ofertas y destinos
+2025-12-13 22:20:53 - utils.logger - INFO - 📸 Screenshot tomado: paso_4_Ofertas_y_destinos_20251213_222053.png
+2025-12-13 22:20:54 - utils.logger - WARNING - ❌ No se pudo hacer click en: Destinos
+2025-12-13 22:20:54 - utils.logger - INFO - 📸 Screenshot tomado: paso_5_Destinos_20251213_222054.png
+2025-12-13 22:20:55 - utils.logger - INFO - ✓ Scroll down
+2025-12-13 22:21:01 - utils.logger - WARNING - ❌ No se pudo hacer click en: Información y ayuda
+2025-12-13 22:21:01 - utils.logger - INFO - 📸 Screenshot tomado: paso_7_Información_y_ayuda_20251213_222101.png
+2025-12-13 22:21:02 - utils.logger - WARNING - ❌ No se pudo hacer click en: Tipos de tarifas
+2025-12-13 22:21:02 - utils.logger - INFO - 📸 Screenshot tomado: paso_8_Tipos_de_tarifas_20251213_222102.png
+2025-12-13 22:21:21 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:21:24 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:21:26 - utils.logger - INFO - 📸 Screenshot tomado: found_Reservar_Book_20251213_222125.png
+2025-12-13 22:21:28 - utils.logger - INFO - URL después de click en Book: https://nuxqa4.avtest.ink/es/
+2025-12-13 22:21:30 - utils.logger - INFO - ✓ Elemento 'Reservar' encontrado como 'Book'
+2025-12-13 22:21:45 - utils.logger - WARNING - ❌ Elemento 'Ofertas' no encontrado
+2025-12-13 22:21:55 - utils.logger - WARNING - ❌ Elemento 'Destinos' no encontrado
+2025-12-13 22:22:08 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-13 22:22:10 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-13 22:22:12 - utils.logger - INFO - 📸 Screenshot tomado: found_Reservar_Book_20251213_222212.png
+2025-12-13 22:22:15 - utils.logger - INFO - URL después de click en Book: https://nuxqa4.avtest.ink/es/
+2025-12-13 22:22:17 - utils.logger - INFO - ✓ Elemento 'Reservar' encontrado como 'Book'
+2025-12-13 22:22:22 - utils.logger - INFO - 📸 Screenshot tomado: found_Ofertas_Ofertas_20251213_222222.png
+2025-12-13 22:22:24 - utils.logger - INFO - URL después de click en Ofertas: https://nuxqa4.avtest.ink/es/
+2025-12-13 22:22:26 - utils.logger - INFO - ✓ Elemento 'Ofertas' encontrado como 'Ofertas'
+2025-12-13 22:22:32 - utils.logger - INFO - 📸 Screenshot tomado: found_Destinos_Destinos_20251213_222232.png
+2025-12-13 22:22:36 - utils.logger - INFO - URL después de click en Destinos: https://nuxqa4.avtest.ink/es/ofertas-destinos/destinos/
+2025-12-13 22:22:39 - utils.logger - INFO - ✓ Elemento 'Destinos' encontrado como 'Destinos'

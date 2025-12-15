@@ -26,6 +26,15 @@ from utils.screenshot_manager import ScreenshotManager
 
 # ==================== FIXTURES PARA MULTI-NAVEGADOR ====================
 
+def pytest_configure(config):
+    """Configuración de pytest para los tests del header"""
+    config.addinivalue_line(
+        "markers", "csv_navigation: Tests de navegación basados en CSV"
+    )
+    config.addinivalue_line(
+        "markers", "multi_language: Tests que prueban múltiples idiomas"
+    )
+
 def get_chrome_options(headless=False):
     """Opciones optimizadas para Chrome"""
     options = ChromeOptions()

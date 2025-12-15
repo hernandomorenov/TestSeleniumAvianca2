@@ -1,0 +1,111 @@
+2025-12-03 00:02:34 - utils.logger - INFO - ✅ Page Objects inicializados correctamente
+2025-12-03 00:02:34 - utils.logger - INFO - 🛠  Browser: chrome
+2025-12-03 00:02:34 - utils.logger - INFO - 🌐 URL Base: https://nuxqa4.avtest.ink/
+2025-12-03 00:02:34 - utils.logger - INFO - ============================================================
+2025-12-03 00:02:34 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-03 00:02:34 - utils.logger - INFO - ============================================================
+2025-12-03 00:02:34 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-03 00:02:47 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-03 00:02:51 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_inicio_20251203_000251.png
+2025-12-03 00:02:51 - utils.logger - INFO - === INICIANDO CONFIGURACIÓN HOME PAGE ===
+2025-12-03 00:02:51 - utils.logger - INFO - Seleccionando idioma English con ActionChains
+2025-12-03 00:02:51 - utils.logger - INFO - PASO 1: Abriendo dropdown de idiomas con ActionChains
+2025-12-03 00:02:51 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:02:52 - utils.logger - INFO -   → Moviendo cursor al dropdown de idiomas...
+2025-12-03 00:02:54 - utils.logger - INFO -   → Haciendo click en dropdown...
+2025-12-03 00:02:54 - utils.logger - INFO - ✓ Dropdown abierto con ActionChains
+2025-12-03 00:02:55 - utils.logger - INFO - PASO 2: Seleccionando English con ActionChains
+2025-12-03 00:02:55 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:02:55 - utils.logger - INFO -   → Moviendo cursor a English...
+2025-12-03 00:02:57 - utils.logger - INFO -   → English resaltado visualmente
+2025-12-03 00:02:58 - utils.logger - INFO -   → Haciendo click en English...
+2025-12-03 00:03:08 - utils.logger - INFO - 📸 Screenshot tomado: language_selected_english_20251203_000307.png
+2025-12-03 00:03:08 - utils.logger - INFO - ✅ Idioma English seleccionado con ActionChains
+2025-12-03 00:03:12 - utils.logger - INFO - Seleccionando POS: Colombia
+2025-12-03 00:03:12 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:03:12 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS selector_20251203_000312.png
+2025-12-03 00:03:13 - utils.logger - INFO - ✅ Click realizado en: POS selector
+2025-12-03 00:03:14 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS selector_20251203_000313.png
+2025-12-03 00:03:14 - utils.logger - INFO - ✓ POS selector abierto
+2025-12-03 00:03:15 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:03:15 - utils.logger - INFO - 📸 Screenshot tomado: before_click_POS option Colombia_20251203_000315.png
+2025-12-03 00:03:16 - utils.logger - INFO - ✅ Click realizado en: POS option Colombia
+2025-12-03 00:03:17 - utils.logger - INFO - 📸 Screenshot tomado: after_click_POS option Colombia_20251203_000316.png
+2025-12-03 00:03:17 - utils.logger - INFO - ✓ POS Colombia seleccionado
+2025-12-03 00:03:17 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:03:17 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Apply button_20251203_000317.png
+2025-12-03 00:03:20 - utils.logger - INFO - ✅ Click realizado en: Apply button
+2025-12-03 00:03:20 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Apply button_20251203_000320.png
+2025-12-03 00:03:20 - utils.logger - INFO - ✓ Apply presionado
+2025-12-03 00:03:21 - utils.logger - INFO - ✓ POS 'Colombia' configurado correctamente
+2025-12-03 00:03:23 - utils.logger - INFO - 📸 Screenshot tomado: before_click_One Way_20251203_000322.png
+2025-12-03 00:03:24 - utils.logger - INFO - ✅ Click realizado en: One Way
+2025-12-03 00:03:25 - utils.logger - INFO - 📸 Screenshot tomado: after_click_One Way_20251203_000324.png
+2025-12-03 00:03:25 - utils.logger - INFO - ✓ One Way seleccionado
+2025-12-03 00:03:27 - utils.logger - INFO - Seleccionando origen: Bogota (BOG)
+2025-12-03 00:03:27 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:03:37 - utils.logger - INFO - ✓ Origen seleccionado con ENTER
+2025-12-03 00:03:38 - utils.logger - INFO - Seleccionando destino: Medellin (MDE) con ActionChains
+2025-12-03 00:03:38 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:03:45 - utils.logger - INFO - ✓ Destino Medellin (MDE) seleccionado con ActionChains
+2025-12-03 00:03:46 - utils.logger - INFO - Seleccionando fecha automática con ActionChains: 05/12/2025
+2025-12-03 00:03:48 - utils.logger - INFO - ✓ Fecha seleccionada con ActionChains: Día 5
+2025-12-03 00:03:50 - utils.logger - INFO - Configurando 1A, 1Y, 1C, 1I
+2025-12-03 00:04:21 - utils.logger - INFO - ✅ Configuración de pasajeros completada
+2025-12-03 00:04:22 - utils.logger - INFO - 🔍 Buscando vuelos...
+2025-12-03 00:04:23 - utils.logger - INFO - 📸 Screenshot tomado: before_click_Search flights_20251203_000422.png
+2025-12-03 00:04:25 - utils.logger - INFO - ✅ Click realizado en: Search flights
+2025-12-03 00:04:25 - utils.logger - INFO - 📸 Screenshot tomado: after_click_Search flights_20251203_000425.png
+2025-12-03 00:04:25 - utils.logger - INFO - ✓ Búsqueda iniciada
+2025-12-03 00:04:28 - utils.logger - INFO - === CONFIGURACIÓN HOME: ✅ EXITOSA ===
+2025-12-03 00:04:28 - utils.logger - INFO - ✅ REQUISITO 1 COMPLETADO: Configuración home exitosa
+2025-12-03 00:04:29 - utils.logger - INFO - 📸 Screenshot tomado: 01_home_completado_20251203_000428.png
+2025-12-03 00:04:29 - utils.logger - INFO - ============================================================
+2025-12-03 00:04:29 - utils.logger - INFO - REQUISITO 2: SELECCIÓN DE VUELO
+2025-12-03 00:04:29 - utils.logger - INFO - ============================================================
+2025-12-03 00:04:29 - utils.logger - INFO - Esperando a que cargue la página de selección de vuelos...
+2025-12-03 00:04:29 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:04:29 - utils.logger - INFO - ✓ Página de selección de vuelos cargada
+2025-12-03 00:04:31 - utils.logger - INFO - 📸 Screenshot tomado: 02_flights_cargado_20251203_000431.png
+2025-12-03 00:04:31 - utils.logger - INFO - Seleccionando tarifa Basic con ActionChains (CSV)...
+2025-12-03 00:04:31 - utils.logger - INFO - ============================================================
+2025-12-03 00:04:31 - utils.logger - INFO - PASO 2: Click en Select fare label con ActionChains
+2025-12-03 00:04:31 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:04:33 - utils.logger - INFO - ✓ Click en Select fare label realizado con ActionChains
+2025-12-03 00:04:34 - utils.logger - INFO - PASO 3: Scroll down para ver tarifas
+2025-12-03 00:04:35 - utils.logger - INFO - ✓ Scroll down realizado
+2025-12-03 00:04:36 - utils.logger - INFO - PASO 4: Seleccionando tarifa Basic con ActionChains (DESTACADO)
+2025-12-03 00:04:36 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:04:36 - utils.logger - INFO - ✓ Botón Basic fare encontrado (selector específico)
+2025-12-03 00:04:37 - utils.logger - INFO -   → Moviendo cursor a tarifa Basic (hover)...
+2025-12-03 00:04:38 - utils.logger - INFO -   → Tarifa Basic resaltada visualmente
+2025-12-03 00:04:39 - utils.logger - INFO -   → Haciendo click en tarifa Basic...
+2025-12-03 00:04:40 - utils.logger - INFO - ✅ Tarifa Basic seleccionada con ActionChains (DESTACADO)
+2025-12-03 00:04:40 - utils.logger - INFO - 📸 Screenshot tomado: basic_fare_selected_20251203_000440.png
+2025-12-03 00:04:42 - utils.logger - INFO - PASO 5: Scroll up
+2025-12-03 00:04:43 - utils.logger - INFO - ✓ Scroll up realizado
+2025-12-03 00:04:44 - utils.logger - INFO - ============================================================
+2025-12-03 00:04:44 - utils.logger - INFO - ✅ Tarifa seleccionada correctamente
+2025-12-03 00:04:44 - utils.logger - INFO - Verificando precio del vuelo...
+2025-12-03 00:04:55 - utils.logger - ERROR - ❌ Timeout esperando elemento: elemento
+2025-12-03 00:04:55 - utils.logger - INFO - 📸 Screenshot tomado: timeout_elemento_20251203_000455.png
+2025-12-03 00:04:55 - utils.logger - WARNING - No se encontró texto de precio
+2025-12-03 00:04:55 - utils.logger - INFO - PASO 6: Click en Continue button con ActionChains
+2025-12-03 00:04:55 - utils.logger - INFO - ✅ Elemento encontrado: elemento
+2025-12-03 00:04:56 - utils.logger - INFO -   → Moviendo cursor a botón Continue...
+2025-12-03 00:04:57 - utils.logger - INFO -   → Haciendo click en Continue...
+2025-12-03 00:04:58 - utils.logger - INFO - ✅ Continue button clicked con ActionChains - Navegando a pasajeros
+2025-12-03 00:05:01 - utils.logger - INFO - ✅ REQUISITO 2 COMPLETADO: Tarifa Basic seleccionada
+2025-12-03 00:05:04 - utils.logger - INFO - ============================================================
+2025-12-03 00:05:04 - utils.logger - INFO - REQUISITO 3: INFORMACIÓN DE PASAJEROS
+2025-12-03 00:05:04 - utils.logger - INFO - ============================================================
+2025-12-03 00:05:04 - utils.logger - INFO - ✅ Página cargada completamente
+2025-12-03 00:05:05 - utils.logger - INFO - 📸 Screenshot tomado: 03_passengers_cargado_20251203_000505.png
+2025-12-03 00:05:22 - utils.logger - INFO - ✅ Page Objects inicializados correctamente
+2025-12-03 00:05:22 - utils.logger - INFO - 🛠  Browser: firefox
+2025-12-03 00:05:22 - utils.logger - INFO - 🌐 URL Base: https://nuxqa4.avtest.ink/
+2025-12-03 00:05:22 - utils.logger - INFO - ============================================================
+2025-12-03 00:05:22 - utils.logger - INFO - REQUISITO 1: CONFIGURACIÓN HOME PAGE
+2025-12-03 00:05:22 - utils.logger - INFO - ============================================================
+2025-12-03 00:05:22 - utils.logger - INFO - 🌐 Navegando a: https://nuxqa4.avtest.ink/
+2025-12-03 00:05:24 - utils.logger - INFO - ✅ Página cargada completamente

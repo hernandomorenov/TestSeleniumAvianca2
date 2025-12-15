@@ -4,8 +4,11 @@ Page Object para selección de asientos
 from selenium.webdriver.common.by import By
 import allure
 import time
+import os
+from datetime import datetime
 from pages.base_page import BasePage
 from utils.logger import logger
+from utils.config import Config
 
 class SeatmapPage(BasePage):
     """Página de selección de asientos"""
@@ -32,10 +35,61 @@ class SeatmapPage(BasePage):
     # ==================== MÉTODOS ====================
     
     @allure.step("Esperar a que cargue el mapa de asientos")
-    def wait_for_seatmap(self, timeout=10):
-        """Esperar a que cargue el mapa de asientos"""
+    def wait_for_seatmap(self, timeout=35):
+        """Esperar a que cargue el mapa de asientos
+
+        - Amplía el timeout por defecto a 35s.
+        - Añade detectores alternativos (`iframe`, `canvas`).
+        - En caso de timeout, guarda un volcado HTML para diagnóstico.
+        """
         logger.info("Esperando carga del mapa de asientos")
-        return self.wait_for_element(self.SEATMAP_CONTAINER, "Mapa de asientos", timeout)
+
+        # Intentar varios selectores ya que el mapa puede renderizarse de forma dinámica
+        candidate_locators = [
+            self.SEATMAP_CONTAINER,
+            (By.CSS_SELECTOR, "[id*='seatmap']"),
+            (By.XPATH, "//*[contains(@class,'seatmap') or contains(@id,'seatmap')]"),
+            self.ECONOMY_SEAT,
+            self.SELECTED_SEATS_INFO,
+            (By.TAG_NAME, 'iframe'),
+            (By.TAG_NAME, 'canvas'),
+            (By.XPATH, "//*[contains(@class,'seat') and contains(@class,'available')]")
+        ]
+
+        end_time = time.time() + timeout
+        while time.time() < end_time:
+            for loc in candidate_locators:
+                try:
+                    el = self.wait_for_element(loc, "Mapa de asientos (chequeo rápido)", timeout=1)
+                    if el:
+                        logger.info(f"✓ Mapa detectado con selector: {loc}")
+                        return el
+                except Exception:
+                    # seguir intentando con otros selectores
+                    continue
+            time.sleep(0.5)
+
+        # En caso de timeout, capturar evidencia adicional (screenshot ya lo hace wait_for_element);
+        # además volcar page_source para ayudar al diagnóstico.
+        logger.error("❌ Timeout esperando elemento: Mapa de asientos")
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"timeout_seatmap_{timestamp}.html"
+            filepath = os.path.join(Config.SCREENSHOT_DIR, filename)
+            os.makedirs(Config.SCREENSHOT_DIR, exist_ok=True)
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(self.driver.page_source)
+            logger.info(f"Volcado HTML guardado: {filepath}")
+            # Adjuntar a Allure si es posible
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    allure.attach(f.read(), name="timeout_seatmap_html", attachment_type=allure.attachment_type.HTML)
+            except Exception:
+                pass
+        except Exception as e:
+            logger.error(f"Error guardando volcado HTML: {e}")
+
+        return None
     
     @allure.step("Seleccionar asiento tipo: {seat_type}")
     def select_seat_type(self, seat_type="economy"):

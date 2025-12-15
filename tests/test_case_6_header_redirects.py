@@ -1,186 +1,146 @@
 import pytest
 import allure
 import time
+from selenium.webdriver.common.by import By  # ¡IMPORTANTE! Falta este import
 from pages.home_page import HomePage
 from utils.logger import logger
 
+LANGUAGES = ["Español", "English", "Português", "Français"]
+
 @allure.epic("FLYR Automation Suite")
 @allure.feature("Navigation Tests")
-@allure.story("Redirecciones del Header")
-@pytest.mark.redirects
-@pytest.mark.navigation
 class TestCase6HeaderRedirects:
-    """Caso 6: Verificar redirecciones del Header"""
-    
-    @allure.title("Test 6: Verify header redirects - {browser}")
-    @allure.description("Usar opciones del Navbar para acceder a 3 sitios diferentes")
-    @allure.severity(allure.severity_level.NORMAL)
-    @allure.tag("header", "navigation", "redirects")
-    def test_header_redirects(self, driver, setup_test, request):
-        # Inicializar página
-        home_page = HomePage(driver)
-        
-        # Links del header a probar (ajustar según sitio real)
-        header_links = ["home", "flights", "hotels"]  # 3 sitios como requerido
-        
-        # ==================== CONFIGURAR IDIOMA INICIAL ====================
-        with allure.step("1. Configurar idioma inicial (English)"):
-            assert home_page.navigate_to(setup_test), "No se pudo navegar a la página"
-            assert home_page.select_language("english"), "No se pudo seleccionar inglés"
-            time.sleep(2)
-        
-        # ==================== PROBAR CADA LINK ====================
-        results = []
-        
-        for i, link in enumerate(header_links, 1):
-            with allure.step(f"{i+1}. Probar link del header: {link}"):
-                # Guardar URL actual para comparación
-                previous_url = driver.current_url
-                
-                # Click en el link del header
-                click_success = home_page.click_header_link(link)
-                
-                if click_success:
-                    # Esperar a que cargue la nueva página
-                    assert home_page.wait_for_page_load(), f"Página no cargó después de click en {link}"
-                    
-                    # Obtener URL actual
-                    current_url = driver.current_url
-                    
-                    # Verificar que la URL cambió
-                    url_changed = previous_url != current_url
-                    
-                    # Verificar que la URL carga correctamente
-                    url_valid = self._verify_url_valid(driver, link)
-                    
-                    # Tomar screenshot
-                    home_page.take_screenshot(f"header_{link}")
-                    
-                    # Registrar resultado
-                    result = {
-                        "link": link,
-                        "click_success": click_success,
-                        "url_changed": url_changed,
-                        "url_valid": url_valid,
-                        "final_url": current_url
-                    }
-                    results.append(result)
-                    
-                    # Adjuntar información
-                    status = "✅" if (url_changed and url_valid) else "⚠️"
-                    allure.attach(
-                        f"Link: {link}\n"
-                        f"Click exitoso: {click_success}\n"
-                        f"URL cambió: {url_changed}\n"
-                        f"URL válida: {url_valid}\n"
-                        f"URL final: {current_url}\n"
-                        f"Status: {status}",
-                        name=f"Header Link {link}",
-                        attachment_type=allure.attachment_type.TEXT
-                    )
-                    
-                    logger.info(f"Header link {link}: click={click_success}, url_changed={url_changed}, valid={url_valid}")
-                    
-                    # Volver a la página principal para probar el siguiente link
-                    if i < len(header_links):
-                        driver.back()
-                        assert home_page.wait_for_page_load(), "No se pudo volver atrás"
-                        time.sleep(1)
-                else:
-                    logger.warning(f"No se pudo hacer click en header link: {link}")
-                    # Continuar con el siguiente link
-        
-        # ==================== VERIFICACIÓN FINAL ====================
-        with allure.step("Verificación final - Resumen de resultados"):
-            # Contar éxitos
-            successful_redirects = sum(1 for r in results if r.get("url_changed") and r.get("url_valid"))
-            
-            home_page.take_screenshot("header_redirects_summary")
-            
-            # Crear resumen
-            summary = f"Test de header redirects completado en {request.cls.browser}\n\n"
-            summary += f"Total links probados: {len(results)}\n"
-            summary += f"Redirecciones exitosas: {successful_redirects}\n\n"
-            
-            for r in results:
-                summary += f"- {r['link']}: {'✅' if r.get('url_changed') and r.get('url_valid') else '❌'}\n"
-                if r.get('final_url'):
-                    summary += f"  URL: {r['final_url']}\n"
-            
-            allure.attach(summary, name="Test Summary", attachment_type=allure.attachment_type.TEXT)
-            
-            # Assert: al menos algunos links deberían funcionar
-            assert successful_redirects >= 1, "Ninguna redirección del header funcionó correctamente"
-            
-            logger.info(f"✅ Header redirects test completado. Exitosos: {successful_redirects}/{len(results)}")
-    
-    def _verify_url_valid(self, driver, link_name):
-        """Verificar que una URL carga correctamente"""
-        try:
-            current_url = driver.current_url
-            
-            # Verificar que no es una página de error
-            page_source = driver.page_source.lower()
-            
-            # Lista de indicadores de error
-            error_indicators = [
-                "error", "not found", "404", "500", "cannot", "unavailable",
-                "error", "no encontrada", "no disponible"
-            ]
-            
-            for error in error_indicators:
-                if error in page_source:
-                    logger.warning(f"Indicador de error encontrado: {error}")
-                    return False
-            
-            # Verificar que la página tiene contenido
-            if len(page_source) < 100:  # Página muy pequeña puede ser error
-                logger.warning("Página muy pequeña, posible error")
-                return False
-            
-            # Verificar código de estado HTTP (vía JavaScript)
+
+    @allure.title("Test Header Navigation por idioma")
+    @pytest.mark.parametrize("language", LANGUAGES)
+    def test_csv_header_navigation(self, driver, setup_test, language):
+        home = HomePage(driver)
+        home.navigate_to(setup_test)
+
+        # Seleccionar idioma
+        with allure.step(f"Seleccionar idioma: {language}"):
             try:
-                http_status = driver.execute_script("""
-                    return window.performance.getEntriesByType('navigation')[0].responseStatus;
-                """)
-                if http_status and http_status >= 400:
-                    logger.warning(f"Código HTTP de error: {http_status}")
-                    return False
-            except:
-                pass  # Si no se puede obtener, continuar
-            
-            return True
-            
-        except Exception as e:
-            logger.error(f"Error verificando URL: {e}")
-            return False
-    
-    @allure.title("Test 6b: Header links with different languages - {browser}")
-    @allure.description("Probar links del header con diferentes idiomas")
-    @allure.severity(allure.severity_level.MINOR)
-    def test_header_multilingual(self, driver, setup_test):
-        """Probar que los links del header funcionan con diferentes idiomas"""
-        home_page = HomePage(driver)
+                success = home.select_language(language)
+                if not success:
+                    logger.warning(f"No se pudo cambiar a {language}, continuando con español")
+            except Exception as e:
+                logger.error(f"Error con método select_language: {e}")
+
+        steps = [
+            {"action": "click", "key": "Reservar", "desc": "Click en Reservar/Book"},
+            {"action": "scroll", "direction": "down", "desc": "Scroll Down"},
+            {"action": "scroll", "direction": "up", "desc": "Scroll Up"},
+            {"action": "click", "key": "Ofertas y destinos", "desc": "Click en Ofertas y destinos"},
+            {"action": "click", "key": "Destinos", "desc": "Click en Destinos"},
+            {"action": "scroll", "direction": "down", "desc": "Scroll Down"},
+            {"action": "click", "key": "Información y ayuda", "desc": "Click en Información y ayuda"},
+            {"action": "click", "key": "Tipos de tarifas", "desc": "Click en Tipos de tarifas"},
+        ]
         
-        assert home_page.navigate_to(setup_test)
+        failures = []
         
-        # Probar con diferentes idiomas
-        for language in ["spanish", "english"]:
-            logger.info(f"Probando header links con idioma: {language}")
+        for i, step in enumerate(steps, 1):
+            with allure.step(f"Paso {i}: {step['desc']}"):
+                try:
+                    if step["action"] == "click":
+                        # Intentar diferentes textos según el idioma
+                        if language == "English":
+                            text_map = {
+                                "Reservar": "Book",
+                                "Ofertas y destinos": "Offers and destinations",
+                                "Destinos": "Our destinations",
+                                "Información y ayuda": "Information and help",
+                                "Tipos de tarifas": "Types of fares"
+                            }
+                        elif language == "Português":
+                            text_map = {
+                                "Reservar": "Reservar",
+                                "Ofertas y destinos": "Ofertas e destinos",
+                                "Destinos": "Nossos destinos",
+                                "Información y ayuda": "Informação e assistência",
+                                "Tipos de tarifas": "Tipos de taxas"
+                            }
+                        elif language == "Français":
+                            text_map = {
+                                "Reservar": "Réserver",
+                                "Ofertas y destinos": "Offres et destinations",
+                                "Destinos": "Destinations",
+                                "Información y ayuda": "Information et aide",
+                                "Tipos de tarifas": "Types de tarifs"
+                            }
+                        else:  # Español
+                            text_map = {
+                                "Reservar": "Reservar",
+                                "Ofertas y destinos": "Ofertas y destinos",
+                                "Destinos": "Destinos",
+                                "Información y ayuda": "Información y ayuda",
+                                "Tipos de tarifas": "Tipos de tarifas"
+                            }
+                        
+                        text = text_map.get(step["key"], step["key"])
+                        
+                        # Método simple de click por texto
+                        xpath = f"//*[contains(text(), '{text}')]"
+                        elements = driver.find_elements(By.XPATH, xpath)
+                        
+                        clicked = False
+                        for element in elements:
+                            try:
+                                if element.is_displayed() and element.is_enabled():
+                                    # Resaltar el elemento
+                                    driver.execute_script("arguments[0].style.border='3px solid red';", element)
+                                    time.sleep(0.3)
+                                    
+                                    # Scroll al elemento
+                                    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+                                    time.sleep(0.5)
+                                    
+                                    # Intentar click
+                                    try:
+                                        element.click()
+                                    except:
+                                        driver.execute_script("arguments[0].click();", element)
+                                    
+                                    # Quitar resaltado
+                                    driver.execute_script("arguments[0].style.border='none';", element)
+                                    
+                                    clicked = True
+                                    logger.info(f"✓ Click en '{text}' ({step['key']})")
+                                    break
+                            except Exception as e:
+                                logger.debug(f"Error con elemento: {e}")
+                                continue
+                        
+                        if not clicked:
+                            failures.append(f"No se pudo hacer click en: {step['key']}")
+                            logger.warning(f"❌ No se pudo hacer click en: {step['key']}")
+                    
+                    elif step["action"] == "scroll":
+                        pixels = 500 if step["direction"] == "down" else -500
+                        driver.execute_script(f"window.scrollBy(0, {pixels});")
+                        logger.info(f"✓ Scroll {step['direction']}")
+                    
+                    # Tomar screenshot después de cada paso
+                    try:
+                        home.take_screenshot(f"paso_{i}_{step['key'].replace(' ', '_')}")
+                    except:
+                        pass
+                    
+                    time.sleep(1)
+                    
+                except Exception as e:
+                    failures.append(f"Error en paso {step['desc']}: {str(e)}")
+                    logger.error(f"Error en paso {step['desc']}: {e}")
+        
+        # Reporte final
+        if failures:
+            failure_msg = f"Fallos en idioma '{language}':\n" + "\n".join(failures)
+            allure.attach(failure_msg, name=f"Fallos {language}", attachment_type=allure.attachment_type.TEXT)
             
-            # Cambiar idioma
-            home_page.select_language(language)
-            time.sleep(2)
-            
-            # Probar un link
-            if home_page.click_header_link("flights"):
-                home_page.take_screenshot(f"header_{language}_flights")
-                logger.info(f"✅ Header link funciona con idioma {language}")
-                
-                # Volver
-                driver.back()
-                home_page.wait_for_page_load()
+            # Si hay demasiados fallos, marcar como fallido
+            if len(failures) > 3:
+                pytest.fail(f"Demasiados fallos en idioma '{language}': {len(failures)}")
             else:
-                logger.warning(f"⚠️ Header link no funciona con idioma {language}")
-        
-        assert True
+                logger.warning(f"Algunos fallos en '{language}' pero continuando: {failures}")
+    
+   

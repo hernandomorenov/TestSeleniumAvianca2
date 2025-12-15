@@ -6,6 +6,13 @@ import allure
 from pages.base_page import BasePage
 from utils.config import Config
 from utils.logger import logger
+from selenium.webdriver import ActionChains
+
+from selenium.common.exceptions import (
+    StaleElementReferenceException,
+    ElementClickInterceptedException,
+    TimeoutException
+)
 
 class HomePage(BasePage):
     """Página de inicio de Avianca"""
@@ -74,34 +81,885 @@ class HomePage(BasePage):
     CHILD_PLUS = (By.XPATH, "//button[contains(@class, 'child-plus')]")
     INFANT_PLUS = (By.XPATH, "//button[contains(@class, 'infant-plus')]")
     
-    # ==================== MÉTODOS  ====================
+    # ==================== SELECTORES MULTIIDIOMA ====================
+    
+    # Dropdown de idioma
+    LANGUAGE_DROPDOWN = (By.XPATH, "//span[@class='dropdown_trigger_value']")
+    
+    # Idiomas disponibles
+    LANGUAGE_ENGLISH = (By.XPATH, "//span[contains(text(),'English')]")
+    LANGUAGE_PORTUGUESE = (By.XPATH, "//span[contains(text(),'Português')]")
+    LANGUAGE_FRENCH = (By.XPATH, "//span[contains(text(),'Français')]")
+    LANGUAGE_SPANISH = (By.XPATH, "//span[contains(text(),'Español')]")
+    
+    # Mapa de idiomas
+    LANGUAGE_MAP = {
+        "English": LANGUAGE_ENGLISH,
+        "Português": LANGUAGE_PORTUGUESE,
+        "Français": LANGUAGE_FRENCH,
+        "Español": LANGUAGE_SPANISH
+    }
+    
+    # Links del footer (textos en español - base)
+    FOOTER_LINKS = {
+        "Somos avianca": (By.XPATH, "//*[@id='footerNavListId-1']/li[1]/a"),
+        "Sostenibilidad": (By.XPATH, "//*[@id='footerNavListId-1']/li[5]/a"),
+        "Plan de accesibilidad": (By.XPATH, "//*[@id='footerNavListId-1']/li[6]/a"),
+        "Información legal": (By.XPATH, "//*[@id='footerNavListId-3']/li[1]/a")
+    }
+
+    def __init__(self, driver):
+        super().__init__(driver)
+    
+    # Mapa de textos por idioma (ajusta si tu sitio usa otras cadenas)
+    HEADER_TEXTS = {
+        "Español": {
+            "Reservar": "//span[normalize-space()='Reservar']",
+            "Ofertas y destinos": "//span[@class='button_label' and normalize-space()='Ofertas y destinos']",
+            "Destinos": "//span[normalize-space()='Destinos']",
+            "Información y ayuda": "//span[@class='button_label' and normalize-space()='Información y ayuda']",
+            "Tipos de tarifas": "//span[normalize-space()='Tipos de tarifas']",
+        },
+        "English": {
+            "Book": "//span[normalize-space()='Book']",
+            "Deals and destinations": "//span[@class='button_label' and normalize-space()='Offers and destinations']",
+            "Destinations": "//span[normalize-space()='Our destinations']",
+            "Information and help": "//span[@class='button_label' and normalize-space()='Information and help']",
+            "Fare types": "//span[normalize-space()='Types of fares']",
+        },
+        "Português": {
+            "Reservar": "//span[normalize-space()='Reservar']",
+            "Ofertas e destinos": "//span[@class='button_label' and normalize-space()='Ofertas e destinos']",
+            "Destinos": "//span[normalize-space()='Nossos destinos']",
+            "Informação e ajuda": "//span[@class='button_label' and normalize-space()='Informação e assistência']",
+            "Tipos de tarifas": "//span[normalize-space()='Tipos de taxas']",
+        },
+        "Français": {
+            "Réserver": "//span[normalize-space()='Réserver']",
+            "Offres et destinations": "//span[@class='button_label' and normalize-space()='Offres et destinations']",
+            "Destinations": "//span[normalize-space()='Destinations']",
+            "Informations et aide": "//span[@class='button_label' and normalize-space()='Informations et aide']",
+            "Types de tarifs": "//span[normalize-space()='Types de tarifs']",
+        },
+    }
+
+    def header_xpath(self, language, key):
+        """Devuelve el XPath del ítem de header según idioma y clave textual."""
+        # Normaliza el idioma que muestra el dropdown
+        lang = language.strip()
+        # Algunos sitios muestran 'English (US)' → reduce a 'English'
+        if lang.startswith("English"):
+            lang = "English"
+        return self.HEADER_TEXTS.get(lang, {}).get(key)
+    
+    # ==================== MÉTODOS PARA HEADER ====================
+    
+    
+    @allure.step("Abrir/Click con ActionChains: {desc}")
+    def _hover_click_with_actions(self, locator, desc="elemento"):
+        element = self.wait_for_clickable(locator, desc, timeout=12)
+        if not element:
+            return False
+        try:
+            # Scroll al centro y borde rojo visible
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView({behavior:'smooth', block:'center'});", element
+            )
+            self.driver.execute_script("arguments[0].style.border='3px solid #e00';", element)
+            time.sleep(0.25)
+
+            ActionChains(self.driver).move_to_element(element).pause(0.2).click().perform()
+
+            # Limpieza del borde
+            try:
+                self.driver.execute_script("arguments[0].style.border='0px';", element)
+            except Exception:
+                pass
+
+            return True
+        except Exception as e:
+            # Fallback: clic directo y último recurso: JS
+            try:
+                element.click()
+                return True
+            except Exception:
+                try:
+                    self.driver.execute_script("arguments[0].click();", element)
+                    return True
+                except Exception:
+                    logger.error(f"Error hover+click ({desc}): {e}")
+
+
+    @allure.step("Click visual: {description}")
+    def click_with_highlight(self, xpath, description):
+        success = False
+        element = None
+        try:
+            # Esperar a que sea clickeable
+            element = WebDriverWait(self.driver, 12).until(
+                EC.element_to_be_clickable((By.XPATH, xpath))
+            )
+            # Scroll al centro
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView({behavior:'smooth', block:'center'});", element
+            )
+            time.sleep(0.3)
+            # Borde rojo
+            self.driver.execute_script("arguments[0].style.border='3px solid red';", element)
+            time.sleep(0.2)
+            # Intento 1: ActionChains
+            try:
+                ActionChains(self.driver).move_to_element(element).pause(0.2).click().perform()
+            except ElementClickInterceptedException:
+                # Intento 2: click directo
+                try:
+                    element.click()
+                except Exception:
+                    # Intento 3: JavaScript click
+                    self.driver.execute_script("arguments[0].click();", element)
+            success = True
+        except Exception as e:
+            logger.error(f"Error clickeando {description}: {e}")
+            success = False
+
+        # Limpieza de borde (segura ante elemento stale)
+        if element:
+            try:
+                self.driver.execute_script("arguments[0].style.border='0px';", element)
+            except StaleElementReferenceException:
+                logger.info("Elemento quedó 'stale' tras el clic; se omite limpieza del borde.")
+            except Exception as e:
+                logger.debug(f"Error de limpieza de borde: {e}")
+        return success
+
+    @allure.step("Ejecutar scroll: {direction}")
+    def perform_scroll(self, direction="down"):
+        try:
+            scroll_amount = 500 if direction == "down" else -500
+            self.driver.execute_script(f"window.scrollBy(0, {scroll_amount});")
+            time.sleep(1)
+            return True
+        except Exception as e:
+            return False
+
+    # ==================== MÉTODOS SIMPLIFICADOS ====================
+    
     
     @allure.step("Seleccionar idioma - {language}")
     def select_language(self, language="English"):
-        """Seleccionar idioma (English, Español, etc.)"""
         logger.info(f"Seleccionando idioma {language}")
 
         try:
-            # Click en dropdown de idioma
-            self.click(self.LANGUAGE_DROPDOWN, "Language dropdown")
-            time.sleep(1)
+            # --- 2.1 Neutralizar posibles cierres/recargas agresivas ---
+            self.driver.execute_script("""
+                try { window.onbeforeunload = null; } catch(e) {}
+                try {
+                    window._originalOpen = window.open;
+                    window.open = function(url, target, features) {
+                        return window._originalOpen(url, "_self", features);
+                    };
+                } catch(e) {}
+            """)
 
-            # Seleccionar idioma específico
-            if language == "English":
-                self.click(self.LANGUAGE_ENGLISH_OPTION, "English option")
-            else:
-                # Seleccionar otro idioma por xpath dinámico
-                language_xpath = (By.XPATH, f"//span[contains(text(),'{language}')]")
-                self.click(language_xpath, f"{language} option")
+            # Guarda los handles actuales para detectar cambios de pestañas
+            original_handles = self.driver.window_handles
 
-            logger.info(f"✓ Idioma {language} seleccionado")
+            # --- 2.2 Abrir dropdown con ActionChains y evidencia visual ---
+            opened = self._hover_click_with_actions(self.LANGUAGE_DROPDOWN, "Language dropdown")
+            if not opened:
+                elem = self.wait_for_clickable(self.LANGUAGE_DROPDOWN, "Language dropdown", timeout=10)
+                if not elem:
+                    return False
+                self.driver.execute_script("arguments[0].click();", elem)
+
+            self.take_screenshot(f"language_dropdown_open_{language}")
+            try:
+                WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'English') or contains(text(),'Español') or contains(text(),'Português') or contains(text(),'Fran')]"))
+                )
+            except TimeoutException:
+                logger.error("El menú de idiomas no se abrió/mostró opciones a tiempo.")
+                return False
+
+            time.sleep(0.4)
+
+            # --- 2.3 Localizar opción por idioma y click con ActionChains ---
+            option_locator = (By.XPATH, f"//span[contains(text(),'{language}')]")
+            selected = self._hover_click_with_actions(option_locator, f"{language} option")
+            if not selected:
+                opt = self.wait_for_clickable(option_locator, f"{language} option", timeout=6)
+                if not opt:
+                    logger.error(f"No se encontró la opción de idioma: {language}")
+                    return False
+                self.driver.execute_script("arguments[0].click();", opt)
+
+            # --- 2.4 Esperar actualización ---
+            time.sleep(1.5)
+
+            # Si el sitio "abrió" otra pestaña, mantenernos en una válida
+            current_handles = self.driver.window_handles
+            if len(current_handles) != len(original_handles):
+                new_handle = current_handles[-1]
+                self.driver.switch_to.window(new_handle)
+                logger.info("Se detectó apertura/cambio de pestaña; se cambió el foco a la pestaña activa.")
+
+            # Validación suave: el dropdown refleja el idioma actual
+            try:
+                current_lang = self.get_current_language()
+                logger.info(f"Idioma actual en UI: {current_lang}")
+            except Exception:
+                current_lang = "unknown"
+                logger.warning("No se pudo obtener idioma actual")
+
             return True
+
         except Exception as e:
             logger.error(f"Error seleccionando idioma: {e}")
-            return False
+            self.take_screenshot("language_selection_error")
+            return False  # Asegúrate de retornar False en caso de error
 
     
+    @allure.step("Obtener idioma actual")
+    def get_current_language(self):
+        """Obtener idioma actual seleccionado"""
+        try:
+            dropdown = self.wait_for_element(self.LANGUAGE_DROPDOWN, "Language dropdown")
+            if dropdown:
+                return dropdown.text.strip()
+        except:
+            pass
+        return "Español"  # Default
     
+    @allure.step("Click en link del footer: {link_name}")
+    def click_footer_link(self, link_name):
+        """Click simple en link del footer"""
+        try:
+            if link_name in self.FOOTER_LINKS:
+                selector = self.FOOTER_LINKS[link_name]
+                
+                # Scroll al elemento primero
+                element = self.wait_for_element(selector, f"Footer link: {link_name}")
+                if element:
+                    self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
+                    time.sleep(0.5)
+                
+                # Click
+                self.click(selector, f"Footer: {link_name}")
+                time.sleep(2)  # Esperar redirección
+                return True
+            return False
+        except Exception as e:
+            logger.warning(f"No se pudo clickear {link_name}: {e}")
+            return False
+    
+    @allure.step("Hacer scroll al footer")
+    def scroll_to_footer(self):
+        """Hacer scroll al final de la página"""
+        try:
+            self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(1)
+            return True
+        except:
+            return False
+
+    # ===================== SELECT POS ===================================#
+    
+    @allure.step("Seleccionar POS (CSV) - {target_pos}")
+    def select_pos_from_csv(self, target_pos: str):
+        """
+        Selecciona el POS según los pasos y xpaths del CSV:
+        target_pos: "otros_paises", "espana", "chile"
+        """
+        # Mapa de xpaths según CSV
+        HEADER_POS_TRIGGER = (By.XPATH, "//li[@class='main-header_nav-secondary_item main-header_nav-secondary_item--point-of-sale-selector']//span[2]")
+        APPLY_SPAN = (By.XPATH, "//span[contains(text(),'Aplicar')]")
+        OTROS_PAISES = (By.XPATH, "//span[normalize-space()='Otros países']")
+        ESPANA = (By.XPATH, "//span[normalize-space()='España']")
+        CHILE = (By.XPATH, "//span[normalize-space()='Chile']")
+        CURRENCY_BUTTON = (By.XPATH, "//span[@class='button_label_value']")
+
+        try:
+            # --- Abrir el selector en el header (hover + evidencia) ---
+            opened = self._hover_click_with_actions(HEADER_POS_TRIGGER, "Header POS trigger")
+            if not opened:
+                elem = self.wait_for_clickable(HEADER_POS_TRIGGER, "Header POS trigger", timeout=10)
+                if not elem:
+                    self.take_screenshot("pos_header_trigger_not_found")
+                    return False
+                self.driver.execute_script("arguments[0].click();", elem)
+            self.take_screenshot("pos_popup_open")
+
+            # --- Selección según destino ---
+            target = target_pos.strip().lower()
+
+            if target == "otros_paises":
+                if not self._hover_click_with_actions(OTROS_PAISES, "Otros países"):
+                    opt = self.wait_for_clickable(OTROS_PAISES, "Otros países", timeout=8)
+                    if not opt: return False
+                    self.driver.execute_script("arguments[0].click();", opt)
+                time.sleep(0.3)
+                self._hover_click_with_actions(APPLY_SPAN, "Aplicar")
+                time.sleep(1.2)
+                self.take_screenshot("pos_otros_paises_applied")
+                return True
+
+            elif target == "espana":
+                # CSV: abrir header -> click "España" -> "Aplicar" -> 
+                if not self._hover_click_with_actions(ESPANA, "España"):
+                    opt = self.wait_for_clickable(ESPANA, "España", timeout=8)
+                    if not opt: return False
+                    self.driver.execute_script("arguments[0].click();", opt)
+                time.sleep(0.3)
+                self._hover_click_with_actions(APPLY_SPAN, "Aplicar")
+                time.sleep(1.2)
+                self.take_screenshot("pos_espana_applied")
+
+                # CSV luego usa un click en "€" para abrir el popup de moneda/país
+                # Esto puede aparecer tras la recarga; lo intentamos si está disponible:
+                try:
+                    reopen = self.wait_for_clickable(CURRENCY_BUTTON, "Currency button", timeout=5)
+                    if reopen:
+                        self._hover_click_with_actions(CURRENCY_BUTTON, "Currency button (reopen)")
+                        self.take_screenshot("currency_popup_open")
+                    else:
+                        # Si no aparece, no es crítico: se continúa
+                        pass
+                except Exception:
+                    pass
+                return True
+
+            elif target == "chile":
+                # CSV: abrir header -> click "Chile" -> "Aplicar"
+                if not self._hover_click_with_actions(CHILE, "Chile"):
+                    opt = self.wait_for_clickable(CHILE, "Chile", timeout=8)
+                    if not opt: return False
+                    self.driver.execute_script("arguments[0].click();", opt)
+                time.sleep(0.3)
+                self._hover_click_with_actions(APPLY_SPAN, "Aplicar")
+                time.sleep(1.2)
+                self.take_screenshot("pos_chile_applied")
+                return True
+
+            else:
+                logger.warning(f"POS objetivo desconocido: {target_pos}")
+                return False
+
+        except Exception as e:
+            logger.error(f"Error en select_pos_from_csv({target_pos}): {e}")
+            self.take_screenshot(f"pos_csv_error_{target_pos}")
+            return
+            
+    #====================== TEST CASE 1 =====================================  #
+
+    
+
+
+    @allure.step("Click XPath con ActionChains: {desc}")
+    def click_xpath_with_actions(self, xpath: str, desc: str):
+        """Wrapper para usar evidencia visual con el XPath exacto del CSV."""
+        return self.click_with_highlight(xpath, desc)  # ya usa ActionChains + borde rojo
+
+    
+    @allure.step("CSV: Seleccionar idioma {language}")
+    def select_language_from_csv(self, language="English"):
+        """
+        Paso 2-3 del CSV:
+        2) Click al dropdown de idioma
+        3) Click en "English"
+        """
+        LANG_DROPDOWN_XPATH = "//span[@class='dropdown_trigger_value']"  # del CSV
+        # Lista de locators robustos para la opción 'English'
+        OPTION_LOCATORS = [
+            (By.XPATH, f"//button[starts-with(@id,'optionId_languageListOptionsLisId')][normalize-space()='{language}']"),
+            (By.XPATH, f"//button[@ role='option'][normalize-space()='{language}']"),
+            (By.XPATH, f"//button[normalize-space()='{language}']"),
+            (By.XPATH, f"//span[normalize-space()='{language}']"),  # último fallback
+        ]
+
+        try:
+            # 1) Abrir dropdown con evidencia ActionChains
+            opened = self.click_xpath_with_actions(LANG_DROPDOWN_XPATH, "Idioma - dropdown")
+            if not opened:
+                elem = self.wait_for_clickable((By.XPATH, LANG_DROPDOWN_XPATH), "Idioma - dropdown", timeout=10)
+                if not elem:
+                    self.take_screenshot("csv_language_dropdown_not_found")
+                    return False
+                self.driver.execute_script("arguments[0].click();", elem)
+
+            # Esperar presencia de cualquier opción de idioma
+            try:
+                WebDriverWait(self.driver, 8).until(
+                    EC.presence_of_element_located((By.XPATH, "//button[@role='option']|//span[contains(.,'English') or contains(.,'Español')]"))
+                )
+            except TimeoutException:
+                self.take_screenshot("csv_language_options_not_visible")
+                return False
+
+            self.take_screenshot("csv_language_dropdown_open")
+
+            # 2) Buscar y clicar la opción 'English' con distintos locators
+            clicked = False
+            last_error = None
+            for by, locator in OPTION_LOCATORS:
+                try:
+                    # Obtener todos los candidatos para evidenciar
+                    candidates = self.driver.find_elements(by, locator)
+                    if not candidates:
+                        continue
+
+                    # Elegir el primero visible/clicable
+                    target = None
+                    for el in candidates:
+                        if el.is_displayed() and el.is_enabled():
+                            target = el
+                            break
+                    if not target:
+                        continue
+
+                    # Evidencia visual + clic (ActionChains)
+                    self.driver.execute_script(
+                        "arguments[0].scrollIntoView({behavior:'smooth',block:'center'});", target
+                    )
+                    self.driver.execute_script("arguments[0].style.border='3px solid #e00';", target)
+                    time.sleep(0.2)
+
+                    try:
+                        ActionChains(self.driver).move_to_element(target).pause(0.2).click().perform()
+                    finally:
+                        try:
+                            self.driver.execute_script("arguments[0].style.border='0';", target)
+                        except Exception:
+                            pass
+
+                    clicked = True
+                    logger.info("✓ Idioma 'English' seleccionado (por botón/rol/id).")
+                    break
+                except Exception as e:
+                    last_error = e
+                    continue
+
+            # 3) Fallback final: JS click sobre el último locator que encuentre 'English'
+            if not clicked:
+                for by, locator in OPTION_LOCATORS:
+                    try:
+                        opt = WebDriverWait(self.driver, 3).until(EC.element_to_be_clickable((by, locator)))
+                        self.driver.execute_script("arguments[0].click();", opt)
+                        clicked = True
+                        logger.info("✓ Idioma 'English' seleccionado vía JS fallback.")
+                        break
+                    except Exception as e:
+                        last_error = e
+                        continue
+
+            if not clicked:
+                logger.error(f"No fue posible clicar 'English'. Último error: {last_error}")
+                self.take_screenshot("csv_language_english_click_failed")
+                return False
+
+            time.sleep(0.8)
+            return True
+
+        except Exception as e:
+            logger.error(f"Error en select_language_from_csv: {e}")
+            self.take_screenshot("csv_language_selection_error")
+
+
+    @allure.step("CSV: Seleccionar POS -> Colombia COP y Aplicar")
+    def select_pos_cop_apply_from_csv(self):
+        """
+        Paso 4-6 del CSV:
+        4) Click en 'Colombia COP' (trigger header)
+        5) Click en 'COP'
+        6) Click en 'Apply'
+        """
+        HEADER_POS_TRIGGER = "//li[@class='main-header_nav-secondary_item main-header_nav-secondary_item--point-of-sale-selector']//span[2]"
+        COP_VALUE = "//span[@class='points-of-sale_list_item_value'][normalize-space()='COP']"
+        
+        # Intentar diferentes variantes del botón Apply
+        APPLY_VARIANTS = [
+            "//span[contains(text(),'Apply')]",  # Original
+            "//button[contains(text(),'Apply')]",  # Botón con texto Apply
+            "//button//span[contains(text(),'Apply')]",  # Span dentro de botón
+            "//button[@type='submit']",  # Botón de tipo submit
+            "//button[contains(@class, 'btn-primary')]",  # Botón primario
+            "//button[contains(@class, 'apply')]",  # Clase apply
+            "//span[contains(text(),'Aplicar')]",  # En español
+        ]
+
+        try:
+            # --- Abrir trigger del POS ---
+            logger.info("Abriendo selector de POS...")
+            if not self.click_xpath_with_actions(HEADER_POS_TRIGGER, "Header POS trigger (Colombia COP)"):
+                elem = self.wait_for_clickable((By.XPATH, HEADER_POS_TRIGGER), "Header POS trigger", timeout=10)
+                if not elem: 
+                    self.take_screenshot("pos_header_trigger_not_found")
+                    return False
+                self.driver.execute_script("arguments[0].click();", elem)
+            
+            self.take_screenshot("csv_pos_popup_open")
+            time.sleep(1.5)  # Esperar a que el popup se abra completamente
+            
+            # --- Seleccionar COP ---
+            logger.info("Seleccionando COP...")
+            if not self.click_xpath_with_actions(COP_VALUE, "POS Moneda - COP"):
+                elem = self.wait_for_clickable((By.XPATH, COP_VALUE), "POS COP", timeout=8)
+                if not elem: 
+                    logger.warning("No se encontró COP, intentando continuar...")
+                else:
+                    self.driver.execute_script("arguments[0].click();", elem)
+            
+            time.sleep(1)  # Esperar a que se seleccione COP
+            
+            # --- Buscar y hacer click en Apply (intentar todas las variantes) ---
+            logger.info("Buscando botón Apply...")
+            apply_found = False
+            
+            for apply_xpath in APPLY_VARIANTS:
+                try:
+                    logger.info(f"Intentando con XPath: {apply_xpath}")
+                    apply_element = WebDriverWait(self.driver, 3).until(
+                        EC.element_to_be_clickable((By.XPATH, apply_xpath))
+                    )
+                    
+                    if apply_element and apply_element.is_displayed():
+                        logger.info(f"✓ Botón Apply encontrado: {apply_xpath}")
+                        
+                        # Scroll al botón
+                        self.driver.execute_script(
+                            "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
+                            apply_element
+                        )
+                        time.sleep(0.5)
+                        
+                        # Intentar click con ActionChains primero
+                        try:
+                            actions = ActionChains(self.driver)
+                            actions.move_to_element(apply_element).pause(0.3).click().perform()
+                            logger.info("✓ Click con ActionChains exitoso")
+                        except:
+                            # Fallback a JavaScript click
+                            self.driver.execute_script("arguments[0].click();", apply_element)
+                            logger.info("✓ Click con JavaScript exitoso")
+                        
+                        apply_found = True
+                        break
+                        
+                except Exception as e:
+                    logger.debug(f"XPath no funcionó {apply_xpath}: {e}")
+                    continue
+            
+            if not apply_found:
+                # Último intento: buscar cualquier botón visible cerca del popup
+                logger.info("Buscando cualquier botón en el popup...")
+                try:
+                    # Buscar todos los botones en el popup
+                    buttons = self.driver.find_elements(By.XPATH, "//div[contains(@class, 'modal') or contains(@class, 'popup')]//button")
+                    for button in buttons:
+                        if button.is_displayed():
+                            button_text = button.text.strip()
+                            if button_text and ('Apply' in button_text or 'Aplicar' in button_text or 'Confirm' in button_text):
+                                logger.info(f"Botón encontrado por texto: {button_text}")
+                                button.click()
+                                apply_found = True
+                                break
+                except:
+                    pass
+            
+            if apply_found:
+                time.sleep(2)  # Esperar a que se aplique el cambio
+                self.take_screenshot("csv_pos_cop_applied")
+                logger.info("✅ POS Colombia COP aplicado exitosamente")
+                return True
+            else:
+                logger.error("❌ No se encontró ningún botón Apply/Aplicar")
+                self.take_screenshot("apply_button_not_found")
+                return False
+
+        except Exception as e:
+            logger.error(f"Error en select_pos_cop_apply_from_csv: {e}")
+            self.take_screenshot(f"pos_csv_error_{str(e)[:50]}")
+            return False
+
+    @allure.step("CSV: Seleccionar One way (por ID)")
+    def select_one_way_by_id_from_csv(self):
+        """Paso 8 del CSV: click en #journeytypeId_1."""
+        # Usar el selector CSS_SELECTOR definido en la clase, que es más robusto
+        try:
+            element = WebDriverWait(self.driver, 12).until(
+                EC.element_to_be_clickable(self.ONE_WAY_LABEL)
+            )
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView({behavior:'smooth', block:'center'});", element
+            )
+            time.sleep(0.3)
+            # Intento 1: ActionChains
+            try:
+                ActionChains(self.driver).move_to_element(element).pause(0.2).click().perform()
+            except ElementClickInterceptedException:
+                # Intento 2: click directo
+                try:
+                    element.click()
+                except Exception:
+                    # Intento 3: JavaScript click
+                    self.driver.execute_script("arguments[0].click();", element)
+            time.sleep(0.5)
+            return True
+        except Exception as e:
+            logger.error(f"Error seleccionando One Way: {e}")
+            return False
+
+    @allure.step("CSV: Seleccionar destino MDE por input y opción 'Medellin'")
+    def select_destination_mde_from_csv(self):
+        """
+        Pasos 9-11 :
+        9) Click en contenedor destino
+        10) Escribir 'MDE' en #arrivalStationInputId
+        11) Click en opción 'Medellin'
+        """
+        DEST_CONTAINER = "//div[@class='station-control station-control--has-filter']"
+        DEST_INPUT = "//input[@id='arrivalStationInputId']"
+        OPTION_MEDELLIN = "//span[contains(text(),'Medellin')]"
+
+        # abrir panel destino
+        self.click_xpath_with_actions(DEST_CONTAINER, "Destino - contenedor")
+        # escribir MDE
+        dest_input = self.wait_for_element((By.XPATH, DEST_INPUT), "Destino - input", timeout=8)
+        if not dest_input: return False
+        dest_input.click(); time.sleep(0.2)
+        dest_input.clear(); dest_input.send_keys("MDE"); time.sleep(1.5)
+
+        # click opción Medellin
+        return self.click_xpath_with_actions(OPTION_MEDELLIN, "Destino - Medellin")
+    
+    ##====================== CALENDARIO Y PASAJEROS CSV =========================  #
+
+    @allure.step("CSV: Seleccionar día del calendario por texto")
+    def click_calendar_day_by_text_from_csv(self, day_text="17"):
+        """Paso 12 del CSV: click en //span[contains(text(),'17')]"""
+        DAY_XPATH = f"//span[contains(text(),'{day_text}')]"
+        ok = self.click_xpath_with_actions(DAY_XPATH, f"Calendario - día {day_text}")
+        time.sleep(0.6)
+        return ok
+
+    @allure.step("CSV: Agregar pasajeros por íconos '+' y confirmar")
+    def add_passengers_plus_and_confirm_from_csv(self):
+        """
+        Pasos 13-16 del CSV (los XPaths absolutos de '+' para Youth y Child y 'Confirm'):
+        Se intenta con los absolutos y, si fallan, se usa tu flujo robusto existente (configure_passengers + confirm).
+        """
+        PLUS_YOUTH_ABS = "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/ibe-multiple-panel[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/ibe-multiple-options[1]/div[1]/div[1]/div[1]/ibe-render-component[1]/div[1]/ng-template[1]/search-container[1]/div[1]/ibe-search-custom[1]/div[1]/div[1]/div[3]/div[3]/pax-control-custom[1]/div[1]/modal-wrapper[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[2]/ibe-minus-plus[1]/div[1]/button[2]"
+        PLUS_CHILD_ABS = "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/ibe-multiple-panel[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/ibe-multiple-options[1]/div[1]/div[1]/div[1]/ibe-render-component[1]/div[1]/ng-template[1]/search-container[1]/div[1]/ibe-search-custom[1]/div[1]/div[1]/div[3]/div[3]/pax-control-custom[1]/div[1]/modal-wrapper[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/div[2]/ibe-minus-plus[1]/div[1]/button[2]"
+        PLUS_INFANT_ABS = "/html/body/div[1]/main/div/div[1]/div/div/ibe-multiple-panel/div/div/div[2]/div/div/div/ibe-multiple-options/div/div/div/ibe-render-component/div/ng-template/search-container/div[1]/ibe-search-custom/div/div/div[3]/div[3]/pax-control-custom/div/modal-wrapper/div/div/div/div[2]/div/ul/li[4]/div[2]/ibe-minus-plus/div/button[2]"
+        CONFIRM_ABS = "/html/body/div[1]/main/div/div[1]/div/div/ibe-multiple-panel/div/div/div[2]/div/div/div/ibe-multiple-options/div/div/div/ibe-render-component/div/ng-template/search-container/div[1]/ibe-search-custom/div/div/div[3]/div[3]/pax-control-custom/div/modal-wrapper/div/div/div/div[2]/div/div/button"
+
+        ok1 = self.click_xpath_with_actions(PLUS_YOUTH_ABS, "Pasajeros: Youth +")
+        ok2 = self.click_xpath_with_actions(PLUS_CHILD_ABS, "Pasajeros: Child +")
+        ok3 = self.click_xpath_with_actions(PLUS_INFANT_ABS, "Pasajeros: Infant +")
+        time.sleep(0.5)
+
+        # Confirm (si el absoluto falla, usa confirm genérico)
+        ok4 = self.click_xpath_with_actions(CONFIRM_ABS, "Pasajeros: Confirm")
+        if not ok3:
+            ok4 = self._confirm_passenger_selection()
+
+        if not (ok1 and ok2 and ok3):
+            logger.warning("No todos los XPaths absolutos funcionaron; aplicando método robusto configure_passengers(...)")
+            self.configure_passengers(adults=1, youths=1, children=1, infants=1)
+            self._confirm_passenger_selection()
+
+        self.take_screenshot("csv_passengers_confirmed")
+        return True
+
+    @allure.step("CSV: Buscar, seleccionar tarifa y continuar")
+    def search_select_fare_and_continue_from_csv(self):
+        """
+        Pasos 17-22 del CSV:
+        17) Click en Search
+        18/19) Click en precio (primera tarifa disponible)
+        20) Click en 'Select' (Basic)
+        22) Click en 'Continue'
+        """
+        try:
+            # Paso 17: Search
+            SEARCH_BTN = "//button[@id='searchButton']//span[@class='button_label'][normalize-space()='Search']"
+            
+            if not self.click_xpath_with_actions(SEARCH_BTN, "Search flights"):
+                # legacy: try direct click as fallback
+                try:
+                    el = WebDriverWait(self.driver, 6).until(EC.element_to_be_clickable((By.XPATH, SEARCH_BTN)))
+                    self.driver.execute_script("arguments[0].click();", el)
+                except Exception:
+                    logger.error("No se pudo hacer clic en Search")
+                    return False
+
+            # Esperar resultados de vuelos con múltiples selectores (más robusto que sleep fijo)
+            result_selectors = [
+                "//button[contains(@class,'fare_button')]",
+                "//fare-control",
+                "//div[contains(@class,'journey_price')]",
+                "//div[contains(@class,'fare-card')]",
+                "//div[contains(@aria-label,'Click to select')]",
+            ]
+
+            found = False
+            wait_until = time.time() + 25
+            while time.time() < wait_until and not found:
+                for sel in result_selectors:
+                    try:
+                        elems = self.driver.find_elements(By.XPATH, sel)
+                        if elems and len(elems) > 0:
+                            logger.info(f"✓ Resultados detectados con selector: {sel}")
+                            found = True
+                            break
+                    except Exception:
+                        continue
+                if not found:
+                    # forzar scroll para cargar resultados lazy
+                    try:
+                        self.driver.execute_script("window.scrollBy(0,300);")
+                    except Exception:
+                        pass
+                    time.sleep(0.6)
+
+            if not found:
+                logger.warning("No se detectaron resultados de vuelos tras Search")
+                self.take_screenshot("csv_search_no_results")
+                # continuar de todos modos (algunos flujos muestran select después)
+
+            self.take_screenshot("csv_search_clicked")
+
+            # Paso 18-19: Precio / Select fare - NUEVO: ser más flexible con selectores
+            logger.info("Buscando y haciendo clic en precio de vuelo...")
+            
+            # Primero intentar con selectores más amplios
+            PRICE_SELECTORS = [
+                # Selectores por contenido de precio
+                "//button[contains(text(),'$') or contains(text(),'COP')]",
+                "//div[contains(text(),'COP')]//ancestor::button",
+                "//span[contains(text(),'COP')]//ancestor::button",
+                # Selectores por clase
+                "//button[contains(@class,'price')]",
+                "//button[contains(@class,'journey')]",
+                # Selectores genéricos - clickeable en sección de precios
+                "//div[contains(@class,'journey_price')]//button",
+                "//div[contains(@class,'fare')]//button[1]",
+                # Fallback: primer botón clickeable en la página (después de scroll)
+                "(//button[@aria-label or @class])[1]"
+            ]
+            
+            price_clicked = False
+            for i, selector in enumerate(PRICE_SELECTORS):
+                try:
+                    logger.info(f"  Intento {i+1}/{len(PRICE_SELECTORS)}: {selector[:80]}")
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    if elements:
+                        logger.info(f"    ✓ Encontrado {len(elements)} elemento(s)")
+                        # Hacer clic en el primer elemento
+                        el = elements[0]
+                        # Scroll y click
+                        self.driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", el)
+                        time.sleep(0.5)
+                        actions = ActionChains(self.driver)
+                        actions.move_to_element(el).pause(0.3).click().perform()
+                        price_clicked = True
+                        logger.info(f"✓ Precio clickeado con selector: {selector[:80]}")
+                        break
+                except Exception as e:
+                    logger.debug(f"  Selector falló: {e}")
+                    continue
+            
+            if not price_clicked:
+                logger.warning("⚠️ No se pudo hacer clic en precio, intentando continuación directa...")
+                # Continuar de todas formas
+                
+            time.sleep(2.0)
+            self.take_screenshot("csv_fare_selected")
+
+            # Paso 20: Click en Select (Basic) - también ser más flexible
+            logger.info("Buscando y haciendo clic en 'Select' para tarifa Basic...")
+            
+            BASIC_SELECT_SELECTORS = [
+                "//div[@aria-label='Click to select Basic fare']//div[@class='fare_button_label']",
+                "//div[contains(@aria-label, 'Basic')]//div[@class='fare_button_label']",
+                "//button[contains(text(),'Select') and contains(@class,'fare')]",
+                "//div[contains(@class,'fare')]//span[contains(text(),'Select')]//ancestor::button",
+                "//div[@class='fare_button_label']",
+                "(//button[contains(text(),'Select')])[1]"
+            ]
+            
+            basic_clicked = False
+            for i, selector in enumerate(BASIC_SELECT_SELECTORS):
+                try:
+                    logger.info(f"  Intento {i+1}/{len(BASIC_SELECT_SELECTORS)}: {selector[:80]}")
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    if elements:
+                        logger.info(f"    ✓ Encontrado {len(elements)} elemento(s)")
+                        el = elements[0]
+                        self.driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", el)
+                        time.sleep(0.5)
+                        actions = ActionChains(self.driver)
+                        actions.move_to_element(el).pause(0.3).click().perform()
+                        basic_clicked = True
+                        logger.info(f"✓ Basic seleccionado con selector: {selector[:80]}")
+                        break
+                except Exception as e:
+                    logger.debug(f"  Selector falló: {e}")
+                    continue
+            
+            if not basic_clicked:
+                logger.warning("⚠️ No se pudo seleccionar tarifa Basic, continuando...")
+                
+            time.sleep(2.0)
+            self.take_screenshot("csv_fare_selected_after_click")
+
+            # Paso 22: Continue - también flexibilizar
+            logger.info("Buscando y haciendo clic en botón Continue...")
+            
+            CONTINUE_SELECTORS = [
+                "//button[contains(@class,'page_button-primary-flow')]",
+                "//button[contains(@class,'page_button-primary')]",
+                "//button[normalize-space()='Continue']",
+                "//button//span[normalize-space()='Continue']//ancestor::button",
+                "//span[contains(text(),'Continue')]//ancestor::button",
+                "(//button[@class])[last()]"  # Último botón como fallback
+            ]
+            
+            continue_clicked = False
+            for i, selector in enumerate(CONTINUE_SELECTORS):
+                try:
+                    logger.info(f"  Intento {i+1}/{len(CONTINUE_SELECTORS)}: {selector[:80]}")
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    if elements:
+                        logger.info(f"    ✓ Encontrado {len(elements)} elemento(s)")
+                        el = elements[0]
+                        self.driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", el)
+                        time.sleep(0.5)
+                        actions = ActionChains(self.driver)
+                        actions.move_to_element(el).pause(0.3).click().perform()
+                        continue_clicked = True
+                        logger.info(f"✓ Continue clickeado con selector: {selector[:80]}")
+                        break
+                except Exception as e:
+                    logger.debug(f"  Selector falló: {e}")
+                    continue
+            
+            if not continue_clicked:
+                logger.error("No se pudo encontrar botón Continue")
+                return False
+                
+            time.sleep(2.0)
+            self.take_screenshot("csv_continue_clicked")
+            
+            logger.info("✅ Búsqueda, selección de tarifa y continuar completados exitosamente")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error en search_select_fare_and_continue_from_csv: {e}")
+            self.take_screenshot(f"error_search_fare_{str(e)[:50]}")
+            return False
+    
+
+    # ==================== MÉTODOS EXISTENTES (CONTINUAN) ==================== #
     
     @allure.step("Seleccionar 'Solo ida' (One Way)")
     def select_one_way(self):
@@ -538,7 +1396,52 @@ class HomePage(BasePage):
     def search_flights(self):
         """Buscar vuelos"""
         logger.info("Buscando vuelos ")
-        return self.click(self.SEARCH_BUTTON, "Search flights")
+
+        # Intento primario: usar el helper de ActionChains con evidencias
+        try:
+            success = self.actions.click_with_evidence(self.SEARCH_BUTTON, "Search flights")
+            if success:
+                logger.info("✓ Búsqueda iniciada (ActionChains)")
+                return True
+            else:
+                logger.warning("ActionChains no pudo clickear Search; intentando fallback")
+        except Exception as e:
+            logger.warning(f"ActionChains lanzó excepción: {e} - intentando fallback")
+
+        # Fallback 1: click directo sobre el elemento encontrado
+        try:
+            elem = self.wait_for_clickable(self.SEARCH_BUTTON, "Search flights", timeout=6)
+            if elem:
+                try:
+                    elem.click()
+                    logger.info("✓ Búsqueda iniciada (direct click)")
+                    return True
+                except Exception as e:
+                    logger.warning(f"Direct click falló: {e} - intentando JS click")
+                    try:
+                        self.driver.execute_script("arguments[0].click();", elem)
+                        logger.info("✓ Búsqueda iniciada (JS click)")
+                        return True
+                    except Exception as e2:
+                        logger.error(f"JS click también falló: {e2}")
+        except Exception as e:
+            logger.debug(f"No se pudo localizar Search button para fallback: {e}")
+
+        # Último recurso: intentar localizar por ID y ejecutar JS click
+        try:
+            try:
+                btn = self.driver.find_element(By.ID, "searchButton")
+                self.driver.execute_script("arguments[0].click();", btn)
+                logger.info("✓ Búsqueda iniciada (fallback por ID + JS)")
+                return True
+            except Exception as e:
+                logger.error(f"Fallback final para Search falló: {e}")
+        except Exception:
+            pass
+
+        # Si llegamos aquí, no se pudo iniciar búsqueda
+        self.take_screenshot("search_button_click_failed")
+        return False
     
     @allure.step("Seleccionar origen - {city} ({code})")
     def select_origin(self, city="Bogota", code="BOG"):

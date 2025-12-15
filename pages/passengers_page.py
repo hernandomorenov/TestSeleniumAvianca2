@@ -1,428 +1,290 @@
+
+# pages/passengers_page.py
+import time
+import allure
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from faker import Faker
-import allure
-import time
-import random
+
 from pages.base_page import BasePage
 from utils.logger import logger
 
-# Inicializar Faker
-fake = Faker()
 
 class PassengersPage(BasePage):
-    """Página de información de pasajeros con Faker integrado"""
-    
-    # ==================== LOCATORS BASADOS EN CSV ====================
-    
-    # Patrón de IDs dinámicos del CSV:
-    # Adulto: 7E7E3533344234383244333232443435353835347E32
-    # Joven: 7E7E3533344234383244333132443435353835347E31
-    # Niño: 7E7E3533344234383244333332443435353835347E33
-    # Infante: 7E7E3533344234383244333432443435353835347E34
-    
-    # Locators generales (independientes del ID dinámico)
-    GENDER_COMBOBOX = (By.XPATH, "//button[contains(@id, 'IdPaxGender_')]")
-    GENDER_MALE = (By.XPATH, "//button[contains(text(),'Male')]")
-    GENDER_FEMALE = (By.XPATH, "//button[contains(text(),'Female')]")
-    
-    # Fecha de nacimiento
-    DAY_DROPDOWN = (By.XPATH, "//button[contains(@id, 'dateDayId_')]")
-    MONTH_DROPDOWN = (By.XPATH, "//button[contains(@id, 'dateMonthId_')]")
-    YEAR_DROPDOWN = (By.XPATH, "//button[contains(@id, 'dateYearId_')]")
-    
-    # Nacionalidad
-    NATIONALITY_COMBOBOX = (By.XPATH, "//button[contains(@id, 'IdDocNationality_')]")
-    COLOMBIA_OPTION = (By.XPATH, "//button[contains(text(),'Colombia')] | //span[contains(text(),'Colombia')]")
-    
-    # Programa de cliente
-    CUSTOMER_PROGRAM = (By.XPATH, "//button[@id='customerPrograms']")
-    NOT_APPLICABLE = (By.XPATH, "//button[contains(text(),'Not applicable')]")
-    
-    # Campos de texto (nombre, apellido, documento, email, teléfono)
-    FIRST_NAME_INPUT = (By.XPATH, "//input[contains(@id, 'firstName') or contains(@name, 'firstName')]")
-    LAST_NAME_INPUT = (By.XPATH, "//input[contains(@id, 'lastName') or contains(@name, 'lastName')]")
-    DOCUMENT_INPUT = (By.XPATH, "//input[contains(@id, 'IdDocNumber') or contains(@name, 'document')]")
-    EMAIL_INPUT = (By.XPATH, "//input[contains(@id, 'email') or contains(@type, 'email')]")
-    PHONE_INPUT = (By.XPATH, "//input[contains(@id, 'phone') or contains(@name, 'phone')]")
-    
-    # Pasajero acompañante (para infante)
-    PASSENGER_SELECTOR = (By.ID, "passengerId")
-    
-    # Prefijo telefónico
-    PHONE_PREFIX = (By.ID, "phone_prefixPhoneId")
-    PHONE_PREFIX_57 = (By.XPATH, "//span[normalize-space()='57']")
-    
-    # Newsletter checkbox
-    NEWSLETTER_CHECKBOX = (By.ID, "sendNewsLetter")
-    
-    # Botón Continue
-    CONTINUE_BUTTON = (By.XPATH, "//button[@class='button page_button btn-action page_button-primary-flow ng-star-inserted']//span[@class='button_label'][normalize-space()='Continue']")
-    
-    # ==================== MÉTODOS CON FAKER ====================
-    
-    def __init__(self, driver):
-        """Inicializar con Faker"""
-        super().__init__(driver)
-        self.fake = Faker()
-        self.fake_es = Faker('es_ES')  # Faker en español para nombres más realistas
-    
-    @allure.step("Generar datos de pasajero con Faker")
-    def generate_passenger_data(self, passenger_type="adult"):
-        """
-        Generar datos aleatorios para un pasajero usando Faker
-        
-        Args:
-            passenger_type: "adult", "youth", "child", o "infant"
-        
-        Returns:
-            dict con todos los datos del pasajero
-        """
-        # Definir edades según tipo de pasajero
-        age_ranges = {
-            "adult": (18, 65),
-            "youth": (12, 17),
-            "child": (2, 11),
-            "infant": (0, 1)
-        }
-        
-        age = random.randint(*age_ranges.get(passenger_type, (25, 50)))
-        birth_year = 2025 - age
-        
-        # Generar género aleatorio
-        gender = random.choice(["Male", "Female"])
-        
-        # Generar datos
-        if gender == "Male":
-            first_name = self.fake_es.first_name_male()
-        else:
-            first_name = self.fake_es.first_name_female()
-        
-        last_name = self.fake_es.last_name()
-        
-        data = {
-            "first_name": first_name,
-            "last_name": last_name,
-            "gender": gender,
-            "birth_day": str(random.randint(1, 28)),  # Día 1-28 para evitar problemas
-            "birth_month": str(random.randint(1, 12)),
-            "birth_year": str(birth_year),
-            "document": str(random.randint(10000000, 99999999)),  # Documento de 8 dígitos
-            "nationality": "Colombia",
-            "customer_program": "Not applicable"
-        }
-        
-        logger.info(f"✓ Datos generados para {passenger_type}: {first_name} {last_name}, {gender}, {data['birth_day']}/{data['birth_month']}/{data['birth_year']}")
-        
-        return data
-    
-    @allure.step("Generar datos de contacto con Faker")
-    def generate_contact_data(self):
-        """Generar datos de contacto usando Faker"""
-        data = {
-            "email": self.fake.email(),
-            "phone": str(random.randint(3000000000, 3999999999)),  # Número colombiano
-            "phone_prefix": "57"
-        }
-        
-        logger.info(f"✓ Datos de contacto generados: {data['email']}, +{data['phone_prefix']} {data['phone']}")
-        
-        return data
-    
-    @allure.step("Llenar campo de texto con Faker: {field_name}")
-    def fill_text_field(self, locator, value, field_name):
-        """Llenar un campo de texto"""
+    """
+    Página de información de pasajeros con modo TURBO basado en CSV (datos estáticos),
+    usando JS click y esperas cortas para máxima velocidad y estabilidad.
+    Incluye helpers para trabajar por 'anchor' (IDs dinámicos del CSV).
+    """
+
+    # ==================== Espera de carga ====================
+
+    @allure.step("Passengers: esperar carga")
+    def wait_for_page_load(self, timeout=12):
         try:
-            # Buscar todos los campos que coincidan
-            fields = self.driver.find_elements(*locator)
-            
-            if not fields:
-                logger.warning(f"⚠️ Campo {field_name} no encontrado")
-                return False
-            
-            # Buscar el primer campo visible
-            for field in fields:
-                try:
-                    if field.is_displayed() and field.is_enabled():
-                        # Scroll al campo
-                        self.driver.execute_script(
-                            "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
-                            field
-                        )
-                        time.sleep(0.5)
-                        
-                        # Limpiar y llenar
-                        field.clear()
-                        field.send_keys(value)
-                        
-                        logger.info(f"  ✓ {field_name}: {value}")
-                        return True
-                except:
-                    continue
-            
-            logger.warning(f"⚠️ No se pudo llenar {field_name}")
-            return False
-            
-        except Exception as e:
-            logger.error(f"❌ Error llenando {field_name}: {e}")
-            return False
-    
-    @allure.step("Seleccionar opción de dropdown: {field_name}")
-    def select_dropdown_option(self, dropdown_locator, option_locator, field_name):
-        """Seleccionar una opción de un dropdown"""
-        try:
-            # Abrir dropdown
-            dropdowns = self.driver.find_elements(*dropdown_locator)
-            
-            dropdown_opened = False
-            for dd in dropdowns:
-                try:
-                    if dd.is_displayed() and dd.is_enabled():
-                        # Scroll
-                        self.driver.execute_script(
-                            "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
-                            dd
-                        )
-                        time.sleep(0.5)
-                        
-                        # Click para abrir
-                        self.driver.execute_script("arguments[0].click();", dd)
-                        dropdown_opened = True
-                        time.sleep(0.5)
-                        break
-                except:
-                    continue
-            
-            if not dropdown_opened:
-                logger.warning(f"⚠️ No se pudo abrir dropdown {field_name}")
-                return False
-            
-            # Seleccionar opción
-            try:
-                option = WebDriverWait(self.driver, 5).until(
-                    EC.element_to_be_clickable(option_locator)
+            WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, "//h1[contains(.,'Passengers') or contains(.,'Pasajeros')]|//booking-contact-custom")
                 )
-                
-                self.driver.execute_script("arguments[0].click();", option)
-                logger.info(f"  ✓ {field_name} seleccionado")
-                time.sleep(0.5)
-                return True
-                
-            except Exception as e:
-                logger.warning(f"⚠️ Opción {field_name} no encontrada: {e}")
-                return False
-            
-        except Exception as e:
-            logger.error(f"❌ Error seleccionando {field_name}: {e}")
-            return False
-    
-    @allure.step("Llenar información completa de pasajero con Faker")
-    def fill_passenger_with_faker(self, passenger_number=1, passenger_type="adult"):
-        """
-        Llenar toda la información de un pasajero usando Faker
-        
-        Args:
-            passenger_number: 1, 2, 3, 4
-            passenger_type: "adult", "youth", "child", "infant"
-        """
-        logger.info(f"=== Llenando {passenger_type.upper()} #{passenger_number} con Faker ===")
-        
-        # Generar datos
-        data = self.generate_passenger_data(passenger_type)
-        
-        success = True
-        
-        # 1. Género
-        try:
-            gender_option = self.GENDER_MALE if data["gender"] == "Male" else self.GENDER_FEMALE
-            success &= self.select_dropdown_option(
-                self.GENDER_COMBOBOX,
-                gender_option,
-                f"Género {data['gender']}"
             )
-        except Exception as e:
-            logger.warning(f"⚠️ Error seleccionando género: {e}")
-        
-        # 2. Fecha de nacimiento
-        try:
-            # Día
-            day_option = (By.XPATH, f"//button[contains(text(),'{data['birth_day']}')]")
-            self.select_dropdown_option(self.DAY_DROPDOWN, day_option, f"Día {data['birth_day']}")
-            
-            # Mes (convertir número a nombre si es necesario)
-            month_names = {
-                "1": "January", "2": "February", "3": "March", "4": "April",
-                "5": "May", "6": "June", "7": "July", "8": "August",
-                "9": "September", "10": "October", "11": "November", "12": "December"
-            }
-            month_name = month_names.get(data['birth_month'], data['birth_month'])
-            month_option = (By.XPATH, f"//button[contains(text(),'{month_name}')]")
-            self.select_dropdown_option(self.MONTH_DROPDOWN, month_option, f"Mes {month_name}")
-            
-            # Año
-            year_option = (By.XPATH, f"//button[contains(text(),'{data['birth_year']}')]")
-            self.select_dropdown_option(self.YEAR_DROPDOWN, year_option, f"Año {data['birth_year']}")
-            
-        except Exception as e:
-            logger.warning(f"⚠️ Error seleccionando fecha de nacimiento: {e}")
-        
-        # 3. Nombre
-        success &= self.fill_text_field(self.FIRST_NAME_INPUT, data["first_name"], "Nombre")
-        
-        # 4. Apellido
-        success &= self.fill_text_field(self.LAST_NAME_INPUT, data["last_name"], "Apellido")
-        
-        # 5. Documento
-        success &= self.fill_text_field(self.DOCUMENT_INPUT, data["document"], "Documento")
-        
-        # 6. Nacionalidad
-        try:
-            success &= self.select_dropdown_option(
-                self.NATIONALITY_COMBOBOX,
-                self.COLOMBIA_OPTION,
-                "Nacionalidad Colombia"
-            )
-        except Exception as e:
-            logger.warning(f"⚠️ Error seleccionando nacionalidad: {e}")
-        
-        # 7. Programa de cliente
-        try:
-            success &= self.select_dropdown_option(
-                self.CUSTOMER_PROGRAM,
-                self.NOT_APPLICABLE,
-                "Customer Program"
-            )
-        except Exception as e:
-            logger.warning(f"⚠️ Error seleccionando customer program: {e}")
-        
-        logger.info(f"✅ {passenger_type.upper()} #{passenger_number} completado")
-        return success
-    
-    @allure.step("Llenar información de contacto con Faker")
-    def fill_contact_with_faker(self):
-        """Llenar información de contacto usando Faker"""
-        logger.info("=== Llenando INFORMACIÓN DE CONTACTO con Faker ===")
-        
-        # Generar datos
-        contact_data = self.generate_contact_data()
-        
-        success = True
-        
-        # 1. Email
-        success &= self.fill_text_field(self.EMAIL_INPUT, contact_data["email"], "Email")
-        
-        # 2. Prefijo telefónico (+57)
-        try:
-            self.select_dropdown_option(
-                (By.ID, "phone_prefixPhoneId"),
-                self.PHONE_PREFIX_57,
-                "Prefijo +57"
-            )
-        except Exception as e:
-            logger.warning(f"⚠️ Error seleccionando prefijo: {e}")
-        
-        # 3. Teléfono
-        success &= self.fill_text_field(self.PHONE_INPUT, contact_data["phone"], "Teléfono")
-        
-        # 4. Newsletter checkbox (opcional)
-        try:
-            checkbox = self.wait_for_element(self.NEWSLETTER_CHECKBOX, timeout=3)
-            if checkbox and not checkbox.is_selected():
-                self.driver.execute_script("arguments[0].click();", checkbox)
-                logger.info("  ✓ Newsletter checkbox marcado")
-        except:
-            logger.debug("Newsletter checkbox no encontrado (opcional)")
-        
-        logger.info("✅ Información de contacto completada")
-        return success
-    
-    @allure.step("Llenar TODOS los pasajeros con Faker")
-    def fill_all_passengers_with_faker(self, adults=1, youths=0, children=0, infants=0):
-        """
-        Llenar todos los pasajeros automáticamente con Faker
-        
-        Args:
-            adults: Cantidad de adultos
-            youths: Cantidad de jóvenes
-            children: Cantidad de niños
-            infants: Cantidad de infantes
-        """
-        logger.info("="*60)
-        logger.info("LLENANDO TODOS LOS PASAJEROS CON FAKER")
-        logger.info(f"{adults}A + {youths}Y + {children}C + {infants}I")
-        logger.info("="*60)
-        
-        success = True
-        
-        # Adultos
-        for i in range(adults):
-            success &= self.fill_passenger_with_faker(i + 1, "adult")
-            time.sleep(1)
-        
-        # Jóvenes
-        for i in range(youths):
-            success &= self.fill_passenger_with_faker(i + 1, "youth")
-            time.sleep(1)
-        
-        # Niños
-        for i in range(children):
-            success &= self.fill_passenger_with_faker(i + 1, "child")
-            time.sleep(1)
-        
-        # Infantes
-        for i in range(infants):
-            success &= self.fill_passenger_with_faker(i + 1, "infant")
-            
-            # Seleccionar pasajero acompañante (adulto 1)
-            try:
-                self.select_dropdown_option(
-                    self.PASSENGER_SELECTOR,
-                    (By.XPATH, "//button[@role='option'][1]"),
-                    "Pasajero acompañante"
-                )
-            except:
-                logger.debug("Selector de acompañante no requerido")
-            
-            time.sleep(1)
-        
-        # Información de contacto
-        success &= self.fill_contact_with_faker()
-        
-        logger.info("="*60)
-        logger.info(f"{'✅ TODOS LOS PASAJEROS COMPLETADOS' if success else '⚠️ COMPLETADO CON WARNINGS'}")
-        logger.info("="*60)
-        
-        return success
-    
-    @allure.step("Continuar a servicios")
-    def continue_to_services(self):
-        """Continuar a la página de servicios"""
-        logger.info("Continuando a servicios...")
-        
-        try:
-            # Botón Continue
-            continue_btn = self.wait_for_element(self.CONTINUE_BUTTON, timeout=10)
-            
-            if not continue_btn:
-                logger.error("❌ Botón Continue no encontrado")
-                return False
-            
-            # Scroll y click
-            self.driver.execute_script(
-                "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
-                continue_btn
-            )
-            time.sleep(1)
-            
-            self.driver.execute_script("arguments[0].click();", continue_btn)
-            logger.info("✓ Continue button clicked - Navegando a servicios")
-            
-            time.sleep(3)
+            time.sleep(0.3)
             return True
-            
         except Exception as e:
-            logger.error(f"Error continuando a servicios: {e}")
-            self.take_screenshot("continue_services_error")
+            logger.error(f"Passengers no cargó: {e}")
             return False
+
+    # ==================== Helpers ultra-rápidos ====================
+
+    def _js_click(self, el):
+        self.driver.execute_script("arguments[0].scrollIntoView({behavior:'instant',block:'center'});", el)
+        self.driver.execute_script("arguments[0].click();", el)
+
+    def _click_by_id(self, _id, timeout=6):
+        el = WebDriverWait(self.driver, timeout).until(EC.element_to_be_clickable((By.ID, _id)))
+        self._js_click(el)
+        return el
+
+    def _type_by_id(self, _id, value, timeout=6):
+        el = WebDriverWait(self.driver, timeout).until(EC.element_to_be_clickable((By.ID, _id)))
+        self.driver.execute_script("arguments[0].scrollIntoView({behavior:'instant',block:'center'});", el)
+        el.clear()
+        el.send_keys(value)
+        time.sleep(0.3)  # Pequeña pausa para permitir visualización de entrada
+        return el
+
+    def _click_option_text(self, text, timeout=6):
+        # Opción puede ser <button> o <span>, el CSV muestra ambos casos
+        for locator in [(By.XPATH, f"//button[normalize-space()='{text}']"),
+                        (By.XPATH, f"//span[normalize-space()='{text}']")]:
+            try:
+                opt = WebDriverWait(self.driver, timeout).until(EC.element_to_be_clickable(locator))
+                self._js_click(opt)
+                time.sleep(0.2)  # Pausa post-selección para renderizado
+                return True
+            except Exception:
+                continue
+        return False
+
+    def _get_container_by_anchor(self, anchor, timeout=6):
+        # Usamos IdFirstName<anchor> para encontrar el bloque local y scopear customerPrograms al pasajero correcto
+        first_name = WebDriverWait(self.driver, timeout).until(
+            EC.presence_of_element_located((By.ID, f"IdFirstName{anchor}"))
+        )
+        container = first_name
+        # Subir algunos niveles hasta un contenedor amplio del bloque de pasajero
+        for _ in range(8):
+            try:
+                container = container.find_element(By.XPATH, "./..")
+            except Exception:
+                break
+        return container
+
+    def _click_customer_program_in_container(self, anchor):
+        container = self._get_container_by_anchor(anchor)
+        btns = container.find_elements(By.XPATH, ".//button[@id='customerPrograms']")
+        if btns:
+            self._js_click(btns[0])
+            # Seleccionar "Not applicable"
+            self._click_option_text("Not applicable")
+
+    def _pick_birthdate_by_anchor(self, anchor, day, month_name, year):
+        # Abre cada dropdown por ID y selecciona opción por texto (button/span)
+        self._click_by_id(f"dateDayId_IdDateOfBirthHidden_{anchor}_")
+        self._click_option_text(day)
+        logger.info(f"  ✓ Día: {day}")
+        time.sleep(0.3)
+
+        self._click_by_id(f"dateMonthId_IdDateOfBirthHidden_{anchor}_")
+        self._click_option_text(month_name)
+        logger.info(f"  ✓ Mes: {month_name}")
+        time.sleep(0.3)
+
+        self._click_by_id(f"dateYearId_IdDateOfBirthHidden_{anchor}_")
+        self._click_option_text(year)
+        logger.info(f"  ✓ Año: {year}")
+        time.sleep(0.3)
+
+    # ==================== Llenado estático (idéntico al CSV) ====================
+
+    @allure.step("Passengers (CSV estático): llenar todos rápido")
+    def fill_passengers_static_from_csv(self):
+        """
+        Llena Adult (E32), Youth (E31), Child (E33), Infant (E34) y Contacto
+        usando los mismos valores del CSV y clicks JS para máxima velocidad.
+        """
+
+        assert self.wait_for_page_load(), "❌ Passengers no cargó"
+
+        # ---- Dataset estático exacto del CSV ----
+        DATA = {
+            "adult": {  # E32
+                "anchor": "7E7E3533344234383244333232443435353835347E32",
+                "gender": "Male",
+                "first": "Hernando",
+                "last":  "Moreno",
+                "day":   "25",
+                "month": "July",
+                "year":  "1987",
+                "nat":   "Colombia",
+            },
+            "youth": {  # E31
+                "anchor": "7E7E3533344234383244333132443435353835347E31",
+                "gender": "Female",
+                "first": "Celeste",
+                "last":  "Moreno",
+                "day":   "24",
+                "month": "April",
+                "year":  "2025",
+                "nat":   "Colombia",
+            },
+            "child": {  # E33
+                "anchor": "7E7E3533344234383244333332443435353835347E33",
+                "gender": "Male",
+                "first": "Nicolas",
+                "last":  "Moreno",
+                "day":   "7",
+                "month": "September",
+                "year":  "2013",
+                "nat":   "Colombia",
+            },
+            "infant": {  # E34
+                "anchor": "7E7E3533344234383244333432443435353835347E34",
+                "gender": "Male",
+                "first": "Andres",
+                "last":  "Moreno",
+                "day":   "15",
+                "month": "March",
+                "year":  "2023",
+                "nat":   "Colombia",
+            },
+            "contact": {
+                "prefix": "Colombia",
+                "phone":  "315542454521",
+                "email":  "h@h.com",
+                "confirm":"h@h.com",
+                "newsletter": True
+            }
+        }
+
+        # ---- 1) Adult (E32) ----
+        logger.info("\n=== Llenando ADULTO ===")
+        a = DATA["adult"]
+        logger.info(f"  Género: {a['gender']}")
+        self._click_by_id(f"IdPaxGender_{a['anchor']}")
+        self._click_option_text(a["gender"])
+        logger.info(f"  Nombre: {a['first']}")
+        self._type_by_id(f"IdFirstName{a['anchor']}", a["first"])
+        logger.info(f"  Apellido: {a['last']}")
+        self._type_by_id(f"IdLastName{a['anchor']}", a["last"])
+        logger.info(f"  Fecha: {a['day']}/{a['month']}/{a['year']}")
+        self._pick_birthdate_by_anchor(a["anchor"], a["day"], a["month"], a["year"])
+        logger.info(f"  Nacionalidad: {a['nat']}")
+        self._click_by_id(f"IdDocNationality_{a['anchor']}"); self._click_option_text(a["nat"])
+        logger.info("  Customer Program: Not applicable")
+        self._click_customer_program_in_container(a["anchor"])
+        time.sleep(0.5)
+        logger.info("✅ ADULTO completado")
+        self.take_screenshot("03_passengers_adult_completed")
+        time.sleep(1.0)  # Pausa para validación visual
+
+        # ---- 2) Youth (E31) ----
+        logger.info("\n=== Llenando YOUTH ===")
+        y = DATA["youth"]
+        logger.info(f"  Género: {y['gender']}")
+        self._click_by_id(f"IdPaxGender_{y['anchor']}"); self._click_option_text(y["gender"])
+        logger.info(f"  Nombre: {y['first']}")
+        self._type_by_id(f"IdFirstName{y['anchor']}", y["first"])
+        logger.info(f"  Apellido: {y['last']}")
+        self._type_by_id(f"IdLastName{y['anchor']}", y["last"])
+        logger.info(f"  Fecha: {y['day']}/{y['month']}/{y['year']}")
+        self._pick_birthdate_by_anchor(y["anchor"], y["day"], y["month"], y["year"])
+        logger.info(f"  Nacionalidad: {y['nat']}")
+        self._click_by_id(f"IdDocNationality_{y['anchor']}"); self._click_option_text(y["nat"])
+        logger.info("  Customer Program: Not applicable")
+        self._click_customer_program_in_container(y["anchor"])
+        time.sleep(0.5)
+        logger.info("✅ YOUTH completado")
+        self.take_screenshot("03_passengers_youth_completed")
+        time.sleep(1.0)  # Pausa para validación visual
+
+        # ---- 3) Child (E33) ----
+        logger.info("\n=== Llenando CHILD ===")
+        c = DATA["child"]
+        logger.info(f"  Género: {c['gender']}")
+        self._click_by_id(f"IdPaxGender_{c['anchor']}"); self._click_option_text(c["gender"])
+        logger.info(f"  Nombre: {c['first']}")
+        self._type_by_id(f"IdFirstName{c['anchor']}", c["first"])
+        logger.info(f"  Apellido: {c['last']}")
+        self._type_by_id(f"IdLastName{c['anchor']}", c["last"])
+        logger.info(f"  Fecha: {c['day']}/{c['month']}/{c['year']}")
+        self._pick_birthdate_by_anchor(c["anchor"], c["day"], c["month"], c["year"])
+        logger.info(f"  Nacionalidad: {c['nat']}")
+        self._click_by_id(f"IdDocNationality_{c['anchor']}"); self._click_option_text(c["nat"])
+        logger.info("  Customer Program: Not applicable")
+        self._click_customer_program_in_container(c["anchor"])
+        time.sleep(0.5)
+        logger.info("✅ CHILD completado")
+        self.take_screenshot("03_passengers_child_completed")
+        time.sleep(1.0)  # Pausa para validación visual
+
+        # ---- 4) Infant (E34) ----
+        logger.info("\n=== Llenando INFANT ===")
+        i = DATA["infant"]
+        logger.info(f"  Género: {i['gender']}")
+        self._click_by_id(f"IdPaxGender_{i['anchor']}"); self._click_option_text(i["gender"])
+        logger.info(f"  Nombre: {i['first']}")
+        self._type_by_id(f"IdFirstName{i['anchor']}", i["first"])
+        logger.info(f"  Apellido: {i['last']}")
+        self._type_by_id(f"IdLastName{i['anchor']}", i["last"])
+        logger.info(f"  Fecha: {i['day']}/{i['month']}/{i['year']}")
+        self._pick_birthdate_by_anchor(i["anchor"], i["day"], i["month"], i["year"])
+        logger.info(f"  Nacionalidad: {i['nat']}")
+        self._click_by_id(f"IdDocNationality_{i['anchor']}"); self._click_option_text(i["nat"])
+        logger.info("  Customer Program: Not applicable")
+        self._click_customer_program_in_container(i["anchor"])
+        time.sleep(0.5)
+        logger.info("✅ INFANT completado")
+        self.take_screenshot("03_passengers_infant_completed")
+        time.sleep(1.0)  # Pausa para validación visual
+
+        # ---- 5) Contacto (global) ----
+        logger.info("\n=== Llenando CONTACTO ===")
+        logger.info(f"  Prefijo: {DATA['contact']['prefix']}")
+        self._click_by_id("phone_prefixPhoneId"); self._click_option_text(DATA["contact"]["prefix"])
+        time.sleep(0.3)
+        logger.info(f"  Teléfono: {DATA['contact']['phone']}")
+        self._type_by_id("phone_phoneNumberId", DATA["contact"]["phone"])
+        logger.info(f"  Email: {DATA['contact']['email']}")
+        self._type_by_id("email", DATA["contact"]["email"])
+        logger.info(f"  Email Confirmación: {DATA['contact']['confirm']}")
+        self._type_by_id("confirmEmail", DATA["contact"]["confirm"])
+
+        if DATA["contact"]["newsletter"]:
+            try:
+                self._click_by_id("sendNewsLetter")
+                logger.info("  Newsletter: ✓ marcado")
+            except Exception:
+                pass
+
+        time.sleep(0.5)
+        logger.info("✅ CONTACTO completado")
+        self.take_screenshot("passengers_csv_static_filled")
+        time.sleep(1.0)  # Pausa final antes de continuar
+        return True
+
+    # ==================== Continuar a Services ====================
+
+    @allure.step("Passengers: continuar a Services")
+    def continue_to_services(self):
+        try:
+            cont = WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH,
+                    "//button[@class='button page_button btn-action page_button-primary-flow ng-star-inserted']//span[@class='button_label'][normalize-space()='Continue']"
+                ))
+            )
+            self._js_click(cont)
+            time.sleep(2.0)
+            return True
+        except Exception as e:
+            logger.error(f"No se pudo continuar a Services: {e}")
+            self.take_screenshot("continue_services_error")

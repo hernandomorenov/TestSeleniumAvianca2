@@ -53,11 +53,29 @@ class ActionChainsHelper:
                 element
             )
             
-            # Click con ActionChains
-            self.actions.click(element).perform()
-            
-            logger.info(f"✅ Click realizado en: {element_name}")
-            return True
+            # Click con ActionChains (primera opción)
+            try:
+                self.actions.click(element).perform()
+                logger.info(f"✅ Click realizado en: {element_name} (ActionChains)")
+                return True
+            except Exception as ac_e:
+                logger.warning(f"ActionChains click falló: {ac_e} - intentando click directo...")
+                # Intento fallback: click directo
+                try:
+                    element.click()
+                    logger.info(f"✅ Click realizado en: {element_name} (direct click)")
+                    return True
+                except Exception as direct_e:
+                    logger.warning(f"Direct click falló: {direct_e} - intentando click por JavaScript...")
+                    # Intento fallback final: JavaScript click
+                    try:
+                        self.driver.execute_script("arguments[0].click();", element)
+                        logger.info(f"✅ Click realizado en: {element_name} (JS click)")
+                        return True
+                    except Exception as js_e:
+                        logger.error(f"Todos los intentos de click fallaron: {js_e}")
+                        # Dejar que el outer except capture y adjunte screenshot
+                        raise
             
         except Exception as e:
             logger.error(f"❌ Error en click con evidencias: {e}")
